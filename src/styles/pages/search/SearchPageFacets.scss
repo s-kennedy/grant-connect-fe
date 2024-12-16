@@ -1,0 +1,332 @@
+@import '../../base.scss';
+
+.Search-page__facets {
+	position: relative;
+	margin-top: -17px;
+	display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+	flex-flow: column;
+	-webkit-flex-flow: column;
+
+	@media screen and (min-width: 1024px) {
+		padding-right: 54px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		padding-right: 20px;
+	}
+
+	hr {
+		width: 100%;
+	}
+
+	small {
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 6px;
+    display: inline-block;
+	}
+
+	p {
+		position: relative;
+
+		button {
+			min-width: 36px !important;
+			position: absolute !important;
+			right: 0 !important;
+			top: -10px !important;
+
+			span {
+				color: $grey-dark;
+				font-size: 12px !important;
+				padding-right: 7px !important;
+    		padding-left: 7px !important;
+			}
+		}
+	}
+
+	&-facet:nth-of-type(1) {
+		order: 5;
+	}
+
+	&-facet:nth-of-type(2) {
+		order: 1;
+	}
+
+	&-facet:nth-of-type(3) {
+		order: 6;
+	}
+
+	&-facet:nth-of-type(4) {
+		order: 2;
+	}
+
+	&-facet:nth-of-type(5) {
+		order: 3;
+	}
+
+	&-facet:nth-of-type(6) {
+		order: 4;
+	}
+
+	&-item {
+		> div {
+
+		margin-bottom: 10px;
+			> div {
+				font-weight: 600;
+				margin: -10px -6px -12px -16px !important;
+
+				@include breakpoint(sm-min) {
+					margin: -10px -6px -12px -6px !important;
+				}
+			}
+		}
+
+		&-grandchild {
+			button {
+				padding: 0 !important;
+				width: 38px !important;
+				height: 38px !important;
+			}
+
+			> div > div {
+				padding: 8px 35px 8px 0px !important;
+			}
+
+			&.selected {
+				> div > div > div {
+					font-weight: 600;
+				}
+			}
+			&.selected {
+				> div > div > button:first-of-type {
+				    margin: 0 !important;
+				    padding: 0 !important;
+				   	z-index: 999;
+				    left: initial !important;
+				    background: none !important;
+				    right: 35px;
+				}
+				> div > div > button:last-of-type {
+					//top: -12px !important;
+				}
+			}
+			svg {
+				width: 18px !important;
+				height: 18px !important;
+				margin: 0 9px !important;
+				fill: $black !important;
+				stroke: $black;
+				stroke-width: 1px;
+				-webkit-font-smoothing: antialiased;
+			}
+		}
+	}
+
+	&-item-child {
+		line-height: 20px !important;
+		padding-left: 10px !important;
+
+		&.selected {
+			> div > div > button:first-of-type {
+				margin: 0 !important;
+				padding: 0 !important;
+				top: 10px !important;
+				left: initial !important;
+				background: none !important;
+				right: 35px;
+
+				svg {
+					fill: $black !important;
+					width: 18px !important;
+	    		height: 18px !important;
+					stroke: $black;
+					stroke-width: 1px;
+					-webkit-font-smoothing: antialiased;
+				}
+			}
+
+			&.checkbox {
+				> div > div > button:first-of-type {
+					right: 10px;
+				}
+			}
+		}
+
+		> div > div button:last-of-type {
+			margin: -5px -6px 0 0 !important;
+
+			svg {
+				fill: $black !important;
+			}
+		}
+
+		> div > div > div {
+			padding-right: 30px;
+		}
+
+		> div > div > svg {
+			position: absolute !important;
+			top: -2px !important;
+			right: 25px;
+			left: initial !important;
+	    width: 18px !important;
+	    height: 18px !important;
+		}
+
+		&.checkbox {
+			padding-left: 25px !important;
+
+			input {
+				margin-left: 20px;
+			}
+
+			> div > div > div {
+				left: -25px !important;
+			}
+
+			div div {
+				svg {
+					fill: $grey-dark !important;
+					transform: initial !important;
+				}
+			}
+		}
+
+		&.selected {
+			font-weight: 600 !important;
+
+					svg {
+					transform: initial !important;
+					opacity: 1 !important;
+				}
+		}
+	}
+
+	&-show-more-button {
+		text-align: center !important;
+		border: solid 1px $grey-light !important;
+		border-radius: 3px;
+		margin-top: 10px !important;
+		margin-bottom: 18px !important;
+		width: 100%;
+		background-color: #fff !important;
+
+		&:hover {
+			background-color: $grey-lighter !important;
+		}
+
+		span {
+			color: $grey-darker !important;
+			display: block;
+		}
+	}
+
+	&-dialog {
+		z-index: 200000 !important;
+
+		h3 {
+			font-size: 12px !important;
+			font-weight: 600 !important;
+			padding: 10px 20px 15px !important;
+
+			@include breakpoint(sm-min) {
+				padding: 10px 45px 15px !important;
+			}
+		}
+
+		a {
+			font-size: 12px !important;
+			color: #000 !important;
+			line-height: 28px;
+			display: block;
+		}
+
+		> div > div {
+			@include breakpoint(xs) {
+				width: 90% !important;
+			}
+		}
+
+		div > div > div {
+			max-width: auto !important;
+
+			 > div {
+				padding: 0px 20px 24px !important;
+				column-count: 3;
+
+				&:last-child {
+					column-count: 1;
+					text-align: center !important;
+				}
+
+				@include breakpoint(xs) {
+					column-count: 1;
+					overflow-y: scroll !important;
+					z-index: 200000 !important;
+				}
+
+				@include breakpoint(sm-min) {
+					padding: 0px 45px 24px !important;
+					display: inline-block;
+				}
+
+				>  div {
+					padding: 0 0 10px !important;
+					column-count: 1;
+					cursor: pointer;
+					color: $black;
+					width: 100%;
+
+					> div  {
+						padding-bottom: 0 !important;
+					}
+
+					svg {
+						fill: $grey-dark !important;
+						vertical-align: top;
+						margin: -3px -30px 0 0;
+					}
+
+					span {
+						padding-left: 35px;
+						display: inline-block;
+					}
+
+					&:last-child {
+						text-align: left !important;
+					}
+				}
+			}
+		}
+
+		button {
+      background-color: $blue !important;
+      color: #fff !important;
+      padding: 0 34px !important;
+
+      &:hover {
+        background-color: $blue-dark !important;
+      }
+		}
+	}
+	.Search-page__filters {
+		order: 10;
+		& > div {
+			padding: 18px 0;
+		}
+		.Search-page__filters-requests-wrapper {
+			margin-left: 0;
+		}
+		.Search-page__filters-typical-wrapper {
+			margin-left: 0;
+		}
+	}
+}
+
+.mui-ripple-circle {display: none}

@@ -1,0 +1,168 @@
+.Material-cards__collapsed,
+.Pipeline-cards__collapsed {
+  font-family: "Open Sans", sans-serif !important;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .Material-cards__collapsed thead th:first-child, .Material-cards__collapsed thead td:first-child, .Material-cards__collapsed tbody th:first-child, .Material-cards__collapsed tbody td:first-child,
+.Pipeline-cards__collapsed thead th:first-child,
+.Pipeline-cards__collapsed thead td:first-child,
+.Pipeline-cards__collapsed tbody th:first-child,
+.Pipeline-cards__collapsed tbody td:first-child {
+    font-weight: 600;
+    width: 36%;
+  }
+  .Material-cards__collapsed thead th:nth-child(2), .Material-cards__collapsed thead td:nth-child(2), .Material-cards__collapsed tbody th:nth-child(2), .Material-cards__collapsed tbody td:nth-child(2),
+.Pipeline-cards__collapsed thead th:nth-child(2),
+.Pipeline-cards__collapsed thead td:nth-child(2),
+.Pipeline-cards__collapsed tbody th:nth-child(2),
+.Pipeline-cards__collapsed tbody td:nth-child(2) {
+    width: 12%;
+    text-align: right !important;
+  }
+  .Material-cards__collapsed thead th:nth-child(5), .Material-cards__collapsed thead td:nth-child(5), .Material-cards__collapsed tbody th:nth-child(5), .Material-cards__collapsed tbody td:nth-child(5),
+.Pipeline-cards__collapsed thead th:nth-child(5),
+.Pipeline-cards__collapsed thead td:nth-child(5),
+.Pipeline-cards__collapsed tbody th:nth-child(5),
+.Pipeline-cards__collapsed tbody td:nth-child(5) {
+    padding-right: 0 !important;
+  }
+  .Material-cards__collapsed thead th:nth-child(5) .Material-cards-stages-wrapper button, .Material-cards__collapsed thead td:nth-child(5) .Material-cards-stages-wrapper button, .Material-cards__collapsed tbody th:nth-child(5) .Material-cards-stages-wrapper button, .Material-cards__collapsed tbody td:nth-child(5) .Material-cards-stages-wrapper button,
+.Pipeline-cards__collapsed thead th:nth-child(5) .Material-cards-stages-wrapper button,
+.Pipeline-cards__collapsed thead td:nth-child(5) .Material-cards-stages-wrapper button,
+.Pipeline-cards__collapsed tbody th:nth-child(5) .Material-cards-stages-wrapper button,
+.Pipeline-cards__collapsed tbody td:nth-child(5) .Material-cards-stages-wrapper button {
+    float: right;
+  }
+  .Material-cards__collapsed thead th:nth-child(3), .Material-cards__collapsed thead th:nth-child(4), .Material-cards__collapsed thead th:nth-child(5), .Material-cards__collapsed thead td:nth-child(3), .Material-cards__collapsed thead td:nth-child(4), .Material-cards__collapsed thead td:nth-child(5), .Material-cards__collapsed tbody th:nth-child(3), .Material-cards__collapsed tbody th:nth-child(4), .Material-cards__collapsed tbody th:nth-child(5), .Material-cards__collapsed tbody td:nth-child(3), .Material-cards__collapsed tbody td:nth-child(4), .Material-cards__collapsed tbody td:nth-child(5),
+.Pipeline-cards__collapsed thead th:nth-child(3),
+.Pipeline-cards__collapsed thead th:nth-child(4),
+.Pipeline-cards__collapsed thead th:nth-child(5),
+.Pipeline-cards__collapsed thead td:nth-child(3),
+.Pipeline-cards__collapsed thead td:nth-child(4),
+.Pipeline-cards__collapsed thead td:nth-child(5),
+.Pipeline-cards__collapsed tbody th:nth-child(3),
+.Pipeline-cards__collapsed tbody th:nth-child(4),
+.Pipeline-cards__collapsed tbody th:nth-child(5),
+.Pipeline-cards__collapsed tbody td:nth-child(3),
+.Pipeline-cards__collapsed tbody td:nth-child(4),
+.Pipeline-cards__collapsed tbody td:nth-child(5) {
+    width: 16%;
+  }
+  .Material-cards__collapsed thead th:nth-child(3):not(:nth-child(5)), .Material-cards__collapsed thead th:nth-child(4):not(:nth-child(5)), .Material-cards__collapsed thead th:nth-child(5):not(:nth-child(5)), .Material-cards__collapsed thead td:nth-child(3):not(:nth-child(5)), .Material-cards__collapsed thead td:nth-child(4):not(:nth-child(5)), .Material-cards__collapsed thead td:nth-child(5):not(:nth-child(5)), .Material-cards__collapsed tbody th:nth-child(3):not(:nth-child(5)), .Material-cards__collapsed tbody th:nth-child(4):not(:nth-child(5)), .Material-cards__collapsed tbody th:nth-child(5):not(:nth-child(5)), .Material-cards__collapsed tbody td:nth-child(3):not(:nth-child(5)), .Material-cards__collapsed tbody td:nth-child(4):not(:nth-child(5)), .Material-cards__collapsed tbody td:nth-child(5):not(:nth-child(5)),
+.Pipeline-cards__collapsed thead th:nth-child(3):not(:nth-child(5)),
+.Pipeline-cards__collapsed thead th:nth-child(4):not(:nth-child(5)),
+.Pipeline-cards__collapsed thead th:nth-child(5):not(:nth-child(5)),
+.Pipeline-cards__collapsed thead td:nth-child(3):not(:nth-child(5)),
+.Pipeline-cards__collapsed thead td:nth-child(4):not(:nth-child(5)),
+.Pipeline-cards__collapsed thead td:nth-child(5):not(:nth-child(5)),
+.Pipeline-cards__collapsed tbody th:nth-child(3):not(:nth-child(5)),
+.Pipeline-cards__collapsed tbody th:nth-child(4):not(:nth-child(5)),
+.Pipeline-cards__collapsed tbody th:nth-child(5):not(:nth-child(5)),
+.Pipeline-cards__collapsed tbody td:nth-child(3):not(:nth-child(5)),
+.Pipeline-cards__collapsed tbody td:nth-child(4):not(:nth-child(5)),
+.Pipeline-cards__collapsed tbody td:nth-child(5):not(:nth-child(5)) {
+    text-align: right !important;
+  }
+  .Material-cards__collapsed thead th:last-child, .Material-cards__collapsed thead td:last-child, .Material-cards__collapsed tbody th:last-child, .Material-cards__collapsed tbody td:last-child,
+.Pipeline-cards__collapsed thead th:last-child,
+.Pipeline-cards__collapsed thead td:last-child,
+.Pipeline-cards__collapsed tbody th:last-child,
+.Pipeline-cards__collapsed tbody td:last-child {
+    width: 5%;
+    text-align: right !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .Material-cards__collapsed thead th:last-child .Material-cards__expanded-actions, .Material-cards__collapsed thead td:last-child .Material-cards__expanded-actions, .Material-cards__collapsed tbody th:last-child .Material-cards__expanded-actions, .Material-cards__collapsed tbody td:last-child .Material-cards__expanded-actions,
+.Pipeline-cards__collapsed thead th:last-child .Material-cards__expanded-actions,
+.Pipeline-cards__collapsed thead td:last-child .Material-cards__expanded-actions,
+.Pipeline-cards__collapsed tbody th:last-child .Material-cards__expanded-actions,
+.Pipeline-cards__collapsed tbody td:last-child .Material-cards__expanded-actions {
+    margin-right: 0 !important;
+  }
+}
+.Material-cards__collapsed thead th,
+.Pipeline-cards__collapsed thead th {
+  background-color: #f5f8f9 !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  height: 30px !important;
+  color: #7c878e !important;
+  white-space: initial !important;
+}
+.Material-cards__collapsed thead th:first-child,
+.Pipeline-cards__collapsed thead th:first-child {
+  padding-left: 20px !important;
+}
+.Material-cards__collapsed tbody tr.red,
+.Pipeline-cards__collapsed tbody tr.red {
+  border-left: solid 5px #d0021b;
+}
+.Material-cards__collapsed tbody tr.red td:nth-child(3),
+.Pipeline-cards__collapsed tbody tr.red td:nth-child(3) {
+  color: #d0021b;
+}
+.Material-cards__collapsed tbody tr.yellow,
+.Pipeline-cards__collapsed tbody tr.yellow {
+  border-left: solid 5px #ffc72c;
+}
+.Material-cards__collapsed tbody tr.yellow td:nth-child(3),
+.Pipeline-cards__collapsed tbody tr.yellow td:nth-child(3) {
+  color: #ffc72c;
+}
+.Material-cards__collapsed tbody tr.green,
+.Pipeline-cards__collapsed tbody tr.green {
+  border-left: solid 5px #417505;
+}
+.Material-cards__collapsed tbody tr.green td:nth-child(3),
+.Pipeline-cards__collapsed tbody tr.green td:nth-child(3) {
+  color: #417505;
+}
+.Material-cards__collapsed tbody tr.gray,
+.Pipeline-cards__collapsed tbody tr.gray {
+  border-left: solid 5px #bfd0da;
+}
+.Material-cards__collapsed tbody tr.gray td:nth-child(3),
+.Pipeline-cards__collapsed tbody tr.gray td:nth-child(3) {
+  color: #bfd0da;
+}
+.Material-cards__collapsed tbody td,
+.Pipeline-cards__collapsed tbody td {
+  font-size: 12px !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+.Material-cards__collapsed tbody td a,
+.Pipeline-cards__collapsed tbody td a {
+  color: #404040 !important;
+}
+.Material-cards__collapsed tbody td:nth-child(5) span,
+.Pipeline-cards__collapsed tbody td:nth-child(5) span {
+  padding-right: 0 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+.Material-cards__collapsed tbody td .Material-cards__expanded-actions,
+.Pipeline-cards__collapsed tbody td .Material-cards__expanded-actions {
+  display: block !important;
+}
+.Material-cards__collapsed tbody td .Material-cards__expanded-state,
+.Pipeline-cards__collapsed tbody td .Material-cards__expanded-state {
+  border: none !important;
+}
+.Material-cards__collapsed tbody td .Material-cards__expanded-state.add,
+.Pipeline-cards__collapsed tbody td .Material-cards__expanded-state.add {
+  color: #479cff !important;
+  margin-right: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+.Material-cards__collapsed tbody td .Material-cards__expanded-state.add.action,
+.Pipeline-cards__collapsed tbody td .Material-cards__expanded-state.add.action {
+  color: #33383b !important;
+}
+.Material-cards__collapsed tbody td .Material-cards__expanded-state.add svg,
+.Pipeline-cards__collapsed tbody td .Material-cards__expanded-state.add svg {
+  color: #7c878e !important;
+}

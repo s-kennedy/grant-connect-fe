@@ -1,0 +1,174 @@
+table {
+  font-family: "Open Sans", sans-serif !important;
+}
+table tr th, table tr td {
+  font-size: 12px !important;
+}
+@media (max-width: 767px) {
+  table tr th, table tr td {
+    font-size: 10px !important;
+  }
+}
+
+.pagination__wrapper {
+  width: 100%;
+  margin-top: 25px;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .pagination__wrapper {
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 1199px) {
+  .pagination__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+.pagination__wrapper small {
+  margin-right: 15px;
+  font-size: 12px !important;
+}
+
+.pagination__pager {
+  display: inline-block;
+}
+@media (max-width: 1199px) {
+  .pagination__pager {
+    order: 1;
+    margin: 0 auto;
+  }
+}
+.pagination__pager small {
+  margin-left: 30px;
+}
+@media (max-width: 1199px) {
+  .pagination__pager small {
+    position: absolute;
+    bottom: 13px;
+    left: 15px;
+    width: 180px;
+    text-align: left;
+    margin-left: 0;
+  }
+}
+@media (max-width: 320px) {
+  .pagination__pager small {
+    bottom: 0;
+    width: 100px;
+  }
+}
+.pagination__pager .pagination__left,
+.pagination__pager .pagination__right {
+  display: inline-block;
+}
+.pagination__pager .pagination__left button,
+.pagination__pager .pagination__right button {
+  width: 20px !important;
+  height: 36px !important;
+  vertical-align: bottom;
+  padding: 12px 0 !important;
+}
+.pagination__pager .pagination__left button svg,
+.pagination__pager .pagination__right button svg {
+  margin-top: 3px;
+}
+.pagination__pager .pagination__left button:hover div,
+.pagination__pager .pagination__right button:hover div {
+  border-bottom: solid 1px #33383b;
+}
+.pagination__pager .pagination__right .pagination__three-dots {
+  padding-right: 2px;
+}
+@media (min-width: 768px) {
+  .pagination__pager .pagination__right .pagination__arrow-double-right {
+    margin-left: 5px !important;
+  }
+}
+.pagination__pager .pagination__left .pagination__three-dots {
+  padding: 0 10px;
+}
+@media (min-width: 768px) {
+  .pagination__pager .pagination__left .pagination__arrow-double-left {
+    margin-right: 5px !important;
+  }
+}
+.pagination__pager > button {
+  border: solid 1px #bfd0da !important;
+  background-color: #fff !important;
+  min-width: 36px !important;
+  margin-right: 8px !important;
+  line-height: 26px !important;
+}
+.pagination__pager > button.selected {
+  background-color: #bfd0da !important;
+}
+.pagination__pager > button:hover {
+  background-color: #bfd0da !important;
+}
+.pagination__pager > button.pagination__three-dots {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.pagination__pager > button span {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+@media (max-width: 320px) {
+  .pagination__pager > button span {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+.pagination__dropdown-actions {
+  display: inline-block;
+}
+@media (max-width: 1199px) {
+  .pagination__dropdown-actions {
+    order: 2;
+    width: 100% !important;
+    margin-top: 20px;
+    padding-right: 15px;
+  }
+}
+.pagination__dropdown-actions small {
+  font-weight: 600;
+}
+.pagination__dropdown-actions .Search-page__filters-pagination-wrapper {
+  display: inline-block;
+}
+.pagination__dropdown-actions .Search-page__filters-pagination {
+  border: solid 1px #bfd0da !important;
+  border-radius: 3px;
+  width: auto !important;
+  height: 36px !important;
+  background-color: #fff !important;
+  vertical-align: middle;
+}
+.pagination__dropdown-actions .Search-page__filters-pagination > div > div > div {
+  top: -10px !important;
+  padding-left: 12px !important;
+  padding-right: 38px !important;
+  font-weight: 600;
+}
+.pagination__dropdown-actions .Search-page__filters-pagination button {
+  top: -3px !important;
+  padding: 12px 0 !important;
+  width: 36px !important;
+}
+.pagination__dropdown-actions .Search-page__filters-pagination button svg {
+  fill: #33383b !important;
+  margin-top: -3px;
+}
+
+.col-xs-12.col-md-9 {
+  position: relative;
+}
+.col-xs-12.col-md-9 .pagination__wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}

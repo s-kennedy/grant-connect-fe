@@ -1,0 +1,197 @@
+@import '../base.scss';
+
+table {
+	font-family: 'Open Sans', sans-serif !important;
+
+	tr {
+		th, td {
+			font-size: 12px !important;
+
+			@include breakpoint(xs) {
+				font-size: 10px !important;
+			}
+		}
+	}
+}
+
+.pagination__wrapper  {
+	width: 100%;
+	margin-top: 25px;
+	text-align: right;
+
+	@include breakpoint(xs) {
+		margin-top: 0 !important;
+	}
+
+	@include breakpoint(md-max) {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+	}
+
+	small {
+		margin-right: 15px;
+		font-size: 12px !important;
+	}
+}
+
+.pagination__pager {
+	display: inline-block;
+
+	@include breakpoint(md-max) {
+		order: 1;
+		margin: 0 auto;
+	}
+
+	small {
+		margin-left: 30px;
+		@include breakpoint(md-max) {
+    	position: absolute;
+    	bottom: 13px;
+    	left: 15px;
+    	width: 180px;
+    	text-align: left;
+    	margin-left: 0;
+		}
+
+		@include breakpoint(xxs) {
+			bottom: 0;
+			width: 100px;
+		}
+	}
+
+	.pagination__left,
+	.pagination__right {
+		display: inline-block;
+
+		button {
+			width: 20px !important;
+			height: 36px !important;
+			vertical-align: bottom;
+			padding: 12px 0 !important;
+
+			svg {
+				margin-top: 3px;
+			}
+
+			&:hover {
+				div {
+					border-bottom: solid 1px $grey-darker;
+				}
+			}
+		}
+	}
+
+	.pagination__right {
+		.pagination__three-dots {
+			padding-right: 2px;
+		}
+
+		.pagination__arrow-double-right {
+			@include breakpoint(sm-min) {
+				margin-left: 5px !important;
+			}
+		}
+	}
+
+	.pagination__left {
+		.pagination__three-dots {
+			padding: 0 10px;
+		}
+
+		.pagination__arrow-double-left {
+			@include breakpoint(sm-min) {
+				margin-right: 5px !important;
+			}
+		}
+	}
+
+	> button {
+		border: solid 1px $grey-light !important;
+		background-color: #fff !important;
+		min-width: 36px !important;
+		margin-right: 8px !important;
+		line-height: 26px !important;
+
+    &.selected {
+      background-color: $grey-light !important;
+    }
+
+		&:hover {
+			background-color: $grey-light !important;
+		}
+
+		&.pagination__three-dots {
+			padding-left: 1px;
+			padding-right: 1px;
+		}
+
+		span {
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+
+			@include breakpoint(xxs) {
+				padding-left: 8px !important;
+				padding-right: 8px !important;
+			}
+		}
+	}
+}
+
+.pagination__dropdown-actions {
+	display: inline-block;
+
+	@include breakpoint(md-max) {
+		order: 2;
+		width: 100% !important;
+		margin-top: 20px;
+		padding-right: 15px;
+	}
+
+	small {
+		font-weight: 600;
+	}
+
+	.Search-page__filters {
+		&-pagination-wrapper {
+			display: inline-block;
+		}
+
+		&-pagination {
+			border: solid 1px $grey-light !important;
+			border-radius: 3px;
+			width: auto !important;
+			height: 36px !important;
+			background-color: #fff !important;
+			vertical-align: middle;
+
+			> div > div > div {
+				top: -10px !important;
+				padding-left: 12px !important;
+				padding-right: 38px !important;
+				font-weight: 600;
+			}
+
+			button {
+				top: -3px !important;
+				padding: 12px 0 !important;
+				width: 36px !important;
+
+				svg {
+					fill: $grey-darker !important;
+					margin-top: -3px;
+				}
+			}
+		}
+	}
+}
+
+.col-xs-12.col-md-9 {
+		position: relative;
+
+		.pagination__wrapper {
+			position: absolute;
+	    width: 100%;
+	    left: 0;
+		}
+}

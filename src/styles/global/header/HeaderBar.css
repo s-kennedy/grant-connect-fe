@@ -1,0 +1,116 @@
+.App-header {
+  position: relative;
+}
+
+.Header-wrapper {
+  background-color: #ffc72c !important;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  .Header-wrapper {
+    z-index: 0 !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    z-index: 15000 !important;
+  }
+  .Header-wrapper > div:nth-child(2) {
+    margin-left: -6px !important;
+  }
+}
+.Header-wrapper [data-class=Header-help],
+.Header-wrapper .Header-icon,
+.Header-wrapper .Header-icon-account {
+  fill: #806416 !important;
+  margin-top: -3px;
+}
+.Header-wrapper [data-class=Header-help]:hover,
+.Header-wrapper .Header-icon:hover,
+.Header-wrapper .Header-icon-account:hover {
+  fill: #402701 !important;
+}
+@media (max-width: 767px) {
+  .Header-wrapper .Header-icon-account {
+    display: none !important;
+  }
+}
+.Header-wrapper [data-class=Header-help] {
+  margin-right: 30px;
+}
+@media (max-width: 991px) {
+  .Header-wrapper [data-class=Header-help] {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .Header-wrapper [data-class=Header-help] {
+    display: none !important;
+  }
+}
+.Header-wrapper .Header-button {
+  right: 10px;
+  top: -9px;
+  background-color: rgba(0, 0, 0, 0) !important;
+  min-width: auto !important;
+  overflow: visible !important;
+  line-height: 36px !important;
+  height: 36px !important;
+  border: none !important;
+}
+@media (max-width: 991px) {
+  .Header-wrapper .Header-button {
+    right: -5px;
+  }
+}
+@media (max-width: 767px) {
+  .Header-wrapper .Header-button {
+    display: none !important;
+  }
+}
+.Header-wrapper .Header-button span {
+  font-weight: 700 !important;
+  color: #806416;
+  overflow: visible !important;
+  padding: 0 !important;
+}
+.Header-wrapper .Header-button:hover span {
+  color: #402701;
+}
+.Header-wrapper .App-logo {
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .Header-wrapper .App-logo {
+    width: 117px;
+  }
+}
+@media (min-width: 768px) {
+  .Header-wrapper .App-logo {
+    margin-left: 10px;
+  }
+}
+
+.Header-popover {
+  width: 135px;
+  background-color: #7c878e !important;
+}
+.Header-popover div {
+  color: #d9e3e9;
+}
+.Header-popover div [role=menu] {
+  padding: 5px 0;
+  background-color: #33383b;
+}
+.Header-popover div [role=menuitem] {
+  line-height: 24px !important;
+  min-height: 24px !important;
+  background-color: #33383b !important;
+}
+.Header-popover div [role=menuitem]:hover {
+  background-color: #7C878E !important;
+  opacity: 1;
+}
+.Header-popover div [role=presentation] {
+  width: 135px !important;
+}

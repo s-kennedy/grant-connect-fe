@@ -1,0 +1,225 @@
+@import '../../../base.scss';
+
+.profile-programs {
+	.profile-programs-regions {
+		p {
+			font-weight: 300;
+			margin: 0;
+		}
+		.profile-info-wrapper {
+			margin-bottom: 20px;
+		}
+
+		&-item {
+			list-style-position: inside;
+		}
+		&.main {
+			display: flex;
+			justify-content: space-between;
+			& > div {
+				width: 48%;
+			}
+		}
+		h5 {
+			font-size: 12px;
+			font-weight: 600;
+		}
+		ul {
+			padding: 0;
+			li {
+				margin-bottom: 5px;
+				display: flex;
+				align-items: flex-start;
+				font-weight: 300;
+				margin-left: 10px;
+				&::before {
+					content: '';
+					min-width: 3px;
+					min-height: 3px;
+					width: 3px;
+					height: 3px;
+					border-radius: 50%;
+					background: #404040;
+					display: block;
+					margin-right: 20px;
+					margin-top: 8px;
+				}
+				strong, b, i {
+					margin-right: 5px;
+				}
+			}
+		}
+
+		&.profile-programs-funding-info {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			& > div {
+				width: 100%;
+				&.profile-info-wrapper {
+					width: 45%;
+					div {
+						margin-bottom: 5px;
+						display: flex;
+						align-items: center;
+						font-weight: 300;
+						margin-left: 30px;
+						&::before {
+							content: '';
+							min-width: 3px;
+							min-height: 3px;
+							width: 3px;
+							height: 3px;
+							border-radius: 50%;
+							background: #404040;
+							display: block;
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	div [style='overflow: hidden;'] {
+		.profile-about-program-expand {
+			color: $blue;
+		}
+	}
+
+	.profile-about-program-expand {
+		padding-top: 15px;
+		display: inline-block;
+		color: $grey-dark;
+	}
+}
+
+.profile-about__general-info > h4 {
+	margin: 0 0 25px 0 !important;
+}
+
+.profile-programs-regions,
+.profile-deadlines-wrapper-item,
+.profile-about__general-info,
+.profile-about-linkedin-widget,
+.profile-financial-data-wraper,
+.profile-positions-wrapper {
+	border-radius: 2px;
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 12px;
+
+	h4 {
+		font-size: 14px;
+		font-weight: 600;
+		margin: 0 0 10px 0;
+	}
+
+	h3 {
+		font-weight: normal;
+		margin: 0 0 10px 0;
+	}
+
+	big {
+		font-size: 18px;
+	}
+}
+
+.Collapsible  {
+	border-radius: 2px;
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 15px;
+
+	&__trigger {
+		position: relative;
+		font-size: 14px;
+		font-weight: 600;
+		display: block;
+		cursor: pointer;
+
+		&.is-closed::before,
+		&.is-closed::after {
+			content: '';
+			position: absolute;
+			top: 10px;
+			width: 8px;
+    	border: 1px solid #000;
+		}
+
+		&.is-closed::before {
+			right: 8px;
+			transform: rotateZ(45deg);
+		}
+
+		&.is-closed::after {
+			right: 2px;
+			transform: rotateZ(-45deg);
+		}
+
+		&.is-open::before,
+		&.is-open::after {
+			content: '';
+			position: absolute;
+			top: 10px;
+			width: 8px;
+    	border: 1px solid #000;
+		}
+
+		&.is-open::before {
+			right: 8px;
+			transform: rotateZ(135deg);
+		}
+
+		&.is-open::after {
+			right: 2px;
+			transform: rotateZ(-135deg);
+		}
+	}
+
+	a {
+		color: $blue;
+	}
+
+	h4 {
+		font-weight: 600;
+	}
+
+	li {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+	}
+
+	.profile-info-wrapper {
+		width: 45% !important;
+		display: inline-block;
+		vertical-align: top;
+		padding-right: 15px;
+
+		ul {
+			margin-left: -40px;
+		}
+
+		li, p {
+			padding-right: 20px;
+		}
+
+		&:nth-child(3) {
+			width: 100% !important;
+		}
+	}
+
+	.profile-info-procedure {
+		width: 100% !important;
+	}
+}
+
+.profile-programs-dealines-wrapper {
+	margin-top: 1.33em;
+
+	.row {
+		padding-bottom: 10px;
+	}
+}

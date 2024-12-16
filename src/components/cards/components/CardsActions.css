@@ -1,0 +1,50 @@
+.Material-cards-actions-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Material-cards__expanded-actions-menu-wrapper,
+.Material-cards__expanded-stages-menu-wrapper {
+  background-color: #33383b !important;
+  padding-top: 30px !important;
+}
+.Material-cards__expanded-actions-menu-wrapper button,
+.Material-cards__expanded-stages-menu-wrapper button {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  width: 28px !important;
+  height: 28px !important;
+  padding: 0 !important;
+}
+.Material-cards__expanded-actions-menu-wrapper button svg,
+.Material-cards__expanded-stages-menu-wrapper button svg {
+  color: #d9e3e9 !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+.Material-cards__expanded-actions-menu-wrapper div,
+.Material-cards__expanded-stages-menu-wrapper div {
+  color: #d9e3e9;
+}
+.Material-cards__expanded-actions-menu-wrapper hr,
+.Material-cards__expanded-stages-menu-wrapper hr {
+  width: 80%;
+}
+.Material-cards__expanded-actions-menu-wrapper div [role=menu],
+.Material-cards__expanded-stages-menu-wrapper div [role=menu] {
+  padding: 5px 0;
+  background-color: #33383b;
+}
+.Material-cards__expanded-actions-menu-wrapper div [role=menuitem],
+.Material-cards__expanded-stages-menu-wrapper div [role=menuitem] {
+  line-height: 24px !important;
+  min-height: 24px !important;
+  background-color: #33383b !important;
+}
+.Material-cards__expanded-actions-menu-wrapper div [role=menuitem]:hover,
+.Material-cards__expanded-stages-menu-wrapper div [role=menuitem]:hover {
+  background-color: #7C878E !important;
+  opacity: 1;
+}

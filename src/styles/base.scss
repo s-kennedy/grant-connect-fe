@@ -1,0 +1,53 @@
+$red: #d0021b;
+$green: #417505;
+$yellow: #ffc72c;
+$yellow-light: #ffd86c;
+$yellow-lighter: #ffe9ac;
+$blue: #4c9eff;
+$blue-dark: #3b7bc8;
+$brown-dark: #402701;
+$brown: #806416;
+$grey-darker: #33383b;
+$grey-dark: #7c878e;
+$grey: #9badb7;
+$grey-light: #bfd0da;
+$grey-lighter: #f5f8f9;
+$black: #404040;
+
+@mixin breakpoint($class) {
+  @if $class == xxs {
+    @media (max-width: 320px) { @content; }
+  }
+
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+
+  @else if $class == sm-min {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $class == sm-max {
+    @media (max-width: 991px) { @content; }
+  }
+
+  @else if $class == md-min {
+    @media (min-width: 992px) { @content; }
+  }
+
+  @else if $class == md-max {
+    @media (max-width: 1199px) { @content; }
+  }
+
+  @else if $class == lg-min {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else if $class == lg-max {
+    @media (max-width: 1399px) { @content; }
+  }
+
+  @else if $class == xl {
+    @media (min-width: 1400px) { @content; }
+  }
+}

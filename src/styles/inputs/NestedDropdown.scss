@@ -1,0 +1,127 @@
+@import '../base.scss';
+
+.Header-search {
+  &__select {
+    background-color: $yellow-light !important;
+    padding: 0 !important;
+
+    &-item {
+      @include breakpoint(xl) {
+        line-height: 8px !important;
+      }
+
+      button {
+        height: 40px !important;
+        padding: 8px !important;
+        width: 38px !important;
+      }
+
+      div div {
+        @include breakpoint(lg-max) {
+          padding-bottom: 12px !important;
+          padding-top: 12px !important;
+
+          div {
+            padding: 0 !important;
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+  }
+
+  .Header-search__select-item ~ div {
+    .Header-search__select-item div div {
+      button {
+        padding: 12px 8px !important;
+      }
+    }
+  }
+
+  &__autocomplete,
+  &__select {
+    @include breakpoint(sm-min) {
+      background-color: $yellow-light !important;
+    }
+    font-size: 12px !important;
+    transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1) 0ms !important;
+
+    &.highlight {
+      background-color: #fff !important;
+      padding: 0 !important;
+
+      div [style='padding: 0px;'] {
+        border-top: solid 1px $grey-light !important;
+
+        .Header-search__select-item {
+          border: solid 1px $grey-light !important;
+          border-top: 0 !important;
+          line-height: 14px !important;
+          float: left;
+          width: 100%;
+          background-color: #fff !important;
+          @include breakpoint(lg-max) {
+            float: right;
+            width: 230px;
+          }
+
+          &:hover {
+            background-color: $grey-lighter !important;
+          }
+
+          div div {
+            padding-left: 0 !important;
+            padding-right: 25px!important;
+            svg {
+              margin-right: 6px !important;
+            }
+          }
+        }
+
+        div [style='padding: 0px;'] {
+          background-color: $grey-lighter;
+
+          .Header-search__select-item {
+            background-color: $grey-lighter !important;
+            border-top: 0 !important;
+
+            &:hover {
+              background-color: #d9e3e9 !important;
+            }
+
+            div div {
+              padding-left: 0px !important;
+            }
+
+            button {
+              @include breakpoint(xl) {
+                top: 5px !important;
+              }
+
+              svg {
+                color: $grey-dark !important;
+                height: 18px !important;
+                width: 18px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    input {
+      text-transform: none;
+    }
+  }
+}
+
+
+.Header-search__select-item {
+  .Header-search__select-item-flex {
+    display: flex;
+    justify-content: space-between;
+    svg {
+      height: 16px !important;
+      fill: #7c878e !important;
+    }
+  }
+}

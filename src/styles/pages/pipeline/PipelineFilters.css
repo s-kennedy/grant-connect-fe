@@ -1,0 +1,64 @@
+.Pipeline__filters {
+  position: relative;
+  margin-top: -17px;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  flex-flow: column;
+  -webkit-flex-flow: column;
+}
+@media screen and (min-width: 1024px) {
+  .Pipeline__filters {
+    padding-right: 54px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .Pipeline__filters {
+    padding-right: 20px;
+  }
+}
+.Pipeline__filters a div div {
+  padding: 5px !important;
+}
+.Pipeline__filters a.selected {
+  font-weight: 700 !important;
+}
+.Pipeline__filters .showArchivedState > div > div {
+  padding: 10px !important;
+}
+.Pipeline__filters .showArchivedState.selected {
+  font-weight: bold !important;
+}
+.Pipeline__filters p {
+  position: relative;
+  margin-bottom: 0;
+}
+.Pipeline__filters p button {
+  min-width: 36px !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: -10px !important;
+}
+.Pipeline__filters p button span {
+  color: #7c878e;
+  font-size: 12px !important;
+  padding-right: 7px !important;
+  padding-left: 7px !important;
+}
+.Pipeline__filters hr {
+  margin: 15px 0;
+}
+.Pipeline__filters .displayHidden {
+  font-weight: bold;
+}
+.Pipeline__filters small {
+  font-weight: 600;
+  font-size: 12px !important;
+  margin: 5px 0 10px;
+}
+.Pipeline__filters small span {
+  font-weight: normal !important;
+}

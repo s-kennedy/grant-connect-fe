@@ -1,0 +1,207 @@
+.profile-programs .profile-programs-regions p {
+  font-weight: 300;
+  margin: 0;
+}
+.profile-programs .profile-programs-regions .profile-info-wrapper {
+  margin-bottom: 20px;
+}
+.profile-programs .profile-programs-regions-item {
+  list-style-position: inside;
+}
+.profile-programs .profile-programs-regions.main {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-programs .profile-programs-regions.main > div {
+  width: 48%;
+}
+.profile-programs .profile-programs-regions h5 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.profile-programs .profile-programs-regions ul {
+  padding: 0;
+}
+.profile-programs .profile-programs-regions ul li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 300;
+  margin-left: 10px;
+}
+.profile-programs .profile-programs-regions ul li::before {
+  content: "";
+  min-width: 3px;
+  min-height: 3px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #404040;
+  display: block;
+  margin-right: 20px;
+  margin-top: 8px;
+}
+.profile-programs .profile-programs-regions ul li strong, .profile-programs .profile-programs-regions ul li b, .profile-programs .profile-programs-regions ul li i {
+  margin-right: 5px;
+}
+.profile-programs .profile-programs-regions.profile-programs-funding-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.profile-programs .profile-programs-regions.profile-programs-funding-info > div {
+  width: 100%;
+}
+.profile-programs .profile-programs-regions.profile-programs-funding-info > div.profile-info-wrapper {
+  width: 45%;
+}
+.profile-programs .profile-programs-regions.profile-programs-funding-info > div.profile-info-wrapper div {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  margin-left: 30px;
+}
+.profile-programs .profile-programs-regions.profile-programs-funding-info > div.profile-info-wrapper div::before {
+  content: "";
+  min-width: 3px;
+  min-height: 3px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #404040;
+  display: block;
+  margin-right: 20px;
+}
+.profile-programs div [style="overflow: hidden;"] .profile-about-program-expand {
+  color: #4c9eff;
+}
+.profile-programs .profile-about-program-expand {
+  padding-top: 15px;
+  display: inline-block;
+  color: #7c878e;
+}
+
+.profile-about__general-info > h4 {
+  margin: 0 0 25px 0 !important;
+}
+
+.profile-programs-regions,
+.profile-deadlines-wrapper-item,
+.profile-about__general-info,
+.profile-about-linkedin-widget,
+.profile-financial-data-wraper,
+.profile-positions-wrapper {
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+.profile-programs-regions h4,
+.profile-deadlines-wrapper-item h4,
+.profile-about__general-info h4,
+.profile-about-linkedin-widget h4,
+.profile-financial-data-wraper h4,
+.profile-positions-wrapper h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.profile-programs-regions h3,
+.profile-deadlines-wrapper-item h3,
+.profile-about__general-info h3,
+.profile-about-linkedin-widget h3,
+.profile-financial-data-wraper h3,
+.profile-positions-wrapper h3 {
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+.profile-programs-regions big,
+.profile-deadlines-wrapper-item big,
+.profile-about__general-info big,
+.profile-about-linkedin-widget big,
+.profile-financial-data-wraper big,
+.profile-positions-wrapper big {
+  font-size: 18px;
+}
+
+.Collapsible {
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.Collapsible__trigger {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  cursor: pointer;
+}
+.Collapsible__trigger.is-closed::before, .Collapsible__trigger.is-closed::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 8px;
+  border: 1px solid #000;
+}
+.Collapsible__trigger.is-closed::before {
+  right: 8px;
+  transform: rotateZ(45deg);
+}
+.Collapsible__trigger.is-closed::after {
+  right: 2px;
+  transform: rotateZ(-45deg);
+}
+.Collapsible__trigger.is-open::before, .Collapsible__trigger.is-open::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 8px;
+  border: 1px solid #000;
+}
+.Collapsible__trigger.is-open::before {
+  right: 8px;
+  transform: rotateZ(135deg);
+}
+.Collapsible__trigger.is-open::after {
+  right: 2px;
+  transform: rotateZ(-135deg);
+}
+.Collapsible a {
+  color: #4c9eff;
+}
+.Collapsible h4 {
+  font-weight: 600;
+}
+.Collapsible li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 1.5em;
+}
+.Collapsible .profile-info-wrapper {
+  width: 45% !important;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 15px;
+}
+.Collapsible .profile-info-wrapper ul {
+  margin-left: -40px;
+}
+.Collapsible .profile-info-wrapper li, .Collapsible .profile-info-wrapper p {
+  padding-right: 20px;
+}
+.Collapsible .profile-info-wrapper:nth-child(3) {
+  width: 100% !important;
+}
+.Collapsible .profile-info-procedure {
+  width: 100% !important;
+}
+
+.profile-programs-dealines-wrapper {
+  margin-top: 1.33em;
+}
+.profile-programs-dealines-wrapper .row {
+  padding-bottom: 10px;
+}

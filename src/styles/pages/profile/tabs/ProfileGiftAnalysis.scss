@@ -1,0 +1,413 @@
+@import "../../../base.scss";
+
+.Profile-gift-analysis {
+  background: #fff;
+  padding: 20px 20px 30px;
+  overflow: auto;
+  margin-bottom: 16px;
+
+  h4 {
+    margin: 0;
+    padding-top: 0;
+    font-size: 14px;
+    font-weight: 600 !important;
+    width: 150px;
+  }
+
+  p {
+    color: $grey-dark;
+    margin: 30px 0 40px;
+
+    @include breakpoint(xs) {
+      margin: 40px 0 40px;
+    }
+  }
+
+  .gift-analysis-filters {
+    text-align: right;
+    margin-bottom: 20px;
+    // margin-top: -25px;
+  }
+
+  &-source {
+    display: inline-block;
+    margin-top: 30px;
+
+    @include breakpoint(xs) {
+      display: none;
+    }
+  }
+
+  .pagination__wrapper {
+    @include breakpoint(lg-min) {
+      margin-top: 10px;
+      display: inline-block;
+      width: auto;
+      float: right;
+    }
+  }
+
+  .Search-page__filters {
+    &-year-wrapper,
+    &-cause-wrapper {
+      display: inline-block;
+      margin: 0 20px 0 0;
+      padding-left: 50px;
+      padding-bottom: 10px;
+      vertical-align: top;
+      .fr & {
+        padding-left: 80px;
+      }
+      @include breakpoint(xs) {
+        float: left;
+        display: none;
+      }
+    }
+
+    &-year {
+      label {
+        left: -40px;
+      }
+    }
+
+    &-cause {
+      label {
+        left: -50px;
+        .fr & {
+          left: -80px;
+          width: 80px;
+          top: 36px !important;
+        }
+      }
+    }
+
+    &-year,
+    &-cause {
+      @include breakpoint(xs) {
+        width: 100% !important;
+        height: 50px !important;
+      }
+
+      @include breakpoint(sm-min) {
+        width: auto !important;
+        min-width: 90px;
+        margin-top: -14px !important;
+        height: auto !important;
+      }
+
+      label {
+        color: $grey-darker !important;
+        font-weight: 600;
+        top: 46px !important;
+      }
+
+      > div {
+        @include breakpoint(xs) {
+          width: auto !important;
+          max-width: 100px;
+          float: right;
+        }
+      }
+
+      > div > div {
+        font-weight: 600;
+        width: auto !important;
+        height: 36px !important;
+        background: #fff !important;
+        border: solid 1px $grey-light !important;
+        border-radius: 3px;
+        font-size: 12px !important;
+        padding-left: 10px;
+
+        div {
+          line-height: 26px !important;
+          height: auto !important;
+        }
+
+        button {
+          top: -5px !important;
+
+          svg {
+            fill: $grey-darker !important;
+          }
+        }
+      }
+    }
+  }
+
+  .gift_commentary {
+    text-align: left;
+  }
+
+  .Profile-page__filters {
+    &-actions {
+      display: inline-block;
+
+      button {
+        background-color: $grey-light !important;
+        border-radius: 3px !important;
+        height: 38px !important;
+        margin-left: 10px !important;
+        top: -1px !important;
+        min-width: 66px !important;
+
+        @include breakpoint(xs) {
+          margin: 15px 0 0 0 !important;
+        }
+
+        &:hover {
+          background-color: $grey !important;
+        }
+      }
+
+      .Profile-page__filters-button-clear {
+        background: none !important;
+
+        &:hover,
+        &:focus {
+          background: none !important;
+        }
+      }
+    }
+
+    &-gift-size-wrapper {
+      display: inline-block;
+      margin: 0 20px 0 0;
+
+      label {
+        position: relative !important;
+        top: 0 !important;
+        color: $grey-darker !important;
+        font-size: 12px !important;
+        font-weight: 600;
+        transform: none !important;
+      }
+
+      @include breakpoint(xs) {
+        margin: 15px 0 0;
+        display: none;
+      }
+
+      @include breakpoint(lg-min) {
+        display: inline-block;
+        // vertical-align: text-bottom;
+      }
+
+      small {
+        font-weight: 600;
+        font-size: 12px !important;
+        margin: 0 10px;
+      }
+    }
+
+    &-gift-size-from {
+      input {
+        margin-left: 15px;
+      }
+    }
+
+    &-gift-size-from,
+    &-gift-size-to {
+      min-width: 100px !important;
+      width: auto !important;
+      height: auto !important;
+
+      @include breakpoint(xs) {
+        min-width: 90px !important;
+      }
+
+      @include breakpoint(xs) {
+        width: auto !important;
+      }
+
+      label {
+        @include breakpoint(xs) {
+          top: 5px !important;
+        }
+      }
+
+      input {
+        height: 38px !important;
+        background: #fff !important;
+        border: solid 1px $grey-light !important;
+        border-radius: 3px;
+        font-size: 12px !important;
+        padding: 0 10px !important;
+        margin-top: 0 !important;
+        width: 100px !important;
+
+        @include breakpoint(xxs) {
+          width: 80px !important;
+        }
+      }
+
+      input::placeholder {
+        color: $grey-darker !important;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.GiftAnalysisTable-RecepientName {
+  font-weight: 600;
+  @include breakpoint(sm-min) {
+    width: 200px !important;
+  }
+  @include breakpoint(md-min) {
+    width: 200px !important;
+  }
+  @include breakpoint(lg-min) {
+    width: 200px !important;
+  }
+}
+.GiftAnalysisTable-Amount {
+  @include breakpoint(sm-min) {
+    width: 65px !important;
+  }
+  @include breakpoint(md-min) {
+    width: 65px !important;
+  }
+  @include breakpoint(lg-min) {
+    width: 65px !important;
+  }
+}
+.GiftAnalysisTable-Year {
+  @include breakpoint(sm-min) {
+    width: 50px !important;
+  }
+  @include breakpoint(md-min) {
+    width: 50px !important;
+  }
+  @include breakpoint(lg-min) {
+    width: 50px !important;
+  }
+}
+.GiftAnalysisTable-CharitySize {
+  @include breakpoint(sm-min) {
+    width: 100px !important;
+  }
+  @include breakpoint(md-min) {
+    width: 100px !important;
+  }
+  @include breakpoint(lg-min) {
+    width: 100px !important;
+  }
+  text-align: right !important;
+  white-space: normal !important;
+  .GiftAnalysisTable-SortLabel {
+    width: calc(100% - 12px);
+    float: left;
+  }
+  .GiftAnalysisTable-SortArrow {
+    width: 10px;
+    float: left;
+  }
+}
+.GiftAnalysisTable-DetailButton {
+  @include breakpoint(sm-min) {
+    width: 45px !important;
+  }
+  @include breakpoint(md-min) {
+    width: 45px !important;
+  }
+  @include breakpoint(lg-min) {
+    width: 45px !important;
+  }
+  text-align: right !important;
+}
+.GiftAnalysisTable-SortLabel {
+  float: left;
+}
+.GiftAnalysisTable-SortArrow {
+  width: 10px;
+  float: left;
+}
+.GiftAnalysisTable-SortArrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.Profile-page-gift-data {
+  thead tr {
+    border-bottom: 1px solid transparent !important;
+  }
+
+  tr {
+    th {
+      padding-left: 0 !important;
+      vertical-align: top;
+
+      &[data-selected="true"] {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #000000 !important;
+      }
+
+      &[data-selected="false"] {
+        text-decoration: underline;
+        cursor: pointer;
+        color: rgb(158, 158, 158);
+      }
+
+      img {
+        width: 10px;
+        height: auto;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  td {
+    padding: 5px 20px 5px 0 !important;
+    height: 50px !important;
+    white-space: initial !important;
+
+    &:last-child {
+      button {
+        text-align: right !important;
+        padding-right: 0 !important;
+
+        svg {
+          color: $grey-dark !important;
+        }
+      }
+    }
+  }
+}
+
+.Profile-gift-analysis-dialog {
+  h3 {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    padding-top: 15px !important;
+    padding-bottom: 0 !important;
+  }
+
+  &-modal-name {
+    font-weight: 600;
+    display: block;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  > div > div {
+    max-width: 635px !important;
+  }
+
+  div > div > div > div {
+    font-size: 12px !important;
+    line-height: 2;
+    margin-right: 10px !important;
+
+    svg {
+      fill: $grey-dark !important;
+    }
+  }
+
+  button {
+    background-color: transparent !important;
+    color: $blue !important;
+    margin-right: -10px !important;
+  }
+}

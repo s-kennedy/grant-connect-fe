@@ -1,0 +1,116 @@
+@import "../../../base.scss";
+
+.Profile-gift-analysis-chart {
+  background: #fff;
+  padding: 20px 20px 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 16px;
+  flex-grow: 1;
+  @include breakpoint(xs) {
+    width: auto;
+    overflow: hidden;
+  }
+  @include breakpoint(sm-min) {
+    width: 50%;
+  }
+  @include breakpoint(md-min) {
+    width: auto;
+  }
+
+  &:first-child {
+    @include breakpoint(xs) {
+      margin-right: 0;
+    }
+    @include breakpoint(sm-min) {
+      margin-right: 8px;
+    }
+    @include breakpoint(md-min) {
+      margin-right: 0;
+    }
+  }
+  &:nth-child(2) {
+    @include breakpoint(xs) {
+      margin-left: 0;
+    }
+    @include breakpoint(sm-min) {
+      margin-left: 8px;
+    }
+    @include breakpoint(md-min) {
+      margin-left: 0;
+    }
+  }
+
+  h4 {
+    margin: 0;
+    padding-top: 0;
+    font-size: 14px;
+    font-weight: 600 !important;
+  }
+
+  p {
+    color: $grey-dark;
+    margin: 30px 0 40px;
+
+    @include breakpoint(xs) {
+      margin: 40px 0 40px;
+    }
+  }
+}
+.Profile-gift-analysis-loading {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.Profile-gift-analysis-subtitle {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-style: oblique;
+  color: #666666;
+}
+.Profile-gift-analysis-chart-container-cause {
+  margin: 20px auto;
+}
+.Profile-gift-analysis-chart-container-region {
+  margin: 0 auto;
+}
+.Profile-gift-analysis-legend-container {
+}
+.Profile-gift-analysis-mobile-desc {
+  display: none;
+  @include breakpoint(xs) {
+    margin: 20px 0;
+    display: block;
+    div {
+      border-bottom: 1px solid #d9e3e9;
+      padding: 12px 0;
+    }
+  }
+}
+.Profile-gift-analysis-tooltip {
+  position: absolute;
+  text-align: left;
+  width: 220px;
+  min-height: 20px;
+  padding: 10px;
+  font: 12px sans-serif;
+  background: #ffffff;
+  border: 2px solid #d9e3e9;
+  border-radius: 8px;
+  pointer-events: none;
+  display: none;
+  z-index: 2000;
+}
+
+.Profile-gift-analysis-tooltip::after {
+  // content: " ";
+  // position: absolute;
+  // top: 50%;
+  // right: 100%;
+  // margin-top: -10px;
+  // border-width: 10px;
+  // border-style: solid;
+  // border-color: transparent #d9e3e9 transparent transparent;
+}

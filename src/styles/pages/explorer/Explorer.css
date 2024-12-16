@@ -1,0 +1,58 @@
+/* Explorer Page */
+.Explorer {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.Explorer .frame {
+  padding: 0;
+  width: 100%;
+  height: calc(93.25vh - 20px);
+  border: 0;
+}
+.Explorer .footer {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  left: 0;
+  background-color: #f5f8f9;
+}
+.Explorer h1 {
+  font-weight: 600;
+}
+.Explorer .subtitle {
+  font-size: 1rem;
+}
+.Explorer .ge-search-field {
+  background: white;
+  border: 1px solid #bfd0da !important;
+  border-radius: 3px;
+  height: 32px !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.button-primary {
+  background-color: #ffc72c !important;
+}
+.button-link {
+  color: #7c878e !important;
+}
+.button-link span {
+  font-weight: 400 !important;
+}
+.button-link svg {
+  height: 18px !important;
+  width: 18px !important;
+}
+
+.full-text-modal {
+  display: inline-block;
+}
+.full-text-modal .show-modal-button {
+  background-color: #bfd0da !important;
+}

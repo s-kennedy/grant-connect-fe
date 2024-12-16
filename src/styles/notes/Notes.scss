@@ -1,0 +1,153 @@
+@import '../base.scss';
+
+.Full-card__notes {
+	background-color: #FFF8E6;
+	padding: 15px;
+	position: relative;
+
+	@include breakpoint(xs) {
+		padding: 30px 15px 15px;
+	}
+
+	@include breakpoint(md-min) {
+		max-width: 310px;
+		min-width: 310px;
+		float: right;
+		margin-top: 55px;
+		text-align: left;
+	}
+
+	svg {
+		width: 18px !important;
+		height: 18px !important;
+		color: $grey-dark !important;
+		padding: 0 !important;
+
+		&:hover {
+			color: $grey-darker !important;
+		}
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0%;
+		right: 0%;
+		width: 0px;
+		height: 0px;
+		border-bottom: 25px solid $yellow-lighter;
+		border-right: 25px solid white;
+	}
+
+	small {
+		font-weight: 600;
+		margin-bottom: 10px;
+  	display: block;
+  	@include breakpoint(xs) {
+			font-size: 12px;
+  	}
+	}
+
+	> div {
+		margin-bottom: 15px;
+	}
+
+	> div > div > div {
+    vertical-align: middle;
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+	}
+
+	&-date {
+		color: $grey-dark;
+		margin: 5px 0;
+		font-weight: 300;
+	}
+
+	&-edit {
+		margin-right: 5px !important;
+	}
+
+	&-edit, &-delete, &-cancel {
+		width: 18px !important;
+		height: 18px !important;
+		padding: 0 !important;
+		overflow: hidden !important;
+	}
+
+	&-note {
+		word-wrap: break-word;
+
+		span {
+			margin-left: 10px;
+  		vertical-align: middle;
+  		display: inline-block;
+  		float: right;
+		}
+	}
+
+	&-new-actions {
+		margin-top: 5px;
+		width: 100%;
+
+		&::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	}
+
+	&-see-all {
+		margin-top: -10px !important;
+		height: 24px !important;
+		line-height: 24px !important;
+
+		span {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
+
+	input {
+		width: 100%;
+		height: 34px;
+		border: none;
+		text-indent: 10px;
+		outline: none;
+	}
+
+	&-cancel {
+		margin-left: 5px !important;
+		float: left;
+		svg {
+			vertical-align: middle;
+		}
+	}
+
+	&-close {
+		color: $grey-dark !important;
+	}
+
+	&-done, &-add {
+		float: right;
+
+		&::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	}
+
+	&-done, &-add, &-close {
+		height: 18px !important;
+		line-height: 14px !important;
+		min-width: 35px !important;
+		margin-right: 5px !important;
+
+		span {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
+}

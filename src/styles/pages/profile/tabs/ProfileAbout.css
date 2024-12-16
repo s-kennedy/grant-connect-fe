@@ -1,0 +1,235 @@
+.profile-about__wrapper {
+  position: relative;
+}
+.profile-about__wrapper strong {
+  font-weight: 600;
+}
+.profile-about__wrapper h3 {
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .profile-about__wrapper h3 {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+.profile-about-mission {
+  padding: 10px 0 30px 0;
+}
+.profile-about-mission a {
+  padding-top: 10px;
+  display: inline-block;
+}
+.profile-about-mission-collapse {
+  color: #7c878e;
+}
+@media (max-width: 767px) {
+  .profile-about-year {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .profile-about-year {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+}
+.profile-about-info {
+  margin-bottom: 30px;
+}
+.profile-about-info .profile-info-wrapper {
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .profile-about-info .col-md-4:last-child h4 {
+    margin-top: 30px;
+  }
+}
+.profile-about-info li,
+.profile-about-contact-info li {
+  display: block;
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .profile-about-info,
+  .profile-about-contact-info {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .profile-about-info .col-xs-12,
+  .profile-about-contact-info .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.profile-about-contact-info svg {
+  float: left;
+  margin-right: 3px;
+}
+@media (max-width: 767px) {
+  .profile-about-contact-info svg {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .profile-about-contact-info svg {
+    margin-bottom: 45px;
+  }
+}
+.profile-about-contact-info .col-md-4 span {
+  display: block;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+.profile-about-contact-info .col-md-4:nth-of-type(3) strong {
+  display: inline-block;
+  width: 60px;
+}
+@media (max-width: 767px) {
+  .profile-about-contact-info .col-md-4:nth-of-type(3) strong {
+    width: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .profile-about-contact-info .col-md-4:last-child strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .profile-about-contact-info .col-md-4:last-child strong {
+    width: 80px;
+    display: inline-block;
+  }
+}
+
+.profile-about-linkedin-widget {
+  position: relative;
+  padding-bottom: 306px;
+  padding-top: 20px;
+  height: 0;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+@media (max-width: 767px) {
+  .profile-about-linkedin-widget {
+    overflow: scroll;
+  }
+}
+.profile-about-linkedin-widget iframe {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 100% !important;
+}
+
+.profile-financial-data-wraper small {
+  color: #7c878e;
+  display: block;
+  padding: 6px 0;
+  font-size: 12px !important;
+  margin-bottom: 10px;
+}
+.profile-financial-data-wraper span {
+  margin-top: 25px;
+  display: block;
+}
+.profile-financial-data-wraper strong {
+  font-weight: 600;
+}
+.profile-financial-data-wraper table {
+  color: #33383b;
+  position: relative;
+  table-layout: auto !important;
+  border-collapse: unset !important;
+}
+.profile-financial-data-wraper table thead th,
+.profile-financial-data-wraper table tbody td {
+  text-align: right !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.profile-financial-data-wraper table thead tr {
+  border-color: transparent !important;
+  height: 38px !important;
+}
+.profile-financial-data-wraper table thead tr th {
+  height: 38px !important;
+  color: #33383b !important;
+  padding: 0 5px !important;
+  text-align: center !important;
+}
+.profile-financial-data-wraper table tbody tr {
+  border-bottom: 0 !important;
+}
+.profile-financial-data-wraper table tbody tr:first-child::before {
+  border: none;
+}
+.profile-financial-data-wraper table tbody tr:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border-bottom: solid 1px #bfd0da;
+}
+.profile-financial-data-wraper table tbody td {
+  font-size: 12px !important;
+  padding: 0 5px !important;
+  text-align: center !important;
+}
+@media (max-width: 767px) {
+  .profile-financial-data-wraper table tbody td {
+    font-size: 10px !important;
+  }
+}
+.profile-financial-data-wraper table tbody td:first-child {
+  white-space: initial !important;
+  text-align: left !important;
+  width: auto;
+}
+.profile-financial-data-wraper .data-name {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: #f5f8f9 !important;
+  border-right: solid 2px #bfd0da;
+}
+.profile-financial-data-wraper .odd-column {
+  background-color: #f5f8f9 !important;
+}
+.profile-financial-data-wraper .data-name strong {
+  white-space: nowrap;
+}
+
+.profile-positions-wrapper {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.profile-positions-wrapper h4 {
+  margin-bottom: 15px;
+}
+.profile-positions-wrapper li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 2.5em;
+  line-height: 1.6;
+}
+.profile-positions-wrapper li:last-child {
+  margin-bottom: 20px;
+}
+.profile-positions-wrapper .col-xs-6 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.fr .profile-about-contact-info .col-md-4 span strong {
+  display: inline-block;
+  width: 75px;
+}
+@media (max-width: 767px) {
+  .fr .profile-about-contact-info .col-md-4 span strong {
+    width: 80px;
+  }
+}

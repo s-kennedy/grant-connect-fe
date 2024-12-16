@@ -1,0 +1,133 @@
+.Full-card__notes {
+  background-color: #FFF8E6;
+  padding: 15px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .Full-card__notes {
+    padding: 30px 15px 15px;
+  }
+}
+@media (min-width: 992px) {
+  .Full-card__notes {
+    max-width: 310px;
+    min-width: 310px;
+    float: right;
+    margin-top: 55px;
+    text-align: left;
+  }
+}
+.Full-card__notes svg {
+  width: 18px !important;
+  height: 18px !important;
+  color: #7c878e !important;
+  padding: 0 !important;
+}
+.Full-card__notes svg:hover {
+  color: #33383b !important;
+}
+.Full-card__notes:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 25px solid #ffe9ac;
+  border-right: 25px solid white;
+}
+.Full-card__notes small {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+@media (max-width: 767px) {
+  .Full-card__notes small {
+    font-size: 12px;
+  }
+}
+.Full-card__notes > div {
+  margin-bottom: 15px;
+}
+.Full-card__notes > div > div > div {
+  vertical-align: middle;
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+}
+.Full-card__notes-date {
+  color: #7c878e;
+  margin: 5px 0;
+  font-weight: 300;
+}
+.Full-card__notes-edit {
+  margin-right: 5px !important;
+}
+.Full-card__notes-edit, .Full-card__notes-delete, .Full-card__notes-cancel {
+  width: 18px !important;
+  height: 18px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.Full-card__notes-note {
+  word-wrap: break-word;
+}
+.Full-card__notes-note span {
+  margin-left: 10px;
+  vertical-align: middle;
+  display: inline-block;
+  float: right;
+}
+.Full-card__notes-new-actions {
+  margin-top: 5px;
+  width: 100%;
+}
+.Full-card__notes-new-actions::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.Full-card__notes-see-all {
+  margin-top: -10px !important;
+  height: 24px !important;
+  line-height: 24px !important;
+}
+.Full-card__notes-see-all span {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.Full-card__notes input {
+  width: 100%;
+  height: 34px;
+  border: none;
+  text-indent: 10px;
+  outline: none;
+}
+.Full-card__notes-cancel {
+  margin-left: 5px !important;
+  float: left;
+}
+.Full-card__notes-cancel svg {
+  vertical-align: middle;
+}
+.Full-card__notes-close {
+  color: #7c878e !important;
+}
+.Full-card__notes-done, .Full-card__notes-add {
+  float: right;
+}
+.Full-card__notes-done::after, .Full-card__notes-add::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.Full-card__notes-done, .Full-card__notes-add, .Full-card__notes-close {
+  height: 18px !important;
+  line-height: 14px !important;
+  min-width: 35px !important;
+  margin-right: 5px !important;
+}
+.Full-card__notes-done span, .Full-card__notes-add span, .Full-card__notes-close span {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

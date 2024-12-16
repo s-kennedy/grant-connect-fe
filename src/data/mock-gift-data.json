@@ -1,0 +1,113 @@
+{
+  "count": 123,
+  "next": "",
+  "previous": "",
+  "results": [
+    {
+      "id": 0,
+      "funder": {
+        "id": 123,
+        "name": "Ontario Arts Council",
+        "pipeline_stage": "identified"
+      },
+      "charity": {
+        "id": 123,
+        "recipient_size": 0,
+        "name": "Kitchener-Waterloo Art Gallery",
+      },
+      "amount": 128855,
+      "focus": "Art museums and galleries",
+      "location": {
+        "city": "Kitchener",
+        "province": "ON"
+      },
+      "year": "2020",
+      "purpose":
+        "“Joyful Art” at the Bennett Centre Long Term Care Home will provide residents of all capabilities with the opportunity to participate in art activities to improve overall quality of life for seniors in living in Long Term Care."
+    },
+    {
+      "id": 0,
+      "funder": {
+        "id": 123,
+        "name": "Kitchener Waterloo Community Foundation",
+        "pipeline_stage": null
+      },
+      "charity": {
+        "id": 123,
+        "recipient_size": 0,
+        "name": "Lost & Found Theatre Inc."
+      },
+      "amount": 10000,
+      "focus": "Theatre",
+      "location": {
+        "city": "Kitchener",
+        "province": "ON"
+      },
+      "year": "2022",
+      "purpose": "Ambas Tres"
+    },
+    {
+      "id": 0,
+      "funder": {
+        "id": 123,
+        "name": "Canada Summer Jobs",
+        "pipeline_stage": "stewardship"
+      },
+      "charity": {
+        "id": 123,
+        "recipient_size": 0,
+        "name": "CAFKA - Contemporary Art Forum Kitchener & Area"
+      },
+      "amount": 22543,
+      "focus": "Arts councils and associations",
+      "location": {
+        "city": "Kitchener",
+        "province": "ON"
+      },
+      "year": "2021",
+      "purpose": null
+    },
+    {
+      "id": 0,
+      "funder": {
+        "id": 123,
+        "name": "Good Foundation Inc.",
+        "pipeline_stage": null
+      },
+      "charity": {
+        "id": 123,
+        "recipient_size": 0,
+        "name": "Centre in the Square Inc."
+      },
+      "amount": 25000,
+      "focus": "Theatre",
+      "location": {
+        "city": "Kitchener",
+        "province": "ON"
+      },
+      "year": "2023",
+      "purpose": null
+    },
+    {
+      "id": 0,
+      "funder": {
+        "id": 123,
+        "name": "CanadaHelps",
+        "pipeline_stage": null
+      },
+      "charity": {
+        "id": 123,
+        "recipient_size": 0,
+        "name": "J.M. Drama Alumni"
+      },
+      "amount": 5900,
+      "focus": "Performing arts",
+      "location": {
+        "city": "Kitchener",
+        "province": "ON"
+      },
+      "year": "2022",
+      "purpose": "BUSH CAMP"
+    }
+  ]
+}

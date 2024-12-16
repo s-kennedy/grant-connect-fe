@@ -1,0 +1,45 @@
+# 1st stage
+FROM node:13 as builder
+
+ARG AWS_ACCESS_KEY_ID
+ENV AWS_ACCESS_KEY_ID $AWS_ACCESS_KEY_ID
+
+ARG AWS_SECRET_ACCESS_KEY
+ENV AWS_SECRET_ACCESS_KEY $AWS_SECRET_ACCESS_KEY
+
+ARG REACT_APP_SERVER_BASE_URL
+ENV REACT_APP_SERVER_BASE_URL $REACT_APP_SERVER_BASE_URL
+
+WORKDIR /app
+
+ENV PATH /app/node_modules/.bin:$PATH
+ENV NODE_OPTIONS=--max-old-space-size=8192
+
+COPY package*.json /app/
+COPY . /app/
+
+RUN npm install
+RUN npm i -g react-scripts
+RUN npm i -g @craco/craco
+
+RUN npm run build
+
+# 2nd stage
+FROM node:13-alpine
+
+ARG AWS_ACCESS_KEY_ID
+ENV AWS_ACCESS_KEY_ID $AWS_ACCESS_KEY_ID
+
+ARG AWS_SECRET_ACCESS_KEY
+ENV AWS_SECRET_ACCESS_KEY $AWS_SECRET_ACCESS_KEY
+
+WORKDIR /app
+RUN mkdir /build && mkdir /.ci
+
+COPY --from=builder /app/build ./build
+COPY --from=builder /app/.ci ./.ci
+
+# install awscli
+RUN apk add --no-cache python py-pip python-dev
+RUN pip install "cython<3.0.0" wheel && pip install pyyaml==5.4.1 --no-build-isolation
+RUN pip install awscli

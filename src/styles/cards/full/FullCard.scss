@@ -1,0 +1,259 @@
+@import '../../base.scss';
+
+.Full-card {
+	padding: 20px 15px 15px 15px;
+	margin-bottom: 25px;
+	position: relative;
+
+	@include breakpoint(xs) {
+		margin: -15px 0 15px 0;
+	}
+
+  &.red {
+    border-left: solid 5px $red;
+  }
+
+  &.yellow {
+    border-left: solid 5px $yellow;
+  }
+
+  &.green {
+    border-left: solid 5px $green;
+  }
+
+  &.gray {
+    border-left: solid 5px $grey-light;
+  }
+
+	h1 {
+		font-weight: 600 !important;
+		margin-top: 0 !important;
+
+		@include breakpoint(xs) {
+			font-size: 18px;
+		}
+
+		@include breakpoint(md-max) {
+			margin-bottom: 0;
+			width: 95%;
+		}
+	}
+
+	.col-xl-4 {
+		> div {
+			text-align: right;
+		}
+	}
+
+	&__type {
+		padding-top: 13px;
+		display: inline-block;
+	}
+
+	&__website {
+		margin: 3px 0 0 20px !important;
+
+		@include breakpoint(xs) {
+			margin-top: 0 !important;
+		}
+
+		span {
+			color: $blue;
+		}
+
+		&:hover {
+			background-color: transparent !important;
+		}
+	}
+
+	&__teaser {
+		line-height: 18px;
+		padding: 0 40px 20px 8px;
+	}
+
+	&__values {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		small {
+			font-weight: 600 !important;
+			padding-bottom: 6px;
+			display: block;
+		}
+
+		big {
+			font-size: 24px;
+			@include breakpoint(xs) {
+				font-size: 18px;
+			}
+		}
+
+		&-gifts, &-typical-gift  {
+			margin: 0 25px 10px 0;
+
+			@include breakpoint(sm-max) {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	&__deadline {
+    &.red {
+      small, svg {
+        color: $red !important;
+      }
+    }
+
+    &.green {
+      small, svg {
+        color: $green !important;
+      }
+    }
+
+    &.yellow {
+      small, svg {
+        color: $yellow !important;
+      }
+    }
+
+    &.gray {
+      small, svg {
+        color: $grey-dark !important;
+      }
+      }
+	}
+
+	&__deadline,
+	&__open-to-requests {
+		svg {
+			color: $grey-dark !important;
+			width: 22px !important;
+			height: 22px !important;
+			padding-right: 5px;
+		}
+
+		small {
+			vertical-align: super;
+			font-weight: 600 !important;
+			padding-right: 15px;
+		}
+	}
+
+	&__deadline {
+		small:empty {
+			@include breakpoint(lg-min) {
+				display: none;
+	    }
+		}
+	}
+
+	&__actions {
+		@include breakpoint(sm-max) {
+			margin: 15px 0;
+		}
+
+		@include breakpoint(md-min) {
+			position: absolute;
+			right: 5px;
+		}
+	}
+
+	&__request-size {
+		display: inline-block;
+		background: #fff;
+
+		small {
+			margin-right: 3px;
+		}
+
+		div small {
+			vertical-align: text-top;
+		}
+
+		input {
+			width: 70px !important;
+			border: 0 !important;
+			border-bottom: solid 1px $grey-light !important;
+			margin-right: 15px;
+			color: $grey-dark !important;
+			outline: none;
+		}
+
+		.Full-card__request-size-edit {
+			width: 18px !important;
+			height: 18px !important;
+			padding: 0 !important;
+			margin: 0 18px 12px 10px !important;
+
+			svg {
+				color: $grey-dark !important;
+				width: 18px !important;
+				height: 18px !important;
+				vertical-align: bottom;
+
+				&:hover {
+					color: $grey-darker !important;
+				}
+			}
+		}
+
+		.Full-card__status {
+			min-width: 49px !important;
+			background: $grey-light !important;
+			height: 32px !important;
+			line-height: 32px !important;
+
+			&:last-child {
+				color: $grey-dark !important;
+				border: 0 !important;
+				background: none !important;
+			}
+
+			span {
+				padding: 10px !important;
+			}
+		}
+	}
+
+	&__status {
+		border: solid 1px $grey-light !important;
+
+    &.add {
+      background-color: $blue !important;
+      border: solid 1px $blue !important;
+      color: #fff !important;
+
+      &:hover {
+        background-color: $blue-dark !important;
+      }
+			.Pipeline-cards__collapsed & {
+				background-color: transparent !important;
+				border: none !important;
+				color: $blue !important;
+			}
+    }
+}
+
+	.Material-cards-stages-wrapper {
+		display: inline-block;
+	}
+
+	.Material-cards-actions-wrapper {
+		margin: -5px 10px 0 0;
+		display: inline-block;
+		vertical-align: middle;
+
+		@include breakpoint(xs) {
+			position: absolute;
+			right: 10px;
+			top: 15px !important;
+		}
+
+		@include breakpoint(sm-max) {
+			position: absolute;
+			right: 0;
+			top: 5px;
+		}
+	}
+}

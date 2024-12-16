@@ -1,0 +1,277 @@
+@import '../../../base.scss';
+
+
+.profile-about {
+	&__wrapper {
+		position: relative;
+
+		strong {
+			font-weight: 600;
+		}
+
+		h3 {
+			width: 70%;
+			@include breakpoint(xs) {
+				font-size: 18px;
+				width: 100%;
+			}
+		}
+	}
+
+	&-mission {
+		padding: 10px 0 30px 0;
+
+		a {
+			padding-top: 10px;
+			display: inline-block;
+		}
+
+		&-collapse {
+			color: $grey-dark;
+		}
+	}
+
+	&-year {
+		@include breakpoint(xs) {
+			margin-bottom: 20px;
+		}
+		@include breakpoint(sm-min) {
+			display: inline-block;
+			position: absolute;
+			top: 25px;
+			right: 20px;
+		}
+	}
+
+	&-info {
+		margin-bottom: 30px;
+
+		.profile-info-wrapper {
+			margin-bottom: 30px;
+		}
+
+		.col-md-4:last-child {
+			h4 {
+				@include breakpoint(xs) {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+
+	&-info, &-contact-info {
+		li {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		@include breakpoint(xs) {
+	    margin-right: 0 !important;
+	    margin-left: 0 !important;
+
+	    .col-xs-12 {
+	    	padding-left: 0;
+	    	padding-right: 0;
+	    }
+  	}
+	}
+
+	&-contact-info {
+		svg {
+			float: left;
+			margin-right: 3px;
+
+			@include breakpoint(xs) {
+				margin-bottom: 20px;
+			}
+
+			@include breakpoint(sm-min) {
+				margin-bottom: 45px;
+			}
+		}
+
+		.col-md-4 {
+			span {
+				display: block;
+				margin-bottom: 5px;
+				word-wrap: break-word;
+			}
+
+			&:nth-of-type(3) {
+				strong {
+					display: inline-block;
+					width: 60px;
+					@include breakpoint(xs) {
+						width: 80px;
+					}
+				}
+			}
+
+			&:last-child {
+				strong {
+					@include breakpoint(sm-min) {
+						display: block;
+						margin-bottom: 5px;
+					}
+
+					@include breakpoint(xs) {
+						width: 80px;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}
+
+.profile-about-linkedin-widget {
+  position: relative;
+  padding-bottom: 306px;
+  padding-top: 20px;
+  height: 0;
+  overflow: scroll;
+  overflow-y: hidden;
+
+  @include breakpoint(xs) {
+    overflow: scroll;
+  }
+
+  iframe {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		height: 100% !important;
+  }
+}
+
+.profile-financial-data-wraper {
+	small {
+		color: $grey-dark;
+    display: block;
+    padding: 6px 0;
+    font-size: 12px !important;
+    margin-bottom: 10px;
+	}
+
+	span {
+		margin-top: 25px;
+		display: block;
+	}
+
+	strong {
+		font-weight: 600;
+	}
+
+	table {
+		color: $grey-darker;
+		position: relative;
+		table-layout: auto !important;
+		border-collapse: unset !important;
+
+		thead th, tbody td {
+			text-align: right !important;
+			padding-left: 0px !important;
+			padding-right: 0px !important;
+		}
+
+		thead tr {
+			border-color: transparent !important;
+			height: 38px !important;
+
+			th {
+				height: 38px !important;
+				color: $grey-darker !important;
+				padding: 0 5px !important;
+				text-align: center !important;
+			}
+		}
+
+		tbody {
+			tr {
+				&:first-child::before {
+					border: none;
+				}
+				border-bottom: 0 !important;
+
+				&:before {
+					content: '';
+					position: absolute;
+					width: 100%;
+					border-bottom: solid 1px $grey-light;
+				}
+			}
+
+			td {
+				font-size: 12px !important;
+				padding: 0 5px !important;
+				text-align: center !important;
+				@include breakpoint(xs) {
+					font-size: 10px !important;
+				}
+
+				&:first-child {
+					white-space: initial !important;
+					text-align: left !important;
+					width: auto;
+				}
+			}
+		}
+	}
+	.data-name {
+		position: sticky;
+		left: 0;
+		z-index: 1;
+		background-color: $grey-lighter !important;
+		border-right: solid 2px $grey-light;
+	}
+	.odd-column{
+		background-color: $grey-lighter !important;
+	}
+	.data-name strong {
+		white-space: nowrap;
+	}
+}
+
+.profile-positions-wrapper {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+
+	h4 {
+		margin-bottom: 15px;
+	}
+
+	li {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1.5em;
+    padding-left: 2.5em;
+    line-height: 1.6;
+
+ 		&:last-child {
+			margin-bottom: 20px;
+		}
+	}
+
+	.col-xs-6 {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.fr {
+	.profile-about {
+		&-contact-info {
+			.col-md-4 {
+				span {
+					strong {
+						display: inline-block;
+						width: 75px;
+						@include breakpoint(xs) {
+							width: 80px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

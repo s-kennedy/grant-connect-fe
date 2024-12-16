@@ -1,0 +1,55 @@
+.Left-menu {
+  position: absolute;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .Left-menu {
+    z-index: 30000 !important;
+  }
+}
+.Left-menu__wrapper {
+  background-color: #33383b !important;
+  padding: 100px 35px;
+}
+@media (max-width: 767px) {
+  .Left-menu__wrapper {
+    padding: 30px 20px;
+    width: 256px !important;
+  }
+}
+.Left-menu__wrapper button {
+  position: absolute !important;
+  right: 0;
+  top: 65px;
+}
+@media (max-width: 767px) {
+  .Left-menu__wrapper button {
+    top: 0;
+  }
+}
+.Left-menu__wrapper button svg {
+  color: #d9e3e9 !important;
+  height: 18px !important;
+  width: 18px !important;
+}
+.Left-menu__wrapper span [role=menuitem] {
+  background: none !important;
+}
+.Left-menu__wrapper a {
+  color: #d9e3e9;
+  font-size: 14px;
+  margin-left: -5px;
+}
+.Left-menu__wrapper hr {
+  background-color: #7c878e;
+  border: 0;
+  height: 1px;
+  margin: 10px 0 10px 5px;
+  text-align: left;
+  width: 80%;
+}
+@media (max-width: 767px) {
+  .Left-menu__wrapper hr {
+    width: 85%;
+  }
+}

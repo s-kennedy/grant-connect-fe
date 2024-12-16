@@ -1,0 +1,225 @@
+@import "../../base.scss";
+
+.profile-page-content-wrapper {
+  position: relative;
+}
+
+.profile-page-charts-container {
+  display: flex;
+  flex-direction: row;
+  @include breakpoint(xs) {
+    flex-direction: column;
+  }
+  @include breakpoint(sm-min) {
+    flex-direction: row;
+  }
+  @include breakpoint(md-min) {
+    flex-direction: column;
+  }
+}
+
+.profile-last-updated {
+  color: $grey-dark;
+  font-size: 10px;
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+
+  @include breakpoint(xs) {
+    display: none;
+  }
+}
+
+.profile-page-report-error-container {
+  width: 100%;
+  text-align: right;
+}
+.profile-page-report-error-content {
+  min-width: 112px !important;
+  background: #ffffff !important;
+  border: #bfd0da 1px solid !important;
+  height: 38px !important;
+  line-height: 32px !important;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  color: #4c9eff;
+  text-transform: uppercase;
+  padding: 5px 10px 0px 10px;
+  &:hover {
+    background-color: $grey-light !important;
+    color: #ffffff;
+  }
+
+  margin-bottom: 20px;
+  margin-right: 55px;
+  @include breakpoint(xs) {
+    margin-bottom: 30px;
+  }
+}
+
+.profile-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 50px);
+  position: relative;
+  & > div {
+    margin-bottom: 15px !important;
+    margin-right: 10px !important;
+    background-color: #d9e3e9 !important;
+    span {
+      font-size: 12px !important;
+      color: #33383b !important;
+    }
+  }
+  button {
+    &:hover {
+      & > div > div {
+        width: 200px;
+        height: 300px;
+        white-space: normal;
+        left: -200px;
+        .fr & {
+          width: 280px;
+          left: -280px;
+        }
+      }
+    }
+    span {
+      white-space: normal !important;
+    }
+    svg {
+      color: #7c878e !important;
+    }
+  }
+  & > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    cursor: pointer;
+  }
+}
+
+.profile-special-notes,
+.profile-grantmaking-notes {
+  padding: 25px 35px;
+  margin-bottom: 25px;
+
+  @include breakpoint(xs) {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  &-note {
+    font-size: 14px;
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    a {
+      font-weight: 600;
+    }
+
+    @include breakpoint(xs) {
+      font-size: 12px;
+    }
+  }
+}
+
+.profile-special-notes {
+  background: $yellow-lighter;
+  border: solid 1px $yellow-light;
+  color: $brown;
+
+  &-note {
+    a {
+      color: $brown;
+    }
+  }
+}
+
+.profile-grantmaking-notes {
+  background: #ffe6ed;
+  border: solid 1px #ffcddb;
+  color: #840025;
+
+  &-note {
+    a {
+      color: #840025;
+    }
+  }
+}
+
+.react-tabs {
+  &__tab-list {
+    list-style: none;
+    padding-left: 0;
+    border-bottom: solid 1px $grey-darker;
+    margin: 0 0 25px 0;
+
+    @include breakpoint(xs) {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 -8px 15px;
+      border-width: 2px;
+    }
+
+    .react-tabs__tab {
+      display: inline-block;
+      font-size: 14px;
+      padding: 10px 20px;
+      cursor: pointer;
+      @include breakpoint(xs) {
+        padding: 18px 15px;
+      }
+
+      &--selected {
+        border-bottom: solid 2px $grey-darker;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/*Vertical Tabs*/
+.vertical-tabs {
+  ul[role="tablist"] {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      padding: 15px;
+      background-color: transparent;
+      margin-right: 15px;
+      &.react-tabs__tab--selected {
+        background-color: $grey-light;
+        font-weight: 600;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .react-tabs__tab-panel--selected {
+    background: white;
+    padding: 15px;
+  }
+  .extra_contact {
+    display: flex;
+    flex-wrap: wrap;
+    h4 {
+      margin-bottom: 0;
+    }
+    & > * {
+      width: calc(50% - 15px);
+      margin-right: 15px;
+      &:nth-child(even) {
+        width: 50%;
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,261 @@
+@import '../../base.scss';
+
+.Material-cards {
+  display: block;
+  width: 100%;
+
+  h3 {
+    font-weight: 600;
+    margin: -3px 0 13px;
+    cursor: pointer;
+
+    a {
+      color: $black;
+    }
+
+    @include breakpoint(xs) {
+      margin-bottom: 10px !important;
+      padding-right: 10px;
+    }
+  }
+
+  small {
+    color: $grey-dark;
+  }
+
+  svg {
+    color: $grey-dark !important;
+    position: relative;
+    top: 8px;
+  }
+
+  &__expanded {
+    margin: 6px 0;
+    padding: 20px;
+    position: relative;
+
+    @include breakpoint(xs) {
+      height: auto !important;
+      margin: 0 3px 6px;
+      padding: 12px 15px;
+    }
+
+    &-actions {
+      position: relative !important;
+      margin-right: -15px !important;
+
+      svg {
+        top: 0;
+        color: $grey-dark !important;
+      }
+
+      @include breakpoint(xs) {
+        position: absolute !important;
+        right: 10px;
+        top: 10px;
+      }
+    }
+
+    &-actions-wrapper {
+      @include breakpoint(sm-min) {
+        float: right;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include breakpoint(md-max) {
+          flex-wrap: wrap;
+        }
+      }
+
+      .Material-cards-stages-wrapper {
+        display: inline-block;
+        //padding-right: 30px;
+        //@include breakpoint(lg-min) {
+        //  margin-top: -8px;
+        //}
+      }
+    }
+
+    &-typical-gift {
+      display: inline-block;
+      vertical-align: top;
+
+      strong {
+        color: $grey-darker;
+        font-weight: 600 !important;
+        padding-right: 20px;
+        .fr & {
+          padding-right: 10px;
+        }
+      }
+    }
+
+    &-state {
+      border: solid 1px $grey-light !important;
+      line-height: 34px !important;
+      padding-right: 10px !important;
+
+      svg {
+        top: 0 !important;
+        margin-right: -5px !important;
+      }
+
+      &.add {
+        background-color: $blue !important;
+        border: solid 1px $blue !important;
+        color: #fff !important;
+        padding-right: 0 !important;
+        &:hover {
+          background-color: $blue-dark !important;
+        }
+
+        &[disabled] {
+          background-color: transparent !important;
+          border: solid 1px $grey-dark !important;
+          color: #7c878e !important;
+        }
+      }
+
+      &.action {
+        border: solid 1px $grey-light !important;
+
+        &:hover {
+          background-color: $grey-light !important;
+        }
+      }
+
+      @include breakpoint(xs) {
+        display: none !important;
+      }
+    }
+
+    &-status {
+      padding-bottom: 8px;
+
+      small {
+        padding-left: 15px;
+      }
+
+      @include breakpoint(sm-min) {
+        margin-top: 40px;
+      }
+
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+
+    &-deadline {
+      @include breakpoint(md-min) {
+        display: inline-block;
+        float: right;
+      }
+
+      small {
+        font-weight: 600;
+
+        svg {
+          margin-right: 3px;
+          @include breakpoint(xs) {
+            width: 19px !important;
+          }
+        }
+      }
+
+      &.red {
+        small, svg {
+          color: $red !important;
+        }
+      }
+
+      &.green {
+        small, svg {
+          color: $green !important;
+        }
+      }
+
+      &.yellow {
+        small, svg {
+          color: $yellow !important;
+        }
+      }
+
+      &.gray {
+        small, svg {
+          color: $grey-dark !important;
+        }
+      }
+    }
+
+    &-teaser {
+      margin-bottom: 2px;
+      line-height: 20px;
+
+      @include breakpoint(md-min) {
+        max-width: 400px;
+      }
+
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+
+    &-notification {
+      display: inline-block;
+      margin-right: 10px;
+      small {
+        color: $grey-darker !important;
+        font-weight: 600 !important;
+        text-transform: uppercase;
+      }
+
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+    &-location {
+      display: inline-block;
+    }
+
+    &.red {
+      border-left: solid 5px $red;
+    }
+
+    &.yellow {
+      border-left: solid 5px $yellow;
+    }
+
+    &.green {
+      border-left: solid 5px $green;
+    }
+
+    &.gray {
+      border-left: solid 5px $grey-light;
+    }
+  }
+
+  &__expanded {
+    &-right {
+      text-align: right;
+
+      @include breakpoint(xs) {
+        margin-top: 15px;
+        text-align: left;
+      }
+      .fr & button span {
+        white-space: nowrap !important;
+        font-size: 10px !important;
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+      }
+    }
+
+    //.Material-cards-actions-wrapper {
+    //  position: absolute;
+    //  top: -15px;
+    //  right: -5px;
+    //}
+  }
+}

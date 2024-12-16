@@ -1,0 +1,223 @@
+.profile-page-content-wrapper {
+  position: relative;
+}
+
+.profile-page-charts-container {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 767px) {
+  .profile-page-charts-container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .profile-page-charts-container {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .profile-page-charts-container {
+    flex-direction: column;
+  }
+}
+
+.profile-last-updated {
+  color: #7c878e;
+  font-size: 10px;
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .profile-last-updated {
+    display: none;
+  }
+}
+
+.profile-page-report-error-container {
+  width: 100%;
+  text-align: right;
+}
+
+.profile-page-report-error-content {
+  min-width: 112px !important;
+  background: #ffffff !important;
+  border: #bfd0da 1px solid !important;
+  height: 38px !important;
+  line-height: 32px !important;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  color: #4c9eff;
+  text-transform: uppercase;
+  padding: 5px 10px 0px 10px;
+  margin-bottom: 20px;
+  margin-right: 55px;
+}
+.profile-page-report-error-content:hover {
+  background-color: #bfd0da !important;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .profile-page-report-error-content {
+    margin-bottom: 30px;
+  }
+}
+
+.profile-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 50px);
+  position: relative;
+}
+.profile-tags-list > div {
+  margin-bottom: 15px !important;
+  margin-right: 10px !important;
+  background-color: #d9e3e9 !important;
+}
+.profile-tags-list > div span {
+  font-size: 12px !important;
+  color: #33383b !important;
+}
+.profile-tags-list button:hover > div > div {
+  width: 200px;
+  height: 300px;
+  white-space: normal;
+  left: -200px;
+}
+.fr .profile-tags-list button:hover > div > div {
+  width: 280px;
+  left: -280px;
+}
+.profile-tags-list button span {
+  white-space: normal !important;
+}
+.profile-tags-list button svg {
+  color: #7c878e !important;
+}
+.profile-tags-list > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  cursor: pointer;
+}
+
+.profile-special-notes,
+.profile-grantmaking-notes {
+  padding: 25px 35px;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .profile-special-notes,
+.profile-grantmaking-notes {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+}
+.profile-special-notes-note,
+.profile-grantmaking-notes-note {
+  font-size: 14px;
+}
+.profile-special-notes-note p,
+.profile-grantmaking-notes-note p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.profile-special-notes-note a,
+.profile-grantmaking-notes-note a {
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .profile-special-notes-note,
+.profile-grantmaking-notes-note {
+    font-size: 12px;
+  }
+}
+
+.profile-special-notes {
+  background: #ffe9ac;
+  border: solid 1px #ffd86c;
+  color: #806416;
+}
+.profile-special-notes-note a {
+  color: #806416;
+}
+
+.profile-grantmaking-notes {
+  background: #ffe6ed;
+  border: solid 1px #ffcddb;
+  color: #840025;
+}
+.profile-grantmaking-notes-note a {
+  color: #840025;
+}
+
+.react-tabs__tab-list {
+  list-style: none;
+  padding-left: 0;
+  border-bottom: solid 1px #33383b;
+  margin: 0 0 25px 0;
+}
+@media (max-width: 767px) {
+  .react-tabs__tab-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 -8px 15px;
+    border-width: 2px;
+  }
+}
+.react-tabs__tab-list .react-tabs__tab {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .react-tabs__tab-list .react-tabs__tab {
+    padding: 18px 15px;
+  }
+}
+.react-tabs__tab-list .react-tabs__tab--selected {
+  border-bottom: solid 2px #33383b;
+  font-weight: 600;
+}
+
+/*Vertical Tabs*/
+.vertical-tabs ul[role=tablist] {
+  padding: 0;
+  margin: 0;
+}
+.vertical-tabs ul[role=tablist] li {
+  list-style: none;
+  padding: 15px;
+  background-color: transparent;
+  margin-right: 15px;
+}
+.vertical-tabs ul[role=tablist] li.react-tabs__tab--selected {
+  background-color: #bfd0da;
+  font-weight: 600;
+}
+.vertical-tabs ul[role=tablist] li:hover {
+  cursor: pointer;
+}
+.vertical-tabs .react-tabs__tab-panel--selected {
+  background: white;
+  padding: 15px;
+}
+.vertical-tabs .extra_contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+.vertical-tabs .extra_contact h4 {
+  margin-bottom: 0;
+}
+.vertical-tabs .extra_contact > * {
+  width: calc(50% - 15px);
+  margin-right: 15px;
+}
+.vertical-tabs .extra_contact > *:nth-child(even) {
+  width: 50%;
+  margin-right: 0;
+}

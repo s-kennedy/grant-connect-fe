@@ -1,0 +1,144 @@
+@import '../../base.scss';
+
+.Material-cards,
+.Pipeline-cards {
+	&__collapsed {
+		font-family: 'Open Sans', sans-serif !important;
+		margin-bottom: 30px;
+		thead, tbody {
+			th, td {
+				@include breakpoint(sm-min) {
+					&:first-child {
+						font-weight: 600;
+						width: 36%;
+					}
+
+					&:nth-child(2) {
+						width: 12%;
+						text-align: right !important;
+					}
+
+					&:nth-child(5) {
+						padding-right: 0 !important;
+
+			      .Material-cards-stages-wrapper button {
+			        float: right;
+			      }
+					}
+
+					&:nth-child(3), &:nth-child(4), &:nth-child(5) {
+						width: 16%;
+
+						&:not(:nth-child(5)) {
+							text-align: right !important;
+						}
+					}
+
+					&:last-child {
+						width: 5%;
+						text-align: right !important;
+						padding-left: 0px !important;
+    				padding-right: 0px !important;
+
+    				.Material-cards__expanded-actions {
+    					margin-right: 0 !important;
+    				}
+					}
+				}
+			}
+		}
+
+		thead {
+			th {
+				background-color: $grey-lighter !important;
+				padding-left: 14px !important;
+				padding-right: 14px !important;
+				height: 30px !important;
+				color: $grey-dark !important;
+				white-space: initial !important;
+
+				&:first-child {
+					padding-left: 20px !important;
+				}
+			}
+		}
+
+		tbody {
+			tr {
+		    &.red {
+		      border-left: solid 5px $red;
+
+					td:nth-child(3) {
+						color: $red;
+					}
+		    }
+
+		    &.yellow {
+		      border-left: solid 5px $yellow;
+
+					td:nth-child(3) {
+						color: $yellow;
+					}
+		    }
+
+		    &.green {
+		      border-left: solid 5px $green;
+
+					td:nth-child(3) {
+						color: $green;
+					}
+		    }
+
+		    &.gray {
+		      border-left: solid 5px $grey-light;
+
+					td:nth-child(3) {
+						color: $grey-light;
+					}
+		    }
+			}
+
+			td {
+				font-size: 12px !important;
+				padding-left: 14px !important;
+				padding-right: 14px !important;
+
+				a {
+					color: $black !important;
+				}
+
+				&:nth-child(5) {
+					span {
+						padding-right: 0 !important;
+						font-size: 12px !important;
+						font-weight: 600 !important;
+					}
+				}
+
+				.Material-cards__expanded-actions {
+					display: block !important;
+				}
+
+				.Material-cards__expanded-state {
+					border: none !important;
+				}
+
+				.Material-cards__expanded-state.add {
+					color: #479cff !important;
+					margin-right: 0 !important;
+					background-color: transparent !important;
+					border: none !important;
+
+					&.action {
+						color: $grey-darker !important;
+					}
+
+					svg {
+						color: $grey-dark !important;
+					}
+				}
+
+			}
+		}
+	}
+}

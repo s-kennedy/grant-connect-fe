@@ -1,0 +1,86 @@
+@import '../../base.scss';
+
+.Header-search {
+	@include breakpoint(xs) {
+		width: 100% !important;
+		left: 50% !important;
+		z-index: 25000;
+
+		> button:first-child {
+			background-color: #fff !important;
+			width: 40px !important;
+			height: 40px !important;
+			border-radius: 0 !important;
+			z-index: 10;
+    	border-left: solid 10px #ffc72c !important;
+
+			svg {
+				margin-top: -5px;
+				margin-left: -5px;
+			}
+		}
+
+		&__autocomplete {
+			background-color: #fff !important;
+			border-left: solid 1px #fff;
+
+			div{
+				padding-left: 50px !important;
+				color: $grey-light !important;
+			}
+
+			input {
+				padding-left: 50px !important;
+			}
+		}
+
+		&-mobile-field-container {
+			width: 100%;
+			position: absolute;
+		}
+
+		&__open-search {
+			position: absolute !important;
+			right: 8px;
+			top: 6px;
+			z-index: 20000;
+
+			svg {
+				color: $brown !important;
+			}
+		}
+
+		&__submit {
+			background-color: #fff !important;
+			border: 0 !important;
+			overflow: visible !important;
+			line-height: 0px !important;
+			position: absolute !important;
+			z-index: 11000 !important;
+			right: 0;
+			border-right: solid 10px #ffc72c !important;
+			z-index: 20000 !important;
+
+			&:hover, &:focus {
+				background-color: #fff !important;
+			}
+
+			&-icon {
+				height: 24px !important;
+    		width: 24px !important;
+				fill: $grey-dark !important;
+				padding-right: 10px;
+			}
+
+			span {
+				display: none;
+			}
+		}
+	}
+}
+
+div[style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 2000;"] {
+	@include breakpoint(xs) {
+		z-index: 25000 !important;
+	}
+}

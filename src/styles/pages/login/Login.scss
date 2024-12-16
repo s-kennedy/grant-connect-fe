@@ -1,0 +1,212 @@
+@import '../../base.scss';
+
+.login, .frlogin {
+  background-color: #fff;
+
+  @include breakpoint(xs) {
+    height: 100vh;
+  }
+
+  .container {
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+
+    .Header-button {
+      position: absolute !important;
+      right: 0;
+      top: 10px;
+    }
+
+    @include breakpoint(xs) {
+      height: 100vh;
+    }
+  }
+
+  .row {
+    @include breakpoint(sm-min) {
+      height: 100vh;
+    }
+
+    .col-md-9 {
+      //position: absolute !important;
+      //top: 50%;
+      //left: 50%;
+      //transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      max-width: 100vw;
+      flex-basis: auto;
+      width: 100%;
+      @include breakpoint(sm-min) {
+        width: auto;
+        margin-left: 10%;
+        justify-content: flex-start;
+      }
+    }
+
+    .col-xs-12 {
+      position: relative;
+      padding: 15px 30px;
+
+      @include breakpoint(xs) {
+        background-image: none !important;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 28px !important;
+    color: #fff;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 21px !important;
+    font-weight: 600 !important;
+
+    @include breakpoint(xs) {
+      text-align: center;
+    }
+  }
+
+  p {
+    font-size: 14px !important;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  @include breakpoint(xs) {
+    &__left, &__imagine-logo {
+      display: none;
+    }
+
+    &__imagine-logo-mobile {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @include breakpoint(sm-min) {
+    &__left, &__right {
+      //position: absolute;
+      //top: 50%;
+      //left: 50%;
+      //transform: translate(-50%, -50%);
+    }
+
+    &__imagine-logo {
+      //position: absolute;
+      //bottom: 30px;
+      //left: 40px;
+    }
+
+    &__imagine-logo-mobile {
+      display: none;
+    }
+  }
+
+  form.Login {
+    > div {
+      display: block !important;
+      width: 100% !important;
+      height: 58px !important;
+    }
+
+    label {
+      font-size: 12px !important;
+      color: $grey-dark !important;
+      top: 15px !important;
+    }
+
+    input {
+      border-radius: 3px;
+      width: 460px !important;
+      height: 47px !important;
+      margin-top: 0 !important;
+      @include breakpoint(xs) {
+        width: 100% !important;
+      }
+    }
+
+    button {
+      background-color: $yellow !important;
+      display: block !important;
+      height: 48px !important;
+      width: 100%;
+      margin-top: 15px !important;
+
+      &:hover, &:focus {
+        background-color: $yellow-light !important;
+      }
+    }
+  }
+  .reset-password-link {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .password_reset_dialog {
+    .message-danger {
+      padding-top: 20px;
+      color: $red;
+    }
+
+    .message-success {
+      color: $green;
+    }
+  }
+}
+.Reset-password-page__facets-dialog {
+  .Login > * {
+    margin-bottom: 10px;
+  }
+  button.reset {
+    background-color: $blue !important;
+    color: #fff !important;
+    padding: 0 34px !important;
+
+    &:hover {
+      background-color: $blue-dark !important;
+    }
+    &:disabled {
+      background-color: #7c878e !important; 
+    }
+  }
+}
+.reset-password-form {
+  & > * {
+    display: block !important;
+  }
+  button {
+    background-color: $blue !important;
+    color: #fff !important;
+    padding: 0 34px !important;
+    margin-top: 20px !important;
+    &:hover {
+      background-color: $blue-dark !important;
+    }
+  }
+}
+.login__left {
+  width: 100%;
+  h2 {
+    padding: 0 20px;
+  }
+  .paragraph{
+    padding-right:50px;
+    padding-left:50px;
+  }
+}
+
+.login--left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}

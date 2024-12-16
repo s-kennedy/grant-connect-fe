@@ -1,0 +1,118 @@
+@import '../../base.scss';
+
+.App-header {
+  position: relative;
+}
+
+.Header-wrapper {
+  background-color: #ffc72c !important;
+  height: 60px;
+  @include breakpoint(xs) {
+    z-index: 0 !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    z-index: 15000 !important;
+
+    > div:nth-child(2) {
+      margin-left: -6px !important;
+    }
+  }
+  [data-class="Header-help"],
+  .Header-icon,
+  .Header-icon-account {
+    fill: $brown !important;
+    margin-top: -3px;
+
+    &:hover {
+      fill: $brown-dark !important;
+    }
+  }
+
+  .Header-icon-account {
+    @include breakpoint(xs) {
+      display: none !important;
+    }
+  }
+  [data-class='Header-help'] {
+    margin-right: 30px;
+    @include breakpoint(sm-max) {
+      margin-right: 0;
+    }
+    @include breakpoint(xs) {
+      display: none !important;
+    }
+  }
+  .Header-button {
+    right: 10px;
+    @include breakpoint(sm-max) {
+      right: -5px;
+    }
+
+    top: -9px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    min-width: auto !important;
+    overflow: visible !important;
+    line-height: 36px !important;
+    height: 36px !important;
+    border: none !important;
+
+    @include breakpoint(xs) {
+      display: none !important;
+    }
+
+    span {
+      font-weight: 700 !important;
+      color: $brown;
+      overflow: visible !important;
+      padding: 0 !important;
+    }
+
+    &:hover {
+      span {
+        color: $brown-dark;
+      }
+    }
+  }
+
+  .App-logo {
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+
+    @include breakpoint(xs) {
+      width: 117px;
+    }
+    @include breakpoint(sm-min) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.Header-popover {
+  width: 135px;
+  background-color: $grey-dark !important;
+
+  div{
+    color: #d9e3e9;
+  }
+
+  div [role='menu'] {
+    padding: 5px 0;
+    background-color: $grey-darker;
+  }
+
+  div [role='menuitem'] {
+    line-height: 24px !important;
+    min-height: 24px !important;
+    background-color: $grey-darker !important;
+
+    &:hover {
+      background-color: #7C878E !important;
+      opacity: 1;
+    }
+  }
+
+  div [role='presentation'] {
+    width: 135px !important;
+  }
+}

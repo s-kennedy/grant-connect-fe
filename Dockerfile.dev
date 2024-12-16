@@ -1,0 +1,15 @@
+FROM node:13-alpine
+
+WORKDIR /app
+
+ENV PATH /app/node_modules/.bin:$PATH
+ENV NODE_OPTIONS=--max-old-space-size=8192
+
+COPY package*.json /app/
+COPY . /app/
+
+RUN npm install
+RUN npm i -g react-scripts
+RUN npm i -g @craco/craco
+
+CMD ["npm", "run", "start"]

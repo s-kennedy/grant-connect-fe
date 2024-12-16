@@ -1,0 +1,58 @@
+@import "../../../styles/base.scss";
+
+.Left-menu {
+  position: absolute;
+  z-index: 10;
+  @include breakpoint(xs) {
+    z-index: 30000 !important;
+  }
+
+  &__wrapper {
+    background-color: $grey-darker !important;
+    padding: 100px 35px;
+
+    @include breakpoint(xs) {
+      padding: 30px 20px;
+      width: 256px !important;
+    }
+
+    button {
+      position: absolute !important;
+      right: 0;
+      top: 65px;
+
+      @include breakpoint(xs) {
+        top: 0;
+      }
+
+      svg {
+        color: #d9e3e9 !important;
+        height: 18px !important;
+        width: 18px !important;
+      }
+    }
+
+    span [role='menuitem'] {
+      background: none !important;
+    }
+
+    a {
+      color: #d9e3e9;
+      font-size: 14px;
+      margin-left: -5px;
+    }
+
+    hr {
+      background-color: $grey-dark;
+      border: 0;
+      height: 1px;
+      margin: 10px 0 10px 5px;
+      text-align: left;
+      width: 80%;
+
+      @include breakpoint(xs) {
+        width: 85%;
+      }
+    }
+  }
+}

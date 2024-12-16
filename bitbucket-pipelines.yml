@@ -1,0 +1,25 @@
+image: node:10.15.0
+pipelines:
+  branches:
+    stage:
+      - step:
+          caches:
+            - composer
+          name: Deploy to stage
+          script:
+            - pipe: atlassian/ssh-run:0.2.3
+              variables:
+                SSH_USER: "ubuntu"
+                SERVER: "alpha.grantconnect.ca"
+                COMMAND: "cd /var/icgc/stage/react && git pull"
+    master:
+      - step:
+          caches:
+            - composer
+          name: Deploy to Prod
+          script:
+            - pipe: atlassian/ssh-run:0.2.3
+              variables:
+                SSH_USER: "ubuntu"
+                SERVER: "beta.grantconnect.ca"
+                COMMAND: "cd /var/icgc/prod/react && git pull"

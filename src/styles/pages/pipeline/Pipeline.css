@@ -1,0 +1,274 @@
+.Pipeline {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.Pipeline::-webkit-scrollbar {
+  display: none;
+}
+
+.Pipeline_container {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .Pipeline_container {
+    margin-top: -15px;
+  }
+}
+.Pipeline_container h3 {
+  font-weight: 600;
+  display: inline-block;
+  padding-right: 45px;
+}
+.Pipeline_container p {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #7c878e;
+}
+.Pipeline_container.expanded .Search-page__view {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.Pipeline_container.collapsed .Search-page__view {
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+@media (max-width: 767px) {
+  .Pipeline_container.collapsed .Search-page__view {
+    top: 6px;
+    margin-right: -5px !important;
+  }
+}
+@media (min-width: 768px) {
+  .Pipeline_container.collapsed .Search-page__view {
+    top: 10px;
+    right: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .Pipeline_container.collapsed p {
+    margin-top: 15px;
+  }
+}
+.Pipeline_container.collapsed p small {
+  font-size: 14px !important;
+  color: #404040;
+}
+.Pipeline_container.collapsed .col-md-9 .row {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .Pipeline_container.collapsed .col-md-9 .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.Pipeline_container .Search-page__view > a {
+  display: inline-block;
+  padding: 12px;
+  position: relative;
+  top: 10px;
+  width: 48px;
+  height: 48px;
+  border: 10px;
+  box-sizing: border-box;
+  left: 10px;
+}
+.Pipeline_container .Search-page__view > a svg {
+  color: #7c878e !important;
+}
+
+.Pipeline__container {
+  position: relative;
+  padding-top: 40px;
+}
+@media (max-width: 767px) {
+  .Pipeline__container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.Pipeline__wrapper {
+  flex: 1;
+  margin-right: 15px;
+}
+.Pipeline__wrapper:last-child {
+  margin-right: 0;
+}
+.Pipeline__wrapper h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.Pipeline__wrapper small {
+  color: #7c878e;
+}
+
+.Pipeline__column {
+  min-width: 224px;
+  min-height: 800px;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  margin-top: 15px;
+}
+
+.Pipeline__card {
+  padding: 10px 25px 20px 15px;
+  margin: 5px 0;
+  min-width: 175px;
+  height: 80px;
+  background-color: white;
+  font-weight: 600;
+  position: relative !important;
+}
+.Pipeline__card .overlay-noClick {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.Pipeline__card div {
+  font-size: 14px;
+}
+.Pipeline__card a {
+  color: #404040;
+}
+.Pipeline__card.red {
+  border-left: solid 5px #d0021b;
+}
+.Pipeline__card.red .Pipeline__card-deadline {
+  color: #d0021b !important;
+}
+.Pipeline__card.red .Pipeline__card-deadline svg {
+  color: #d0021b !important;
+}
+.Pipeline__card.yellow {
+  border-left: solid 5px #ffc72c;
+}
+.Pipeline__card.yellow .Pipeline__card-deadline {
+  color: #ffc72c !important;
+}
+.Pipeline__card.yellow .Pipeline__card-deadline svg {
+  color: #ffc72c !important;
+}
+.Pipeline__card.green {
+  border-left: solid 5px #417505;
+}
+.Pipeline__card.green .Pipeline__card-deadline {
+  color: #417505 !important;
+}
+.Pipeline__card.green .Pipeline__card-deadline svg {
+  color: #417505 !important;
+}
+.Pipeline__card.gray {
+  border-left: solid 5px #bfd0da;
+}
+.Pipeline__card.gray .Pipeline__card-deadline {
+  color: #7c878e !important;
+}
+.Pipeline__card.gray .Pipeline__card-deadline svg {
+  color: #7c878e !important;
+}
+.Pipeline__card .Full-card__request-size {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  font-weight: 400;
+}
+.Pipeline__card .Full-card__request-size .Full-card__request-size-edit {
+  margin: 0 !important;
+}
+.Pipeline__card .Material-cards-actions-wrapper {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+.Pipeline__card .Material-cards-actions-wrapper svg {
+  color: #7c878e !important;
+}
+
+.Pipeline__card-deadline {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px !important;
+}
+.Pipeline__card-deadline svg {
+  width: 20px !important;
+  height: 20px !important;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .Pipeline-cards__collapsed tbody td:first-child,
+.Pipeline-cards__collapsed thead th:first-child {
+    width: 75%;
+  }
+  .Pipeline-cards__collapsed tbody tr {
+    position: relative;
+  }
+  .Pipeline-cards__collapsed tbody tr .Full-card__request-size.open-true {
+    position: absolute;
+    margin-top: -15px;
+    padding: 0 10px;
+    background: white;
+    margin-left: -175px;
+    z-index: 1;
+  }
+  .Pipeline-cards__collapsed tbody tr .Full-card__request-size.open-true .Full-card__status {
+    padding-right: 10px !important;
+  }
+  .Pipeline-cards__collapsed tbody td:nth-child(4) {
+    overflow: visible !important;
+  }
+  .Pipeline-cards__collapsed tbody td:nth-child(4) svg {
+    margin-right: 0 !important;
+  }
+  .Pipeline-cards__collapsed tbody td:nth-child(4),
+.Pipeline-cards__collapsed thead th:nth-child(4) {
+    width: 22%;
+  }
+  .Pipeline-cards__collapsed tbody td:nth-child(4) .Material-cards-stages-wrapper,
+.Pipeline-cards__collapsed thead th:nth-child(4) .Material-cards-stages-wrapper {
+    float: right;
+  }
+  .Pipeline-cards__collapsed tbody td:nth-child(2),
+.Pipeline-cards__collapsed thead th:nth-child(2) {
+    width: 16%;
+  }
+  .Pipeline-cards__collapsed tbody td:nth-child(2) .Full-card__request-size-edit,
+.Pipeline-cards__collapsed thead th:nth-child(2) .Full-card__request-size-edit {
+    margin: 0 !important;
+  }
+  .Pipeline-cards__collapsed tbody td:nth-child(2) .Full-card__status,
+.Pipeline-cards__collapsed thead th:nth-child(2) .Full-card__status {
+    margin-right: 5px !important;
+  }
+}
+.Pipeline-cards__collapsed .Full-card__status {
+  border: 0 !important;
+  padding-left: 10px !important;
+}
+.Pipeline-cards__collapsed .Full-card__status span {
+  padding: 0 !important;
+}
+.Pipeline-cards__collapsed .Material-cards-actions-wrapper {
+  float: right;
+}
+@media (max-width: 767px) {
+  .Pipeline-cards__collapsed .Material-cards__expanded-actions {
+    position: relative !important;
+    top: initial;
+  }
+}

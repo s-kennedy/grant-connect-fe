@@ -1,0 +1,75 @@
+@import '../../base.scss';
+
+/* Explorer Page */
+$page-height: calc(93.575vh - 20px);
+$frame-height: calc(93.25vh - 20px);
+$general-width: 100%;
+
+
+.Explorer {
+    position: relative;
+    padding: 0;
+    // height: $page-height;
+    overflow: hidden;
+
+    .frame {
+        padding: 0;
+        width: $general-width;
+        height: $frame-height;
+        border: 0;
+    }
+    .footer {
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: $general-width;
+      height: 40px;
+      bottom: 0;
+      left: 0;
+      background-color: $grey-lighter;
+    }
+
+    h1 {
+        font-weight: 600;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .ge-search-field {
+        background: white;
+        border: 1px solid #bfd0da!important;
+        border-radius: 3px;
+        height: 32px !important;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+}
+
+.button {
+    &-primary {
+        background-color: $yellow !important;
+    }
+    &-link {
+        color: $grey-dark !important;
+        span {
+            font-weight: 400 !important;
+        }
+        svg {
+            height: 18px !important;
+            width: 18px !important;
+        }
+    }
+}
+
+.full-text-modal {
+    display: inline-block;
+    .show-modal-button {
+        background-color: $grey-light !important;
+    }
+}
+
+

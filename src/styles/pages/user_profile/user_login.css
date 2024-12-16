@@ -1,0 +1,34 @@
+.user-edit form {
+  margin-bottom: 30px !important;
+}
+.user-edit form > div {
+  display: block !important;
+  width: 50% !important;
+  height: 58px !important;
+}
+.user-edit form label {
+  font-size: 12px !important;
+  color: #7c878e !important;
+  top: 15px !important;
+}
+.user-edit form input {
+  border-radius: 3px;
+  width: 100% !important;
+  height: 47px !important;
+  margin-top: 0 !important;
+}
+.user-edit form button {
+  background-color: #ffc72c !important;
+  display: block !important;
+  height: 48px !important;
+  margin-top: 15px !important;
+  border: none !important;
+}
+.user-edit form button:hover, .user-edit form button:focus {
+  background-color: #ffd86c !important;
+}
+@media (max-width: 767px) {
+  .user-edit form > div {
+    width: 100% !important;
+  }
+}

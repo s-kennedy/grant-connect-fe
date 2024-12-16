@@ -1,0 +1,41 @@
+@import '../../base.scss';
+
+.user-edit {
+  form {
+    margin-bottom: 30px !important;
+    > div {
+      display: block !important;
+      width: 50% !important;
+      height: 58px !important;
+    }
+
+    label {
+      font-size: 12px !important;
+      color: $grey-dark !important;
+      top: 15px !important;
+    }
+
+    input {
+      border-radius: 3px;
+      width: 100% !important;
+      height: 47px !important;
+      margin-top: 0 !important;
+    }
+
+    button {
+      background-color: $yellow !important;
+      display: block !important;
+      height: 48px !important;
+      margin-top: 15px !important;
+      border: none !important;
+      &:hover, &:focus {
+        background-color: $yellow-light !important;
+      }
+    }
+    @include breakpoint(xs) {
+      > div {
+        width: 100% !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.Header-search__select {
+  background-color: #ffd86c !important;
+  padding: 0 !important;
+}
+@media (min-width: 1400px) {
+  .Header-search__select-item {
+    line-height: 8px !important;
+  }
+}
+.Header-search__select-item button {
+  height: 40px !important;
+  padding: 8px !important;
+  width: 38px !important;
+}
+@media (max-width: 1399px) {
+  .Header-search__select-item div div {
+    padding-bottom: 12px !important;
+    padding-top: 12px !important;
+  }
+  .Header-search__select-item div div div {
+    padding: 0 !important;
+    word-wrap: break-word;
+  }
+}
+.Header-search .Header-search__select-item ~ div .Header-search__select-item div div button {
+  padding: 12px 8px !important;
+}
+.Header-search__autocomplete, .Header-search__select {
+  font-size: 12px !important;
+  transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1) 0ms !important;
+}
+@media (min-width: 768px) {
+  .Header-search__autocomplete, .Header-search__select {
+    background-color: #ffd86c !important;
+  }
+}
+.Header-search__autocomplete.highlight, .Header-search__select.highlight {
+  background-color: #fff !important;
+  padding: 0 !important;
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"], .Header-search__select.highlight div [style="padding: 0px;"] {
+  border-top: solid 1px #bfd0da !important;
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"] .Header-search__select-item, .Header-search__select.highlight div [style="padding: 0px;"] .Header-search__select-item {
+  border: solid 1px #bfd0da !important;
+  border-top: 0 !important;
+  line-height: 14px !important;
+  float: left;
+  width: 100%;
+  background-color: #fff !important;
+}
+@media (max-width: 1399px) {
+  .Header-search__autocomplete.highlight div [style="padding: 0px;"] .Header-search__select-item, .Header-search__select.highlight div [style="padding: 0px;"] .Header-search__select-item {
+    float: right;
+    width: 230px;
+  }
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"] .Header-search__select-item:hover, .Header-search__select.highlight div [style="padding: 0px;"] .Header-search__select-item:hover {
+  background-color: #f5f8f9 !important;
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"] .Header-search__select-item div div, .Header-search__select.highlight div [style="padding: 0px;"] .Header-search__select-item div div {
+  padding-left: 0 !important;
+  padding-right: 25px !important;
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"] .Header-search__select-item div div svg, .Header-search__select.highlight div [style="padding: 0px;"] .Header-search__select-item div div svg {
+  margin-right: 6px !important;
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"] div [style="padding: 0px;"], .Header-search__select.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] {
+  background-color: #f5f8f9;
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item, .Header-search__select.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item {
+  background-color: #f5f8f9 !important;
+  border-top: 0 !important;
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item:hover, .Header-search__select.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item:hover {
+  background-color: #d9e3e9 !important;
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item div div, .Header-search__select.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item div div {
+  padding-left: 0px !important;
+}
+@media (min-width: 1400px) {
+  .Header-search__autocomplete.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item button, .Header-search__select.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item button {
+    top: 5px !important;
+  }
+}
+.Header-search__autocomplete.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item button svg, .Header-search__select.highlight div [style="padding: 0px;"] div [style="padding: 0px;"] .Header-search__select-item button svg {
+  color: #7c878e !important;
+  height: 18px !important;
+  width: 18px !important;
+}
+.Header-search__autocomplete input, .Header-search__select input {
+  text-transform: none;
+}
+
+.Header-search__select-item .Header-search__select-item-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.Header-search__select-item .Header-search__select-item-flex svg {
+  height: 16px !important;
+  fill: #7c878e !important;
+}

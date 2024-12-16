@@ -1,0 +1,165 @@
+.Header-search {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  z-index: 1200;
+}
+@media screen and (max-width: 767px) {
+  .Header-search {
+    justify-content: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Header-search {
+    justify-content: center;
+  }
+}
+@media (max-width: 1399px) {
+  .Header-search {
+    left: 57.5%;
+  }
+}
+.Header-search .Header-search-field-container {
+  height: 40px;
+  margin: 0 2px;
+  position: relative;
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+}
+.Header-search__autocomplete {
+  height: 40px !important;
+  line-height: 18px !important;
+}
+.Header-search__autocomplete-menu-list {
+  padding-bottom: 0 !important;
+}
+.Header-search__autocomplete-menu-list > div > span > div > span {
+  top: -10px !important;
+}
+.Header-search__autocomplete-menu-list div {
+  position: relative !important;
+}
+.Header-search__autocomplete-menu-list div span {
+  white-space: normal !important;
+  line-height: 1.6 !important;
+  min-height: auto !important;
+  padding: 10px 0 !important;
+}
+.Header-search__autocomplete-menu-list div span i {
+  margin-left: 5px;
+}
+.Header-search__autocomplete-menu-list div span.last-taxonomy-in-list {
+  margin-bottom: 40px !important;
+}
+.Header-search__autocomplete-menu-list div span.last-taxonomy-in-list::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  height: 2px;
+  background: #7c878e;
+  width: calc(100% - 40px);
+  left: 20px;
+}
+.Header-search__autocomplete-menu-list div span.last-taxonomy-in-list::after {
+  content: "Profiles";
+  position: absolute;
+  bottom: -40px;
+  width: auto;
+  left: 15px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #7c878e;
+}
+.fr .Header-search__autocomplete-menu-list div span.last-taxonomy-in-list::after {
+  content: "Profils";
+}
+.Header-search__autocomplete-menu-list div span.last-taxonomy-in-list > div > div span {
+  display: inline-block;
+  padding: 0 !important;
+  min-width: 100%;
+}
+.Header-search__autocomplete-menu-list div span.extra {
+  display: inline-block !important;
+  width: 100%;
+  background: #b1c5d4 !important;
+  border: 1px solid #99abb9 !important;
+}
+.Header-search__autocomplete-menu-list div span.extra:hover {
+  background: #99abb9 !important;
+}
+.Header-search__autocomplete-menu-list div span.extra > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.Header-search__autocomplete-menu-list div span.extra .extra--text {
+  font-size: 10px !important;
+  order: 1;
+}
+.Header-search__autocomplete-menu-list div span.extra .extra--text div {
+  font-size: 10px !important;
+}
+.Header-search__autocomplete-menu-list div span.extra .extra--item {
+  order: 2;
+  background: #7c878e;
+  color: white;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  padding: 5px;
+}
+.Header-search__autocomplete div {
+  color: #33383b !important;
+  padding-left: 15px;
+}
+.Header-search__autocomplete input {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .Header-search__autocomplete input {
+    text-indent: 15px;
+  }
+}
+.Header-search__autocomplete input::ms-clear {
+  display: none;
+}
+.Header-search__submit {
+  background-color: #806416 !important;
+  border-radius: 0 !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  margin-left: 2px !important;
+  min-width: 40px !important;
+}
+.Header-search__submit-icon {
+  fill: #ffe9ac !important;
+}
+.Header-search__submit:hover {
+  background-color: #402701 !important;
+}
+@media (min-width: 768px) {
+  .Header-search__submit svg {
+    height: 21px !important;
+    width: 21px !important;
+  }
+}
+
+.__react_component_tooltip.show {
+  border-radius: 0 !important;
+  font-size: 12px !important;
+  min-width: 65px;
+  position: absolute !important;
+  margin-top: 0 !important;
+}
