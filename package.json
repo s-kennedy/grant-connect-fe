@@ -2,6 +2,9 @@
   "name": "gc",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.20.2"
+  },
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "@craco/craco": "^6.1.0",
