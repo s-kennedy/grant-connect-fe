@@ -7,7 +7,11 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'spin-reverse': 'spin 2s linear infinite',
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',

@@ -47,6 +47,10 @@ $general-width: 100%;
         padding-right: 0.5rem;
     }
 
+    .Material-cards svg {
+        top: 0 !important;
+    }
+
 }
 
 .button {
@@ -72,4 +76,15 @@ $general-width: 100%;
     }
 }
 
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 
+.spin-reverse {
+    animation: spin-reverse 1.5s linear infinite;
+}

@@ -35,6 +35,9 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.Explorer .Material-cards svg {
+  top: 0 !important;
+}
 
 .button-primary {
   background-color: #ffc72c !important;
@@ -55,4 +58,16 @@
 }
 .full-text-modal .show-modal-button {
   background-color: #bfd0da !important;
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.spin-reverse {
+  animation: spin-reverse 1.5s linear infinite;
 }
