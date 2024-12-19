@@ -56,15 +56,21 @@ $general-width: 100%;
         border: 1px solid #bfd0da!important;
         border-radius: 3px;
     }
+
+    .MuiTableCell-root {
+        font-family: 'Open Sans' !important;
+    }
 }
 
 .button {
     &-primary {
         background-color: $yellow !important;
         height: unset !important;
+        line-height: unset !important;
     }
     &-link {
         color: $grey-dark !important;
+        height: unset !important;
         span {
             font-weight: 400 !important;
         }
