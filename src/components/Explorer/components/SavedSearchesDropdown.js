@@ -14,7 +14,7 @@ function SavedSearchesDropdown({ classes, label, placeholderText, onChange }) {
   return (
     <div className={`ge-search-field-wrapper tw-flex tw-gap-2`}>
       <FlatButton color="primary" className={`button-link`}>
-        <div className="tw-inline-flex tw-p-1">
+        <div className="tw-inline-flex tw-p-1 tw-items-center">
           <Star />
           <span className="tw-underline tw-ml-1">Your Saved Searches</span>
         </div>

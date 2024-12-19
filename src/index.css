@@ -3965,9 +3965,15 @@ table tr th, table tr td {
 .Explorer .Material-cards svg {
   top: 0 !important;
 }
+.Explorer .ge-autocomplete-results {
+  background: white;
+  border: 1px solid #bfd0da !important;
+  border-radius: 3px;
+}
 
 .button-primary {
   background-color: #ffc72c !important;
+  height: unset !important;
 }
 .button-link {
   color: #7c878e !important;

@@ -25,6 +25,11 @@ module.exports = {
       md: '14px',
       lg: '18px',
       xl: '24px'
+    },
+    colors: {
+      darkGrey: '#7c878e',
+      lighterGrey: '#f5f8f9',
+      white: '#ffffff',
     }
   },
   variants: {
