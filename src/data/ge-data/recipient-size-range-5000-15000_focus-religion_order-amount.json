@@ -1,0 +1,2077 @@
+{
+  "count": 100,
+  "next": "",
+  "previous": "",
+  "results": [
+    {
+      "id": 2655328,
+      "funder": {
+        "id": 8820,
+        "name": "Culleen and Donald Kurt Foundation"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 400000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2109901,
+      "funder": {
+        "id": 8820,
+        "name": "Culleen and Donald Kurt Foundation"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 400000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 2482415,
+      "funder": {
+        "id": 8820,
+        "name": "Culleen and Donald Kurt Foundation"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 400000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 2662960,
+      "funder": {
+        "id": 2334,
+        "name": "Sasamat Foundation"
+      },
+      "charity": {
+        "id": 4205,
+        "name": "Regent College Foundation of Canada",
+        "recipient_size": 6581
+      },
+      "gift_amount": 250000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 31258,
+      "funder": {
+        "id": 8,
+        "name": "Matan B'sayser Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 226423.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 1289586,
+      "funder": {
+        "id": 2033,
+        "name": "Heitner Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 221000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 1821792,
+      "funder": {
+        "id": 8820,
+        "name": "Culleen and Donald Kurt Foundation"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 200000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 1713201,
+      "funder": {
+        "id": 2033,
+        "name": "Heitner Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 186400.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 234006,
+      "funder": {
+        "id": 8,
+        "name": "Matan B'sayser Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 167995.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 2348952,
+      "funder": {
+        "id": 2033,
+        "name": "Heitner Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 167000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 769414,
+      "funder": {
+        "id": 2036,
+        "name": "J. & H. Feldman Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 164840.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 2040934,
+      "funder": {
+        "id": 8188,
+        "name": "The Christian Science Trust In Canada"
+      },
+      "charity": {
+        "id": 63891,
+        "name": "First Church Of Christ, Scientist",
+        "recipient_size": 10722
+      },
+      "gift_amount": 159512.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "NS",
+        "city": "Halifax"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 2597010,
+      "funder": {
+        "id": 12959,
+        "name": "Toronto Foundation"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 145350.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 515478,
+      "funder": {
+        "id": 2599,
+        "name": "Eagles' Wings Charitable Trust"
+      },
+      "charity": {
+        "id": 4205,
+        "name": "Regent College Foundation of Canada",
+        "recipient_size": 6581
+      },
+      "gift_amount": 145250.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2008,
+      "details": null
+    },
+    {
+      "id": 171313,
+      "funder": {
+        "id": 2033,
+        "name": "Heitner Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 117000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 427805,
+      "funder": {
+        "id": 603,
+        "name": "The Lincolnshire Foundation"
+      },
+      "charity": {
+        "id": 3646,
+        "name": "Massawippi Union Church Trustees Endowment Fund",
+        "recipient_size": 5871
+      },
+      "gift_amount": 115000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": null,
+      "year": 2011,
+      "details": null
+    },
+    {
+      "id": 2082771,
+      "funder": {
+        "id": 3704,
+        "name": "CanadaHelps"
+      },
+      "charity": {
+        "id": 51558,
+        "name": "24-7 Prayer Canada Incorporated",
+        "recipient_size": 6779
+      },
+      "gift_amount": 101381.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "Welland"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 1386852,
+      "funder": {
+        "id": 10093,
+        "name": "Stronger Philanthropy"
+      },
+      "charity": {
+        "id": 15248,
+        "name": "Christian Business Ministries Canada",
+        "recipient_size": 14958
+      },
+      "gift_amount": 100000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "ON",
+        "city": "Whitby"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 382958,
+      "funder": {
+        "id": 855,
+        "name": "Van Norman Charitable Foundation Inc."
+      },
+      "charity": {
+        "id": 1519,
+        "name": "Barry Moore Ministries Inc.",
+        "recipient_size": 12276
+      },
+      "gift_amount": 100000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 2480789,
+      "funder": {
+        "id": 3762,
+        "name": "Benefaction Foundation"
+      },
+      "charity": {
+        "id": 17802,
+        "name": "Heritage Christian Ministries",
+        "recipient_size": 9529
+      },
+      "gift_amount": 100000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "AB",
+        "city": "Edmonton"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 1147415,
+      "funder": {
+        "id": 3704,
+        "name": "CanadaHelps"
+      },
+      "charity": {
+        "id": 41076,
+        "name": "Four Rivers Presbytery",
+        "recipient_size": 11010
+      },
+      "gift_amount": 94161.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "NB",
+        "city": "Perth"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 2040909,
+      "funder": {
+        "id": 8188,
+        "name": "The Christian Science Trust In Canada"
+      },
+      "charity": {
+        "id": 37464,
+        "name": "Christian Science Society Kelowna B.C.",
+        "recipient_size": 13127
+      },
+      "gift_amount": 92120.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "BC",
+        "city": "Kelowna"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 1699767,
+      "funder": {
+        "id": 12626,
+        "name": "Green Municipal Fund"
+      },
+      "charity": {
+        "id": 47876,
+        "name": "La Fabrique De La Paroisse De Sainte-Val\u00e9rie",
+        "recipient_size": 7149
+      },
+      "gift_amount": 89571.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": null,
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 1051886,
+      "funder": {
+        "id": 2033,
+        "name": "Heitner Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 86000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1051889,
+      "funder": {
+        "id": 2033,
+        "name": "Heitner Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 85602.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 2407654,
+      "funder": {
+        "id": 5258,
+        "name": "Jewish Heritage Foundation of Canada"
+      },
+      "charity": {
+        "id": 7649,
+        "name": "N'Siv Hachesed",
+        "recipient_size": 14202
+      },
+      "gift_amount": 85000.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 588713,
+      "funder": {
+        "id": 718,
+        "name": "The Hershel and Yitta Rubenstein Foundation"
+      },
+      "charity": {
+        "id": 2095,
+        "name": "E.D. Fund",
+        "recipient_size": 10431
+      },
+      "gift_amount": 80400.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "ON",
+        "city": "Vaughan"
+      },
+      "year": 2003,
+      "details": null
+    },
+    {
+      "id": 389896,
+      "funder": {
+        "id": 2033,
+        "name": "Heitner Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 78692.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 677852,
+      "funder": {
+        "id": 14,
+        "name": "D'Ancona Charitable Trust"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 78392.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 1998,
+      "details": null
+    },
+    {
+      "id": 1656135,
+      "funder": {
+        "id": 14558,
+        "name": "The Presbyterian Church In Canada"
+      },
+      "charity": {
+        "id": 44088,
+        "name": "Presbytery Of Paris",
+        "recipient_size": 12719
+      },
+      "gift_amount": 77604.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "Norfolk County"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 2434029,
+      "funder": {
+        "id": 3704,
+        "name": "CanadaHelps"
+      },
+      "charity": {
+        "id": 51558,
+        "name": "24-7 Prayer Canada Incorporated",
+        "recipient_size": 6779
+      },
+      "gift_amount": 76361.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "Welland"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 575402,
+      "funder": {
+        "id": 12962,
+        "name": "The Ontario Trillium Foundation"
+      },
+      "charity": {
+        "id": 11330,
+        "name": "Friends of St. Andrew's Stone Church",
+        "recipient_size": 9933
+      },
+      "gift_amount": 75000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": null,
+      "year": 2003,
+      "details": "Toward the restoration of the St. Andrew's historic stone church. (Community Program - Halton-Peel)."
+    },
+    {
+      "id": 676307,
+      "funder": {
+        "id": 185,
+        "name": "Maranatha Foundation"
+      },
+      "charity": {
+        "id": 5656,
+        "name": "Pinzgau Christian Mission Canada",
+        "recipient_size": 7000
+      },
+      "gift_amount": 75000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "BC",
+        "city": "Burnaby"
+      },
+      "year": 1998,
+      "details": null
+    },
+    {
+      "id": 126329,
+      "funder": {
+        "id": 2467,
+        "name": "The Call of the Poor"
+      },
+      "charity": {
+        "id": 1134,
+        "name": "Filles de la Charit\u00e9 du Sacr\u00e9 Coeur de J\u00e9sus",
+        "recipient_size": 5673
+      },
+      "gift_amount": 72500.0,
+      "focus": "Religion",
+      "focus_display": "Roman Catholicism",
+      "location": {
+        "province": "QC",
+        "city": "Sherbrooke"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 923181,
+      "funder": {
+        "id": 2118,
+        "name": "Richard & Barry Sacks Families Foundation"
+      },
+      "charity": {
+        "id": 7195,
+        "name": "Canadian Jewish Educational Fund",
+        "recipient_size": 5002
+      },
+      "gift_amount": 65644.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 685901,
+      "funder": {
+        "id": 718,
+        "name": "The Hershel and Yitta Rubenstein Foundation"
+      },
+      "charity": {
+        "id": 2095,
+        "name": "E.D. Fund",
+        "recipient_size": 10431
+      },
+      "gift_amount": 60662.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "ON",
+        "city": "Vaughan"
+      },
+      "year": 1997,
+      "details": null
+    },
+    {
+      "id": 1052077,
+      "funder": {
+        "id": 2589,
+        "name": "Cambridge Mercantile Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 58000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 309096,
+      "funder": {
+        "id": 3600,
+        "name": "Canadian National Christian Foundation"
+      },
+      "charity": {
+        "id": 37437,
+        "name": "Christian Perspective Ministries",
+        "recipient_size": 13331
+      },
+      "gift_amount": 57000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "Rideau Lakes"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 249621,
+      "funder": {
+        "id": 288,
+        "name": "The Reimer Express Foundation Inc."
+      },
+      "charity": {
+        "id": 19862,
+        "name": "Light to the Nations Christian Ministries",
+        "recipient_size": 10791
+      },
+      "gift_amount": 55000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "BC",
+        "city": "Abbotsford"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 124331,
+      "funder": {
+        "id": 288,
+        "name": "The Reimer Express Foundation Inc."
+      },
+      "charity": {
+        "id": 19862,
+        "name": "Light to the Nations Christian Ministries",
+        "recipient_size": 10791
+      },
+      "gift_amount": 55000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "BC",
+        "city": "Abbotsford"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 376887,
+      "funder": {
+        "id": 288,
+        "name": "The Reimer Express Foundation Inc."
+      },
+      "charity": {
+        "id": 19862,
+        "name": "Light to the Nations Christian Ministries",
+        "recipient_size": 10791
+      },
+      "gift_amount": 55000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "BC",
+        "city": "Abbotsford"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 2467701,
+      "funder": {
+        "id": 311,
+        "name": "Abundance Canada"
+      },
+      "charity": {
+        "id": 51558,
+        "name": "24-7 Prayer Canada Incorporated",
+        "recipient_size": 6779
+      },
+      "gift_amount": 52000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "Welland"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 454417,
+      "funder": {
+        "id": 853,
+        "name": "Stephen S. Steeves Foundation"
+      },
+      "charity": {
+        "id": 1519,
+        "name": "Barry Moore Ministries Inc.",
+        "recipient_size": 12276
+      },
+      "gift_amount": 50000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 2010,
+      "details": null
+    },
+    {
+      "id": 375803,
+      "funder": {
+        "id": 5821,
+        "name": "Keren HaTorah Charity Fund"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 50000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 297121,
+      "funder": {
+        "id": 3762,
+        "name": "Benefaction Foundation"
+      },
+      "charity": {
+        "id": 36981,
+        "name": "St John'S Anglican Church",
+        "recipient_size": 11241
+      },
+      "gift_amount": 50000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": null,
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 2341501,
+      "funder": {
+        "id": 12959,
+        "name": "Toronto Foundation"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 50000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 2586279,
+      "funder": {
+        "id": 3643,
+        "name": "Charitable Gift Funds Canada Foundation"
+      },
+      "charity": {
+        "id": 201787,
+        "name": "Gregoriana Inc.",
+        "recipient_size": 7772
+      },
+      "gift_amount": 50000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 688435,
+      "funder": {
+        "id": 286,
+        "name": "David and Dorothy Lam Foundation"
+      },
+      "charity": {
+        "id": 4205,
+        "name": "Regent College Foundation of Canada",
+        "recipient_size": 6581
+      },
+      "gift_amount": 50000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 1996,
+      "details": null
+    },
+    {
+      "id": 2396138,
+      "funder": {
+        "id": 803,
+        "name": "Graham Munro Charitable Foundation"
+      },
+      "charity": {
+        "id": 47159,
+        "name": "Burns Memorial Presbyterian Church",
+        "recipient_size": 9135
+      },
+      "gift_amount": 50000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": null,
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 1416472,
+      "funder": {
+        "id": 603,
+        "name": "The Lincolnshire Foundation"
+      },
+      "charity": {
+        "id": 3646,
+        "name": "Massawippi Union Church Trustees Endowment Fund",
+        "recipient_size": 5871
+      },
+      "gift_amount": 50000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": null,
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 386701,
+      "funder": {
+        "id": 12953,
+        "name": "The Windsor Foundation"
+      },
+      "charity": {
+        "id": 33327,
+        "name": "Boars Head Cultural Foundation",
+        "recipient_size": 8536
+      },
+      "gift_amount": 49271.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "NS",
+        "city": "Digby"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 2421005,
+      "funder": {
+        "id": 15091,
+        "name": "Peter and Taina Youngren Gospel Legacy Foundation"
+      },
+      "charity": {
+        "id": 56139,
+        "name": "Grace Life Community Church",
+        "recipient_size": 13696
+      },
+      "gift_amount": 49000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 513527,
+      "funder": {
+        "id": 1255,
+        "name": "The Paul and Lea Reichmann Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 47500.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2008,
+      "details": null
+    },
+    {
+      "id": 1289656,
+      "funder": {
+        "id": 2589,
+        "name": "Cambridge Mercantile Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 47000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 490573,
+      "funder": {
+        "id": 2467,
+        "name": "The Call of the Poor"
+      },
+      "charity": {
+        "id": 1134,
+        "name": "Filles de la Charit\u00e9 du Sacr\u00e9 Coeur de J\u00e9sus",
+        "recipient_size": 5673
+      },
+      "gift_amount": 45900.0,
+      "focus": "Religion",
+      "focus_display": "Roman Catholicism",
+      "location": {
+        "province": "QC",
+        "city": "Sherbrooke"
+      },
+      "year": 2009,
+      "details": null
+    },
+    {
+      "id": 513528,
+      "funder": {
+        "id": 1255,
+        "name": "The Paul and Lea Reichmann Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 42500.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2008,
+      "details": null
+    },
+    {
+      "id": 378211,
+      "funder": {
+        "id": 2467,
+        "name": "The Call of the Poor"
+      },
+      "charity": {
+        "id": 1134,
+        "name": "Filles de la Charit\u00e9 du Sacr\u00e9 Coeur de J\u00e9sus",
+        "recipient_size": 5673
+      },
+      "gift_amount": 42000.0,
+      "focus": "Religion",
+      "focus_display": "Roman Catholicism",
+      "location": {
+        "province": "QC",
+        "city": "Sherbrooke"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 458326,
+      "funder": {
+        "id": 2467,
+        "name": "The Call of the Poor"
+      },
+      "charity": {
+        "id": 1134,
+        "name": "Filles de la Charit\u00e9 du Sacr\u00e9 Coeur de J\u00e9sus",
+        "recipient_size": 5673
+      },
+      "gift_amount": 42000.0,
+      "focus": "Religion",
+      "focus_display": "Roman Catholicism",
+      "location": {
+        "province": "QC",
+        "city": "Sherbrooke"
+      },
+      "year": 2010,
+      "details": null
+    },
+    {
+      "id": 2039530,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 41914.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 2591651,
+      "funder": {
+        "id": 5821,
+        "name": "Keren HaTorah Charity Fund"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 40613.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 2312266,
+      "funder": {
+        "id": 10632,
+        "name": "Canada Summer Jobs"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 40580.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 648906,
+      "funder": {
+        "id": 14,
+        "name": "D'Ancona Charitable Trust"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 40100.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2000,
+      "details": null
+    },
+    {
+      "id": 2540084,
+      "funder": {
+        "id": 2033,
+        "name": "Heitner Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 40000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 1685119,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 35368.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 243574,
+      "funder": {
+        "id": 10093,
+        "name": "Stronger Philanthropy"
+      },
+      "charity": {
+        "id": 15248,
+        "name": "Christian Business Ministries Canada",
+        "recipient_size": 14958
+      },
+      "gift_amount": 35000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "ON",
+        "city": "Whitby"
+      },
+      "year": 2013,
+      "details": "Gifts in Kind Online Order System Project"
+    },
+    {
+      "id": 572094,
+      "funder": {
+        "id": 756,
+        "name": "Lassonde Family Foundation"
+      },
+      "charity": {
+        "id": 1147,
+        "name": "Holy Rosary Parish",
+        "recipient_size": 5798
+      },
+      "gift_amount": 33988.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": null,
+      "year": 2004,
+      "details": null
+    },
+    {
+      "id": 664767,
+      "funder": {
+        "id": 718,
+        "name": "The Hershel and Yitta Rubenstein Foundation"
+      },
+      "charity": {
+        "id": 2095,
+        "name": "E.D. Fund",
+        "recipient_size": 10431
+      },
+      "gift_amount": 33571.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "ON",
+        "city": "Vaughan"
+      },
+      "year": 1999,
+      "details": null
+    },
+    {
+      "id": 132590,
+      "funder": {
+        "id": 2589,
+        "name": "Cambridge Mercantile Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 33000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 559866,
+      "funder": {
+        "id": 814,
+        "name": "The Buller Foundation Inc."
+      },
+      "charity": {
+        "id": 1519,
+        "name": "Barry Moore Ministries Inc.",
+        "recipient_size": 12276
+      },
+      "gift_amount": 33000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 2005,
+      "details": null
+    },
+    {
+      "id": 1755143,
+      "funder": {
+        "id": 3704,
+        "name": "CanadaHelps"
+      },
+      "charity": {
+        "id": 51558,
+        "name": "24-7 Prayer Canada Incorporated",
+        "recipient_size": 6779
+      },
+      "gift_amount": 32724.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "Welland"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 1560029,
+      "funder": {
+        "id": 5848,
+        "name": "Conam Charitable Foundation"
+      },
+      "charity": {
+        "id": 1147,
+        "name": "Holy Rosary Parish",
+        "recipient_size": 5798
+      },
+      "gift_amount": 32002.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": null,
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 839146,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 31622.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 1598368,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 31301.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 2690493,
+      "funder": {
+        "id": 3704,
+        "name": "CanadaHelps"
+      },
+      "charity": {
+        "id": 51558,
+        "name": "24-7 Prayer Canada Incorporated",
+        "recipient_size": 6779
+      },
+      "gift_amount": 30033.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "Welland"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2631260,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 30008.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2611898,
+      "funder": {
+        "id": 6703,
+        "name": "Fondation \u00ab \u00c0 Dieu Va \u00bb / \u00ab to God Go \u00bb Foundation"
+      },
+      "charity": {
+        "id": 18686,
+        "name": "Centre De Pastorale \"Sel Et Lumiere\"",
+        "recipient_size": 12911
+      },
+      "gift_amount": 30000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Qu\u00e9bec"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 473150,
+      "funder": {
+        "id": 1533,
+        "name": "Universal Outreach Foundation"
+      },
+      "charity": {
+        "id": 11802,
+        "name": "3CM (Cross Cultural Christian Missions Society)",
+        "recipient_size": 8465
+      },
+      "gift_amount": 30000.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "ON",
+        "city": "Cochrane"
+      },
+      "year": 2009,
+      "details": null
+    },
+    {
+      "id": 2271816,
+      "funder": {
+        "id": 810,
+        "name": "The Jack Weinbaum Family Foundation"
+      },
+      "charity": {
+        "id": 18927,
+        "name": "Friends of Yiddish in Toronto",
+        "recipient_size": 9278
+      },
+      "gift_amount": 30000.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 1840563,
+      "funder": {
+        "id": 99,
+        "name": "Fleming Foundation"
+      },
+      "charity": {
+        "id": 69119,
+        "name": "Hamilton Church Of Christ",
+        "recipient_size": 10351
+      },
+      "gift_amount": 30000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "Hamilton"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 696023,
+      "funder": {
+        "id": 571,
+        "name": "Nathan & Lily Silver Family Foundation"
+      },
+      "charity": {
+        "id": 1057,
+        "name": "Canadian Foundation for Pioneering Israel",
+        "recipient_size": 14196
+      },
+      "gift_amount": 30000.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 1994,
+      "details": null
+    },
+    {
+      "id": 704234,
+      "funder": {
+        "id": 571,
+        "name": "Nathan & Lily Silver Family Foundation"
+      },
+      "charity": {
+        "id": 1057,
+        "name": "Canadian Foundation for Pioneering Israel",
+        "recipient_size": 14196
+      },
+      "gift_amount": 30000.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 1992,
+      "details": null
+    },
+    {
+      "id": 1001790,
+      "funder": {
+        "id": 1066,
+        "name": "The Charis Foundation"
+      },
+      "charity": {
+        "id": 48376,
+        "name": "Muatard Seeds Ministries International",
+        "recipient_size": 5845
+      },
+      "gift_amount": 30000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "BC",
+        "city": "Delta"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 2225137,
+      "funder": {
+        "id": 3762,
+        "name": "Benefaction Foundation"
+      },
+      "charity": {
+        "id": 17802,
+        "name": "Heritage Christian Ministries",
+        "recipient_size": 9529
+      },
+      "gift_amount": 30000.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "AB",
+        "city": "Edmonton"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 2407511,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 29792.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 211210,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 29392.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 1124138,
+      "funder": {
+        "id": 903,
+        "name": "First Fruits Foundation Inc."
+      },
+      "charity": {
+        "id": 63910,
+        "name": "First Fruits Foundation",
+        "recipient_size": 14019
+      },
+      "gift_amount": 29294.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": {
+        "province": "ON",
+        "city": "Ottawa"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1034731,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 29108.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 638252,
+      "funder": {
+        "id": 1583,
+        "name": "Mehaduras Friedman Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 28000.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2001,
+      "details": null
+    },
+    {
+      "id": 684015,
+      "funder": {
+        "id": 853,
+        "name": "Stephen S. Steeves Foundation"
+      },
+      "charity": {
+        "id": 1519,
+        "name": "Barry Moore Ministries Inc.",
+        "recipient_size": 12276
+      },
+      "gift_amount": 27500.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 1997,
+      "details": null
+    },
+    {
+      "id": 238860,
+      "funder": {
+        "id": 9885,
+        "name": "Golden Spade Foundation"
+      },
+      "charity": {
+        "id": 19862,
+        "name": "Light to the Nations Christian Ministries",
+        "recipient_size": 10791
+      },
+      "gift_amount": 27475.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "BC",
+        "city": "Abbotsford"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 1177043,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 27473.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 2312267,
+      "funder": {
+        "id": 10632,
+        "name": "Canada Summer Jobs"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 26989.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 436505,
+      "funder": {
+        "id": 2033,
+        "name": "Heitner Charitable Foundation"
+      },
+      "charity": {
+        "id": 1882,
+        "name": "Bobever Yeshiva Bnei Zion Charitable Fund",
+        "recipient_size": 14810
+      },
+      "gift_amount": 26814.0,
+      "focus": "Religion",
+      "focus_display": "Theology and theological education",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2011,
+      "details": null
+    },
+    {
+      "id": 1105717,
+      "funder": {
+        "id": 9885,
+        "name": "Golden Spade Foundation"
+      },
+      "charity": {
+        "id": 19862,
+        "name": "Light to the Nations Christian Ministries",
+        "recipient_size": 10791
+      },
+      "gift_amount": 26750.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "BC",
+        "city": "Abbotsford"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1629152,
+      "funder": {
+        "id": 14575,
+        "name": "Third Avenue United Church"
+      },
+      "charity": {
+        "id": 31873,
+        "name": "Wesley United Church",
+        "recipient_size": 13726
+      },
+      "gift_amount": 26665.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": null,
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 56831,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 26548.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 1616975,
+      "funder": {
+        "id": 3704,
+        "name": "CanadaHelps"
+      },
+      "charity": {
+        "id": 55031,
+        "name": "Canadian Fellowship Of Christian Peac Officers Inc/Fraternite Canadienne Des Agents De La Paix Chretiens Inc",
+        "recipient_size": 14150
+      },
+      "gift_amount": 26114.0,
+      "focus": "Religion",
+      "focus_display": "Religion",
+      "location": null,
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 2300824,
+      "funder": {
+        "id": 10632,
+        "name": "Canada Summer Jobs"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 26025.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2020,
+      "details": ""
+    },
+    {
+      "id": 2300825,
+      "funder": {
+        "id": 10632,
+        "name": "Canada Summer Jobs"
+      },
+      "charity": {
+        "id": 23191,
+        "name": "Associates Resourcing the Church",
+        "recipient_size": 10236
+      },
+      "gift_amount": 26025.0,
+      "focus": "Religion",
+      "focus_display": "Christianity",
+      "location": {
+        "province": "QC",
+        "city": "Waterloo"
+      },
+      "year": 2020,
+      "details": ""
+    },
+    {
+      "id": 1238089,
+      "funder": {
+        "id": 3315,
+        "name": "Jewish Federation of Greater Vancouver"
+      },
+      "charity": {
+        "id": 24053,
+        "name": "White Rock/South Surrey Jewish Community Centre",
+        "recipient_size": 6479
+      },
+      "gift_amount": 25982.0,
+      "focus": "Religion",
+      "focus_display": "Judaism",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2015,
+      "details": null
+    }
+  ]
+}

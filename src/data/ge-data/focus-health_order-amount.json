@@ -1,0 +1,2107 @@
+{
+  "count": 100,
+  "next": "",
+  "previous": "",
+  "results": [
+    {
+      "id": 2677465,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 144882035.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 1678551,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 138000000.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 2398659,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 136455989.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 767844,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 135779886.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 26324,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 125862966.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 1810361,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 124854306.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 1531597,
+      "funder": {
+        "id": 3910,
+        "name": "William Osler Health System Foundation"
+      },
+      "charity": {
+        "id": 209519,
+        "name": "William Osler Health Centre",
+        "recipient_size": 784337000
+      },
+      "gift_amount": 116941880.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Brampton"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 1588861,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 115703609.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 2643404,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 114653791.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2393879,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 113988165.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 2071455,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 112587141.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 822342,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 106563000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 2037647,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 24362,
+        "name": "Provincial Health Services Authority",
+        "recipient_size": 2553308536
+      },
+      "gift_amount": 106509196.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 2418239,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 105076663.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 1837139,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 105045941.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 1566003,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 104672000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 1224353,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 103707146.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 1026227,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 102460000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 2181111,
+      "funder": {
+        "id": 10374,
+        "name": "Canada Foundation for Innovation"
+      },
+      "charity": {
+        "id": 210149,
+        "name": "McGill University Health Centre",
+        "recipient_size": 1410986978
+      },
+      "gift_amount": 99988343.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2008,
+      "details": "Desalination and Water Purification, Energy Systems, Design Optimization Energy and Water System Prototyping and Test Equipment"
+    },
+    {
+      "id": 997038,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 98265175.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 734844,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 98265175.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 0,
+      "details": null
+    },
+    {
+      "id": 1190741,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 96461000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1333108,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 95476000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 2051019,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 95442556.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 2181112,
+      "funder": {
+        "id": 10374,
+        "name": "Canada Foundation for Innovation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 92255967.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2008,
+      "details": "particulate matter, aerosols, urban smog, mass spectrometry, lasers, environmental engineering"
+    },
+    {
+      "id": 2181113,
+      "funder": {
+        "id": 10374,
+        "name": "Canada Foundation for Innovation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 91119176.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2008,
+      "details": "protein function, structural biology, computational biology, mass spectrometry, gene chips."
+    },
+    {
+      "id": 221527,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 89789124.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 2629093,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 24362,
+        "name": "Provincial Health Services Authority",
+        "recipient_size": 2553308536
+      },
+      "gift_amount": 89488837.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2405907,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 24362,
+        "name": "Provincial Health Services Authority",
+        "recipient_size": 2553308536
+      },
+      "gift_amount": 88992129.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 1216462,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 81846252.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1531390,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 81840456.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 2029726,
+      "funder": {
+        "id": 12956,
+        "name": "SickKids Foundation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 79593013.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 829796,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 76857999.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 993000,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 76776474.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 738809,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 76776474.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 0,
+      "details": null
+    },
+    {
+      "id": 1034968,
+      "funder": {
+        "id": 3453,
+        "name": "Fondation CHU Sainte-Justine / Sainte-Justine UHC Foundation"
+      },
+      "charity": {
+        "id": 3910,
+        "name": "H\u00f4pital Sainte-Justine",
+        "recipient_size": 454953773
+      },
+      "gift_amount": 71994549.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 1190742,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 69803267.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 208267,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 64779000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 1264887,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 64614721.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 1596217,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 24362,
+        "name": "Provincial Health Services Authority",
+        "recipient_size": 2553308536
+      },
+      "gift_amount": 63946332.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 358403,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 63484000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 48840,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 11022,
+        "name": "Children's & Women's Health Centre of British Columbia Branch",
+        "recipient_size": 630457784
+      },
+      "gift_amount": 62989548.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 38362,
+      "funder": {
+        "id": 3093,
+        "name": "The Princess Margaret Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 62401000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 1034984,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 11022,
+        "name": "Children's & Women's Health Centre of British Columbia Branch",
+        "recipient_size": 630457784
+      },
+      "gift_amount": 60443293.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 1698137,
+      "funder": {
+        "id": 2922,
+        "name": "Vgh & UBC Hospital Foundation"
+      },
+      "charity": {
+        "id": 16999,
+        "name": "Vancouver Coastal Health Authority",
+        "recipient_size": 3518935000
+      },
+      "gift_amount": 58162927.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 204910,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 11022,
+        "name": "Children's & Women's Health Centre of British Columbia Branch",
+        "recipient_size": 630457784
+      },
+      "gift_amount": 57381707.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 2181114,
+      "funder": {
+        "id": 10374,
+        "name": "Canada Foundation for Innovation"
+      },
+      "charity": {
+        "id": 210230,
+        "name": "Sunnybrook Health Sciences Centre",
+        "recipient_size": 1031863150
+      },
+      "gift_amount": 57351858.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2008,
+      "details": "Thermal Spray Coating; Plasma Processing and Plasma Chemistry; High-Velocity Oxy-Fuel Spraying; radio-frequency inductively coupled plasma; Diagnostics; Mathematical Modelling; Process design and optimization; Droplet impact"
+    },
+    {
+      "id": 1026840,
+      "funder": {
+        "id": 2922,
+        "name": "Vgh & UBC Hospital Foundation"
+      },
+      "charity": {
+        "id": 16999,
+        "name": "Vancouver Coastal Health Authority",
+        "recipient_size": 3518935000
+      },
+      "gift_amount": 55882145.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 2420323,
+      "funder": {
+        "id": 2922,
+        "name": "Vgh & UBC Hospital Foundation"
+      },
+      "charity": {
+        "id": 16999,
+        "name": "Vancouver Coastal Health Authority",
+        "recipient_size": 3518935000
+      },
+      "gift_amount": 55706041.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 1233657,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 11022,
+        "name": "Children's & Women's Health Centre of British Columbia Branch",
+        "recipient_size": 630457784
+      },
+      "gift_amount": 55431478.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 1683128,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 24362,
+        "name": "Provincial Health Services Authority",
+        "recipient_size": 2553308536
+      },
+      "gift_amount": 54565395.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 2647451,
+      "funder": {
+        "id": 2922,
+        "name": "Vgh & UBC Hospital Foundation"
+      },
+      "charity": {
+        "id": 16999,
+        "name": "Vancouver Coastal Health Authority",
+        "recipient_size": 3518935000
+      },
+      "gift_amount": 53312134.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 212190,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 52894153.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 1198517,
+      "funder": {
+        "id": 3312,
+        "name": "The Sir Mortimer B. Davis Jewish General Hospital Foundation / Fondation de L'H\u00f4pital General Juif Sir Mortimer Davis"
+      },
+      "charity": {
+        "id": 1959,
+        "name": "Sir Mortimer B. Davis Jewish General Hospital",
+        "recipient_size": null
+      },
+      "gift_amount": 52828086.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 38356,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 51801164.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 2050805,
+      "funder": {
+        "id": 2779,
+        "name": "Mackenzie Health Foundation"
+      },
+      "charity": {
+        "id": 24895,
+        "name": "York Central Hospital",
+        "recipient_size": 314725000
+      },
+      "gift_amount": 50347225.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Richmond Hill"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 354743,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 11022,
+        "name": "Children's & Women's Health Centre of British Columbia Branch",
+        "recipient_size": 630457784
+      },
+      "gift_amount": 49892596.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 356066,
+      "funder": {
+        "id": 2907,
+        "name": "Toronto General & Western Hospital Foundation"
+      },
+      "charity": {
+        "id": 6177,
+        "name": "University Health Network",
+        "recipient_size": 2215379000
+      },
+      "gift_amount": 49638293.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 839759,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 11022,
+        "name": "Children's & Women's Health Centre of British Columbia Branch",
+        "recipient_size": 630457784
+      },
+      "gift_amount": 48896712.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 1676892,
+      "funder": {
+        "id": 2923,
+        "name": "Centre for Addiction and Mental Health Foundation"
+      },
+      "charity": {
+        "id": 4861,
+        "name": "Centre for Addiction and Mental Health",
+        "recipient_size": 498591351
+      },
+      "gift_amount": 48732527.0,
+      "focus": "Health",
+      "focus_display": "Mental health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 763222,
+      "funder": {
+        "id": 2935,
+        "name": "St Michael's Hospital Foundation"
+      },
+      "charity": {
+        "id": 624,
+        "name": "St. Michael's Hospital",
+        "recipient_size": 1103090000
+      },
+      "gift_amount": 48479366.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 1182783,
+      "funder": {
+        "id": 3777,
+        "name": "British Columbia's Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 11022,
+        "name": "Children's & Women's Health Centre of British Columbia Branch",
+        "recipient_size": 630457784
+      },
+      "gift_amount": 48212244.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 2051004,
+      "funder": {
+        "id": 2935,
+        "name": "St Michael's Hospital Foundation"
+      },
+      "charity": {
+        "id": 624,
+        "name": "St. Michael's Hospital",
+        "recipient_size": 1103090000
+      },
+      "gift_amount": 47620934.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 2181115,
+      "funder": {
+        "id": 10374,
+        "name": "Canada Foundation for Innovation"
+      },
+      "charity": {
+        "id": 5952,
+        "name": "Hamilton Health Sciences Corporation",
+        "recipient_size": 1523695198
+      },
+      "gift_amount": 43790845.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Hamilton"
+      },
+      "year": 2008,
+      "details": "flexible smart glass, lab-in-fibre, distributed sensing, 3D ultrafast laser processing, smart catheter, multi-functional optical fibre, safe water & structure Laser nanofabrication, optical fiber packaging/characterization, cell culturing"
+    },
+    {
+      "id": 2184870,
+      "funder": {
+        "id": 10374,
+        "name": "Canada Foundation for Innovation"
+      },
+      "charity": {
+        "id": 1879,
+        "name": "Hospital for Sick Children",
+        "recipient_size": 969620657
+      },
+      "gift_amount": 43361816.0,
+      "focus": "Health",
+      "focus_display": "Health",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2016,
+      "details": "hydrology, water resource, groundwater, river, sustainability"
+    },
+    {
+      "id": 829160,
+      "funder": {
+        "id": 2922,
+        "name": "Vgh & UBC Hospital Foundation"
+      },
+      "charity": {
+        "id": 16999,
+        "name": "Vancouver Coastal Health Authority",
+        "recipient_size": 3518935000
+      },
+      "gift_amount": 42857629.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 2418217,
+      "funder": {
+        "id": 2935,
+        "name": "St Michael's Hospital Foundation"
+      },
+      "charity": {
+        "id": 624,
+        "name": "St. Michael's Hospital",
+        "recipient_size": 1103090000
+      },
+      "gift_amount": 41652421.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 2052829,
+      "funder": {
+        "id": 2922,
+        "name": "Vgh & UBC Hospital Foundation"
+      },
+      "charity": {
+        "id": 16999,
+        "name": "Vancouver Coastal Health Authority",
+        "recipient_size": 3518935000
+      },
+      "gift_amount": 41293773.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 1532878,
+      "funder": {
+        "id": 2922,
+        "name": "Vgh & UBC Hospital Foundation"
+      },
+      "charity": {
+        "id": 16999,
+        "name": "Vancouver Coastal Health Authority",
+        "recipient_size": 3518935000
+      },
+      "gift_amount": 40427821.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 529263,
+      "funder": {
+        "id": 568,
+        "name": "Peter and Melanie Munk Charitable Foundation"
+      },
+      "charity": {
+        "id": 119476,
+        "name": "Toronto General Hospital",
+        "recipient_size": null
+      },
+      "gift_amount": 37000000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2006,
+      "details": "Peter Munk Cardiac Centre. To fund a new program and facility that will revolutionize the diagnosis and treatment of cardiovascular disease."
+    },
+    {
+      "id": 35175,
+      "funder": {
+        "id": 3207,
+        "name": "Mount Sinai Hospital Foundation of Toronto"
+      },
+      "charity": {
+        "id": 80,
+        "name": "Mount Sinai Hospital Foundation of Toronto",
+        "recipient_size": 47122186
+      },
+      "gift_amount": 35254548.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 2619473,
+      "funder": {
+        "id": 2923,
+        "name": "Centre for Addiction and Mental Health Foundation"
+      },
+      "charity": {
+        "id": 4861,
+        "name": "Centre for Addiction and Mental Health",
+        "recipient_size": 498591351
+      },
+      "gift_amount": 34914419.0,
+      "focus": "Health",
+      "focus_display": "Mental health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2632402,
+      "funder": {
+        "id": 3207,
+        "name": "Mount Sinai Hospital Foundation of Toronto"
+      },
+      "charity": {
+        "id": 756,
+        "name": "Sinai Health System",
+        "recipient_size": 667454824
+      },
+      "gift_amount": 34460325.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 214443,
+      "funder": {
+        "id": 3207,
+        "name": "Mount Sinai Hospital Foundation of Toronto"
+      },
+      "charity": {
+        "id": 756,
+        "name": "Sinai Health System",
+        "recipient_size": 667454824
+      },
+      "gift_amount": 34099250.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 1190660,
+      "funder": {
+        "id": 2922,
+        "name": "Vgh & UBC Hospital Foundation"
+      },
+      "charity": {
+        "id": 16999,
+        "name": "Vancouver Coastal Health Authority",
+        "recipient_size": 3518935000
+      },
+      "gift_amount": 34051903.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 2618907,
+      "funder": {
+        "id": 3312,
+        "name": "The Sir Mortimer B. Davis Jewish General Hospital Foundation / Fondation de L'H\u00f4pital General Juif Sir Mortimer Davis"
+      },
+      "charity": {
+        "id": 1959,
+        "name": "Sir Mortimer B. Davis Jewish General Hospital",
+        "recipient_size": null
+      },
+      "gift_amount": 33867914.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2643172,
+      "funder": {
+        "id": 2779,
+        "name": "Mackenzie Health Foundation"
+      },
+      "charity": {
+        "id": 24895,
+        "name": "York Central Hospital",
+        "recipient_size": 314725000
+      },
+      "gift_amount": 33866950.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Richmond Hill"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 1805757,
+      "funder": {
+        "id": 3207,
+        "name": "Mount Sinai Hospital Foundation of Toronto"
+      },
+      "charity": {
+        "id": 756,
+        "name": "Sinai Health System",
+        "recipient_size": 667454824
+      },
+      "gift_amount": 33125313.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 1596685,
+      "funder": {
+        "id": 3453,
+        "name": "Fondation CHU Sainte-Justine / Sainte-Justine UHC Foundation"
+      },
+      "charity": {
+        "id": 3910,
+        "name": "H\u00f4pital Sainte-Justine",
+        "recipient_size": 454953773
+      },
+      "gift_amount": 32680311.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 2457659,
+      "funder": {
+        "id": 2926,
+        "name": "Sunnybrook Health Sciences Centre Foundation"
+      },
+      "charity": {
+        "id": 210230,
+        "name": "Sunnybrook Health Sciences Centre",
+        "recipient_size": 1031863150
+      },
+      "gift_amount": 32458952.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 1812577,
+      "funder": {
+        "id": 3391,
+        "name": "Hamilton Health Sciences Foundation"
+      },
+      "charity": {
+        "id": 5306,
+        "name": "Hamilton Health Sciences Foundation",
+        "recipient_size": 33397657
+      },
+      "gift_amount": 31748732.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Hamilton"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 1672422,
+      "funder": {
+        "id": 3391,
+        "name": "Hamilton Health Sciences Foundation"
+      },
+      "charity": {
+        "id": 5952,
+        "name": "Hamilton Health Sciences Corporation",
+        "recipient_size": 1523695198
+      },
+      "gift_amount": 31748732.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Hamilton"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 766301,
+      "funder": {
+        "id": 3453,
+        "name": "Fondation CHU Sainte-Justine / Sainte-Justine UHC Foundation"
+      },
+      "charity": {
+        "id": 3910,
+        "name": "H\u00f4pital Sainte-Justine",
+        "recipient_size": 454953773
+      },
+      "gift_amount": 31035741.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 2396860,
+      "funder": {
+        "id": 2923,
+        "name": "Centre for Addiction and Mental Health Foundation"
+      },
+      "charity": {
+        "id": 4861,
+        "name": "Centre for Addiction and Mental Health",
+        "recipient_size": 498591351
+      },
+      "gift_amount": 30508475.0,
+      "focus": "Health",
+      "focus_display": "Mental health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 2629568,
+      "funder": {
+        "id": 3453,
+        "name": "Fondation CHU Sainte-Justine / Sainte-Justine UHC Foundation"
+      },
+      "charity": {
+        "id": 3910,
+        "name": "H\u00f4pital Sainte-Justine",
+        "recipient_size": 454953773
+      },
+      "gift_amount": 30503453.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 1531138,
+      "funder": {
+        "id": 2779,
+        "name": "Mackenzie Health Foundation"
+      },
+      "charity": {
+        "id": 24895,
+        "name": "York Central Hospital",
+        "recipient_size": 314725000
+      },
+      "gift_amount": 30484055.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Richmond Hill"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 1192807,
+      "funder": {
+        "id": 3207,
+        "name": "Mount Sinai Hospital Foundation of Toronto"
+      },
+      "charity": {
+        "id": 756,
+        "name": "Sinai Health System",
+        "recipient_size": 667454824
+      },
+      "gift_amount": 29837685.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1039991,
+      "funder": {
+        "id": 3312,
+        "name": "The Sir Mortimer B. Davis Jewish General Hospital Foundation / Fondation de L'H\u00f4pital General Juif Sir Mortimer Davis"
+      },
+      "charity": {
+        "id": 1959,
+        "name": "Sir Mortimer B. Davis Jewish General Hospital",
+        "recipient_size": null
+      },
+      "gift_amount": 29300759.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 1683432,
+      "funder": {
+        "id": 3453,
+        "name": "Fondation CHU Sainte-Justine / Sainte-Justine UHC Foundation"
+      },
+      "charity": {
+        "id": 3910,
+        "name": "H\u00f4pital Sainte-Justine",
+        "recipient_size": 454953773
+      },
+      "gift_amount": 28715601.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 1588878,
+      "funder": {
+        "id": 2910,
+        "name": "The Terry Fox Foundation"
+      },
+      "charity": {
+        "id": 24687,
+        "name": "Terry Fox Research Institute",
+        "recipient_size": 23531569
+      },
+      "gift_amount": 28334082.0,
+      "focus": "Health",
+      "focus_display": "Cancers and tumours",
+      "location": {
+        "province": "BC",
+        "city": "Chilliwack"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 1198500,
+      "funder": {
+        "id": 3453,
+        "name": "Fondation CHU Sainte-Justine / Sainte-Justine UHC Foundation"
+      },
+      "charity": {
+        "id": 3910,
+        "name": "H\u00f4pital Sainte-Justine",
+        "recipient_size": 454953773
+      },
+      "gift_amount": 28150132.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 2648252,
+      "funder": {
+        "id": 3125,
+        "name": "University of Ottawa Heart Institute Foundation / Fondation de l'Institut de Cardiologie de l'Universit\u00e9 D'Ottawa"
+      },
+      "charity": {
+        "id": 20869,
+        "name": "Ottawa Heart Institute Research Corporation - Corporation de Recherches de l'Institut de Cardiologie d'Ottawa",
+        "recipient_size": 35180227
+      },
+      "gift_amount": 27794136.0,
+      "focus": "Health",
+      "focus_display": "Heart and circulatory system diseases",
+      "location": {
+        "province": "ON",
+        "city": "Ottawa"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2418050,
+      "funder": {
+        "id": 2779,
+        "name": "Mackenzie Health Foundation"
+      },
+      "charity": {
+        "id": 24895,
+        "name": "York Central Hospital",
+        "recipient_size": 314725000
+      },
+      "gift_amount": 27790829.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Richmond Hill"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 993702,
+      "funder": {
+        "id": 3207,
+        "name": "Mount Sinai Hospital Foundation of Toronto"
+      },
+      "charity": {
+        "id": 756,
+        "name": "Sinai Health System",
+        "recipient_size": 667454824
+      },
+      "gift_amount": 27765316.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 738130,
+      "funder": {
+        "id": 3207,
+        "name": "Mount Sinai Hospital Foundation of Toronto"
+      },
+      "charity": {
+        "id": 756,
+        "name": "Sinai Health System",
+        "recipient_size": 667454824
+      },
+      "gift_amount": 27765316.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 0,
+      "details": null
+    },
+    {
+      "id": 1220527,
+      "funder": {
+        "id": 3312,
+        "name": "The Sir Mortimer B. Davis Jewish General Hospital Foundation / Fondation de L'H\u00f4pital General Juif Sir Mortimer Davis"
+      },
+      "charity": {
+        "id": 1959,
+        "name": "Sir Mortimer B. Davis Jewish General Hospital",
+        "recipient_size": null
+      },
+      "gift_amount": 27645258.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "QC",
+        "city": "Montr\u00e9al"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 891402,
+      "funder": {
+        "id": 6363,
+        "name": "Czorny Alzheimer Centre Society"
+      },
+      "charity": {
+        "id": 209674,
+        "name": "Surrey Memorial Hospital Foundation",
+        "recipient_size": 35876401
+      },
+      "gift_amount": 27500000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 2661896,
+      "funder": {
+        "id": 11276,
+        "name": "Hamilton Health Sciences Research Institute"
+      },
+      "charity": {
+        "id": 5952,
+        "name": "Hamilton Health Sciences Corporation",
+        "recipient_size": 1523695198
+      },
+      "gift_amount": 27117000.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Hamilton"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2646270,
+      "funder": {
+        "id": 3631,
+        "name": "Alberta Children's Hospital Foundation"
+      },
+      "charity": {
+        "id": 209381,
+        "name": "Alberta Health Services",
+        "recipient_size": 14718186000
+      },
+      "gift_amount": 27089701.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "AB",
+        "city": "Calgary"
+      },
+      "year": 2023,
+      "details": ""
+    },
+    {
+      "id": 2177183,
+      "funder": {
+        "id": 10374,
+        "name": "Canada Foundation for Innovation"
+      },
+      "charity": {
+        "id": 756,
+        "name": "Sinai Health System",
+        "recipient_size": 667454824
+      },
+      "gift_amount": 26771044.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2002,
+      "details": "givrage atmosh\u00e9rique, r\u00e9seaux \u00e9lectriques, \u00e9oliennes, isolation \u00e9lectrique, haute tension en courant continu, soufflerie r\u00e9frig\u00e9r\u00e9e et chambre climatique, source de courant impulsionnel, cam\u00e9ra haute-vitesse, analyseur de particules"
+    }
+  ]
+}

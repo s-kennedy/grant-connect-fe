@@ -7,7 +7,7 @@ import SearchBar from './components/SearchBar'
 import SavedSearchesDropdown from './components/SavedSearchesDropdown'
 import DataTable from './components/DataTable'
 import Loader from './components/Loader'
-import mockData from 'data/mock-gift-data.json'
+import mockData from 'data/ge-data/default.json'
 import mockAutocompleteResults from 'data/mock-autocomplete-results.json'
 
 const Explorer = ({ url }) => {
@@ -24,7 +24,7 @@ const Explorer = ({ url }) => {
     setTimeout(() => {
       setRecords(mockData.results)
       setLoading(false)
-    }, 2000)
+    }, 1000)
   }, [])
 
   const handleSearchChange = (event, newInputValue) => {

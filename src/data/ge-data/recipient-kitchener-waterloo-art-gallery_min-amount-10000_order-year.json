@@ -1,0 +1,1246 @@
+{
+  "count": 59,
+  "next": "",
+  "previous": "",
+  "results": [
+    {
+      "id": 2394878,
+      "funder": {
+        "id": 3141,
+        "name": "Ontario Arts Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 15357.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 2517342,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 23675.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 2537876,
+      "funder": {
+        "id": 2045,
+        "name": "Astley Family Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 16000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2022,
+      "details": ""
+    },
+    {
+      "id": 2170175,
+      "funder": {
+        "id": 11973,
+        "name": "Museums Assistance Program"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 12507.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2021,
+      "details": "Le Fonds pour la r\u00e9ouverture des organismes du patrimoine / Reopening Fund for Heritage Organizations"
+    },
+    {
+      "id": 2103645,
+      "funder": {
+        "id": 3704,
+        "name": "CanadaHelps"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 14771.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 2126261,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 92000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2021,
+      "details": "Visual Arts"
+    },
+    {
+      "id": 2339837,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 19350.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2021,
+      "details": ""
+    },
+    {
+      "id": 1710369,
+      "funder": {
+        "id": 3141,
+        "name": "Ontario Arts Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 17704.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2020,
+      "details": null
+    },
+    {
+      "id": 2128782,
+      "funder": {
+        "id": 2518,
+        "name": "Ontario Arts Council"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 128855.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2020,
+      "details": "Arts Recovery Support Fund \u00f1 Organizations"
+    },
+    {
+      "id": 2128781,
+      "funder": {
+        "id": 2518,
+        "name": "Ontario Arts Council"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 128855.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2020,
+      "details": "Public Art Galleries: Operating"
+    },
+    {
+      "id": 2122439,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 82000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2020,
+      "details": "Visual Arts"
+    },
+    {
+      "id": 1915404,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 31520.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2020,
+      "details": ""
+    },
+    {
+      "id": 1800737,
+      "funder": {
+        "id": 12992,
+        "name": "Ontario Cultural Attractions Fund (OCAF)"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 12000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2020,
+      "details": "Soundings: An Exhibition in Five Parts"
+    },
+    {
+      "id": 1846170,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 35710.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 1637033,
+      "funder": {
+        "id": 2518,
+        "name": "Ontario Arts Council"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 128855.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2019,
+      "details": "Public Art Galleries: Operating - Visual Arts - Creating and Presenting"
+    },
+    {
+      "id": 1635376,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 82000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2019,
+      "details": "Engage and Sustain - Artistic Catalysts - Visual Arts"
+    },
+    {
+      "id": 1585775,
+      "funder": {
+        "id": 226,
+        "name": "Good Foundation Inc."
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 10000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2019,
+      "details": null
+    },
+    {
+      "id": 1517812,
+      "funder": {
+        "id": 12962,
+        "name": "The Ontario Trillium Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 150000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 1520946,
+      "funder": {
+        "id": 2518,
+        "name": "Ontario Arts Council"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 135980.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2018,
+      "details": "Public Art Galleries: Operating - Multi-Year Operating - Year 3"
+    },
+    {
+      "id": 1520945,
+      "funder": {
+        "id": 2518,
+        "name": "Ontario Arts Council"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 12756.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2018,
+      "details": "Artists in Communities and Schools Projects"
+    },
+    {
+      "id": 1426113,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 29250.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 821908,
+      "funder": {
+        "id": 3141,
+        "name": "Ontario Arts Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 15289.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2018,
+      "details": null
+    },
+    {
+      "id": 940981,
+      "funder": {
+        "id": 2518,
+        "name": "Ontario Arts Council"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 120603.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2017,
+      "details": "Public Art Galleries: Operating - Multi-Year Operating \u2013 Year 2"
+    },
+    {
+      "id": 896052,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 22400.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2017,
+      "details": null
+    },
+    {
+      "id": 1170295,
+      "funder": {
+        "id": 2518,
+        "name": "Ontario Arts Council"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 105450.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2016,
+      "details": "Public Art Galleries - Multi-Year - Operating"
+    },
+    {
+      "id": 849471,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 82000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2016,
+      "details": "Visual Arts - Grants to Art Museums and Public Galleries - Multi-Year Operating"
+    },
+    {
+      "id": 1112291,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 28700.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1122010,
+      "funder": {
+        "id": 687,
+        "name": "RBC Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 10000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1133974,
+      "funder": {
+        "id": 807,
+        "name": "The Cowan Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 25000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1171640,
+      "funder": {
+        "id": 11973,
+        "name": "Museums Assistance Program"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 18096.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2016,
+      "details": "Museum Assistance Program - Collections Management"
+    },
+    {
+      "id": 1201674,
+      "funder": {
+        "id": 11973,
+        "name": "Museums Assistance Program"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 18096.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2016,
+      "details": "Museum Assistance Program - Collections Management Grant"
+    },
+    {
+      "id": 1204954,
+      "funder": {
+        "id": 3141,
+        "name": "Ontario Arts Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 12452.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1217897,
+      "funder": {
+        "id": 226,
+        "name": "Good Foundation Inc."
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 10000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2016,
+      "details": null
+    },
+    {
+      "id": 1376372,
+      "funder": {
+        "id": 2518,
+        "name": "Ontario Arts Council"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 105450.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 1271323,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 31950.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 1374723,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 82000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 1374724,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 16000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2015,
+      "details": null
+    },
+    {
+      "id": 165064,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 34950.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 123690,
+      "funder": {
+        "id": 8095,
+        "name": "C\u00e9line & Jacques Lamarre Foundation / Fondation C\u00e9line & Jacques Lamarre"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 10000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2014,
+      "details": null
+    },
+    {
+      "id": 192042,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 82000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2014,
+      "details": "Grants to Art Museums and Public Galleries"
+    },
+    {
+      "id": 338166,
+      "funder": {
+        "id": 10115,
+        "name": "New Horizons for Seniors Program"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 17286.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2013,
+      "details": "Seniors, Art and Artists (2013-2014 Approved Community-Based Projects)"
+    },
+    {
+      "id": 201494,
+      "funder": {
+        "id": 226,
+        "name": "Good Foundation Inc."
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 20000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 263924,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 44016.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2013,
+      "details": null
+    },
+    {
+      "id": 344170,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 82000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2013,
+      "details": "Grants to Art Museums and Public Galleries"
+    },
+    {
+      "id": 384899,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 15000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2012,
+      "details": null
+    },
+    {
+      "id": 420877,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 80000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2012,
+      "details": "Grants to Art Museums and Public Galleries"
+    },
+    {
+      "id": 445216,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 80000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2011,
+      "details": "Grants to Art Museums and Public Galleries"
+    },
+    {
+      "id": 443895,
+      "funder": {
+        "id": 12962,
+        "name": "The Ontario Trillium Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 94800.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2011,
+      "details": "18 months - to design a shared vision for an arts and literacy program and community engagement strategy as part of the planned revitalization of the civic district."
+    },
+    {
+      "id": 468912,
+      "funder": {
+        "id": 2181,
+        "name": "Canada Council for the Arts"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 80000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2010,
+      "details": "Grants to Art Museums and Public Galleries"
+    },
+    {
+      "id": 486556,
+      "funder": {
+        "id": 2306,
+        "name": "The Manfred & Penny Conrad Family Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 10000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2009,
+      "details": null
+    },
+    {
+      "id": 512899,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 44440.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2008,
+      "details": null
+    },
+    {
+      "id": 526129,
+      "funder": {
+        "id": 1312,
+        "name": "Tula Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 20000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2007,
+      "details": null
+    },
+    {
+      "id": 522332,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 168075.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2007,
+      "details": null
+    },
+    {
+      "id": 550151,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 10800.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2005,
+      "details": "(Community Fund)."
+    },
+    {
+      "id": 588248,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 500000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2003,
+      "details": null
+    },
+    {
+      "id": 581496,
+      "funder": {
+        "id": 1312,
+        "name": "Tula Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 50000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2003,
+      "details": null
+    },
+    {
+      "id": 576267,
+      "funder": {
+        "id": 12962,
+        "name": "The Ontario Trillium Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 113000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2003,
+      "details": "Over two years to strengthen the capacity of the organization. (Community Program - Waterloo, Wellington and Dufferin)."
+    },
+    {
+      "id": 629702,
+      "funder": {
+        "id": 12940,
+        "name": "Kitchener Waterloo Community Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 51000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 2001,
+      "details": "Musagetes Fund. (Donor-Advised Funds)."
+    },
+    {
+      "id": 702027,
+      "funder": {
+        "id": 12948,
+        "name": "The Gordon Foundation"
+      },
+      "charity": {
+        "id": 1250,
+        "name": "Kitchener-Waterloo Art Gallery",
+        "recipient_size": 1269711
+      },
+      "gift_amount": 15000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Art museums and galleries",
+      "location": {
+        "province": "ON",
+        "city": "Kitchener"
+      },
+      "year": 1993,
+      "details": null
+    }
+  ]
+}

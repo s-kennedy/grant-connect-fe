@@ -1,0 +1,1888 @@
+{
+  "count": 100,
+  "next": "",
+  "previous": "",
+  "results": [
+    {
+      "id": 2503852,
+      "funder": {
+        "id": 12030,
+        "name": "WorkSafeBC"
+      },
+      "charity": {
+        "id": 307852,
+        "name": "University of Calgary, Cumming School of Medicine",
+        "recipient_size": null
+      },
+      "gift_amount": 49775.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "A compendium of policy and practice to reduce exposure to antineoplastic drugs in pharmacies View report"
+    },
+    {
+      "id": 2503849,
+      "funder": {
+        "id": 12030,
+        "name": "WorkSafeBC"
+      },
+      "charity": {
+        "id": 265515,
+        "name": "Institute for Work & Health",
+        "recipient_size": null
+      },
+      "gift_amount": 49838.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Strengthening RTW communication in B.C.'s healthcare sector View report"
+    },
+    {
+      "id": 2503847,
+      "funder": {
+        "id": 12030,
+        "name": "WorkSafeBC"
+      },
+      "charity": {
+        "id": 307849,
+        "name": "Aura Health and Safety Corporation",
+        "recipient_size": null
+      },
+      "gift_amount": 50000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Fog in the film industry and health effects View report"
+    },
+    {
+      "id": 2503846,
+      "funder": {
+        "id": 12030,
+        "name": "WorkSafeBC"
+      },
+      "charity": {
+        "id": 751,
+        "name": "Laurentian University of Sudbury",
+        "recipient_size": 198516000
+      },
+      "gift_amount": 49510.0,
+      "focus": "Education",
+      "focus_display": "University education",
+      "location": {
+        "province": "ON",
+        "city": "Greater Sudbury"
+      },
+      "year": 2018,
+      "details": "Evaluating an intervention for psychosocial risk factors in wildland firefighters and staff View report"
+    },
+    {
+      "id": 2503845,
+      "funder": {
+        "id": 12030,
+        "name": "WorkSafeBC"
+      },
+      "charity": {
+        "id": 215,
+        "name": "The University of British Columbia",
+        "recipient_size": 2605795000
+      },
+      "gift_amount": 47950.0,
+      "focus": "Education",
+      "focus_display": "University education",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2018,
+      "details": "Examining incivility and bullying in long-term residential care View report"
+    },
+    {
+      "id": 2503841,
+      "funder": {
+        "id": 12030,
+        "name": "WorkSafeBC"
+      },
+      "charity": {
+        "id": 121989,
+        "name": "Kwantlen Polytechnic University",
+        "recipient_size": 188397894
+      },
+      "gift_amount": 44200.0,
+      "focus": null,
+      "focus_display": null,
+      "location": {
+        "province": "BC",
+        "city": "Surrey"
+      },
+      "year": 2018,
+      "details": "Upper body protection for arborists View report"
+    },
+    {
+      "id": 2503831,
+      "funder": {
+        "id": 12030,
+        "name": "WorkSafeBC"
+      },
+      "charity": {
+        "id": 210284,
+        "name": "Vancouver Island University",
+        "recipient_size": 143775438
+      },
+      "gift_amount": 16089.0,
+      "focus": "Education",
+      "focus_display": "University education",
+      "location": {
+        "province": "BC",
+        "city": null
+      },
+      "year": 2018,
+      "details": "Building resilience in volunteer firefighters View report"
+    },
+    {
+      "id": 2503827,
+      "funder": {
+        "id": 12030,
+        "name": "WorkSafeBC"
+      },
+      "charity": {
+        "id": 208753,
+        "name": "Simon Fraser University",
+        "recipient_size": 743498704
+      },
+      "gift_amount": 106000.0,
+      "focus": "Education",
+      "focus_display": "University education",
+      "location": {
+        "province": "BC",
+        "city": "Burnaby"
+      },
+      "year": 2018,
+      "details": "Detection kits with enhanced sensitivity for heavy metal contaminants View report"
+    },
+    {
+      "id": 2503823,
+      "funder": {
+        "id": 12030,
+        "name": "WorkSafeBC"
+      },
+      "charity": {
+        "id": 304636,
+        "name": "Justice Institute of British Columbia",
+        "recipient_size": null
+      },
+      "gift_amount": 49612.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Building personal resilience and coping skills in BScN nursing students View report"
+    },
+    {
+      "id": 2503814,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307843,
+        "name": "Sustainable Development Fair",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Sustainable Development Fair"
+    },
+    {
+      "id": 2503812,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307842,
+        "name": "Steam PEI",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Building a Sustainable City"
+    },
+    {
+      "id": 2503811,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307841,
+        "name": "Spring Park Home and School Association (SPHSA)",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "The Spring Park Home and School Association (SPHSA) will install a demo rain garden just off the main entrance Spring Park Elementary School in Charlottetown. By reducing or eliminating a surface water runoff problem specific to this site, the goal of the project to provide a practical demonstration of how to use storm water runoff to create an attractive landscape feature."
+    },
+    {
+      "id": 2503809,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307839,
+        "name": "PEI Wild Child Forest School",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Wild Child Forest School Gear Library"
+    },
+    {
+      "id": 2503807,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307838,
+        "name": "PEI Invasive Species Council",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "The Distribution of Invasive Plant Species and Management of Oriental Bittersweet"
+    },
+    {
+      "id": 2503791,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307824,
+        "name": "Edible Gardening for Beginners",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Edible Gardening for Beginners"
+    },
+    {
+      "id": 2503784,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307817,
+        "name": "Charlottetown Rural Solar Watering Pump",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Charlottetown Rural Solar Watering Pump"
+    },
+    {
+      "id": 2503773,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307806,
+        "name": "Inner City Life Skills Camp",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Inner City Life Skills Camp"
+    },
+    {
+      "id": 2503771,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307804,
+        "name": "The Centre for Local Prosperity",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Import Replacement Strategy for the City of Charlottetown"
+    },
+    {
+      "id": 2503768,
+      "funder": {
+        "id": 11988,
+        "name": "Community Sustainability Micro-Grant Program"
+      },
+      "charity": {
+        "id": 307801,
+        "name": "Charlottetown Farmers Market",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "The Power of Produce Club"
+    },
+    {
+      "id": 2503760,
+      "funder": {
+        "id": 11972,
+        "name": "Movable Cultural Property Grants"
+      },
+      "charity": {
+        "id": 307797,
+        "name": "Canadian Museum Of History - Canadian War Museum",
+        "recipient_size": null
+      },
+      "gift_amount": 220000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2503757,
+      "funder": {
+        "id": 11972,
+        "name": "Movable Cultural Property Grants"
+      },
+      "charity": {
+        "id": 648,
+        "name": "Royal Ontario Museum",
+        "recipient_size": 79768120
+      },
+      "gift_amount": 35000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Museums",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2503732,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 307789,
+        "name": "Sutherland Secondary School YOUTH INITIATED: Shiqi Xu",
+        "recipient_size": null
+      },
+      "gift_amount": 500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Meatless Monday Club"
+    },
+    {
+      "id": 2503724,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 307785,
+        "name": "RC Life Skills Society",
+        "recipient_size": null
+      },
+      "gift_amount": 1500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Griffins Boxing Program via Life Skills Organization"
+    },
+    {
+      "id": 2503716,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 307781,
+        "name": "Queen Mary Community Elementary",
+        "recipient_size": null
+      },
+      "gift_amount": 600.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Youth Empowerment and Self-Advocacy: iGirl & iGuy"
+    },
+    {
+      "id": 2503715,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 307780,
+        "name": "Presentation House Theatre",
+        "recipient_size": null
+      },
+      "gift_amount": 3000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Hot Pink Collective Youth Engagement Events"
+    },
+    {
+      "id": 2503707,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 307772,
+        "name": "Kenneth Gordon Maplewood School",
+        "recipient_size": null
+      },
+      "gift_amount": 1500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Multi-Sensory Outdoor Facility"
+    },
+    {
+      "id": 2503700,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 307765,
+        "name": "Carson Graham Secondary School",
+        "recipient_size": null
+      },
+      "gift_amount": 1200.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Gender-Sexuality Alliance Workshop"
+    },
+    {
+      "id": 2503691,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 307763,
+        "name": "Mountainside Secondary School",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Wellness"
+    },
+    {
+      "id": 2503675,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 16999,
+        "name": "Vancouver Coastal Health Authority",
+        "recipient_size": 3518935000
+      },
+      "gift_amount": 1200.0,
+      "focus": "Health",
+      "focus_display": "Health care",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2018,
+      "details": "The Anti-Social Social Club"
+    },
+    {
+      "id": 2503663,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 10213,
+        "name": "North Shore Women's Centre Society",
+        "recipient_size": 226362
+      },
+      "gift_amount": 1500.0,
+      "focus": "Social Services",
+      "focus_display": "Social Services",
+      "location": {
+        "province": "BC",
+        "city": "North Vancouver"
+      },
+      "year": 2018,
+      "details": "Fearless: Girls\u2019 Empowerment Camp"
+    },
+    {
+      "id": 2503657,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 76779,
+        "name": "Westcoast Boys Club Network Foundation",
+        "recipient_size": 480807
+      },
+      "gift_amount": 3000.0,
+      "focus": "Gender / Sexual Identity",
+      "focus_display": "Men and boys",
+      "location": {
+        "province": "BC",
+        "city": "Vancouver"
+      },
+      "year": 2018,
+      "details": "Boys Club Network Club"
+    },
+    {
+      "id": 2503650,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 636,
+        "name": "North Shore Crisis Services Society",
+        "recipient_size": 1859617
+      },
+      "gift_amount": 1500.0,
+      "focus": "Health",
+      "focus_display": "Crisis services",
+      "location": {
+        "province": "BC",
+        "city": "North Vancouver"
+      },
+      "year": 2018,
+      "details": "Peace Camp"
+    },
+    {
+      "id": 2503644,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 75636,
+        "name": "Jack.org",
+        "recipient_size": 4688752
+      },
+      "gift_amount": 1000.0,
+      "focus": "Health",
+      "focus_display": "Mental health care",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2018,
+      "details": "Talk at the Top Regional Summit"
+    },
+    {
+      "id": 2503639,
+      "funder": {
+        "id": 11947,
+        "name": "Child and Youth Initiatives Fund"
+      },
+      "charity": {
+        "id": 2306,
+        "name": "Capilano Community Services Society",
+        "recipient_size": 445396
+      },
+      "gift_amount": 3000.0,
+      "focus": "Social Services",
+      "focus_display": "Social Services",
+      "location": {
+        "province": "BC",
+        "city": "North Vancouver"
+      },
+      "year": 2018,
+      "details": "Ready, Set, Cook! -"
+    },
+    {
+      "id": 2503632,
+      "funder": {
+        "id": 11940,
+        "name": "Community Heritage Investment Program (CHIP)"
+      },
+      "charity": {
+        "id": 307750,
+        "name": "RASC - London Chapter",
+        "recipient_size": null
+      },
+      "gift_amount": 7000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Celebrating the Amateur Astronomer in Canada"
+    },
+    {
+      "id": 2503619,
+      "funder": {
+        "id": 11940,
+        "name": "Community Heritage Investment Program (CHIP)"
+      },
+      "charity": {
+        "id": 307741,
+        "name": "The Royal Canadian Regiment Museum",
+        "recipient_size": null
+      },
+      "gift_amount": 10000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Operating"
+    },
+    {
+      "id": 2503618,
+      "funder": {
+        "id": 11940,
+        "name": "Community Heritage Investment Program (CHIP)"
+      },
+      "charity": {
+        "id": 307740,
+        "name": "LondonFuse",
+        "recipient_size": null
+      },
+      "gift_amount": 6678.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "London, Ontario Heritage: \"Mini-Documentaries\""
+    },
+    {
+      "id": 2503615,
+      "funder": {
+        "id": 11940,
+        "name": "Community Heritage Investment Program (CHIP)"
+      },
+      "charity": {
+        "id": 307738,
+        "name": "A Century For Women",
+        "recipient_size": null
+      },
+      "gift_amount": 4000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Events and exhibits celebrating the 100th anniversary of womens' right to vote in Federal elections"
+    },
+    {
+      "id": 2503610,
+      "funder": {
+        "id": 11940,
+        "name": "Community Heritage Investment Program (CHIP)"
+      },
+      "charity": {
+        "id": 52704,
+        "name": "London And Middlesex Historical Society",
+        "recipient_size": 3100
+      },
+      "gift_amount": 6164.0,
+      "focus": "Arts and culture",
+      "focus_display": "Historical activities",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 2018,
+      "details": "Documentary: \"A Portrait of Ross Woodman\""
+    },
+    {
+      "id": 2503608,
+      "funder": {
+        "id": 11940,
+        "name": "Community Heritage Investment Program (CHIP)"
+      },
+      "charity": {
+        "id": 4809,
+        "name": "Canadian Medical Hall of Fame",
+        "recipient_size": 750174
+      },
+      "gift_amount": 5000.0,
+      "focus": "Sciences and social sciences",
+      "focus_display": "Life sciences",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 2018,
+      "details": "Operating"
+    },
+    {
+      "id": 2503603,
+      "funder": {
+        "id": 11940,
+        "name": "Community Heritage Investment Program (CHIP)"
+      },
+      "charity": {
+        "id": 14708,
+        "name": "Secrets of Radar Museum",
+        "recipient_size": 28264
+      },
+      "gift_amount": 10000.0,
+      "focus": "Arts and culture",
+      "focus_display": "War memorial",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 2018,
+      "details": "Operating"
+    },
+    {
+      "id": 2503599,
+      "funder": {
+        "id": 11940,
+        "name": "Community Heritage Investment Program (CHIP)"
+      },
+      "charity": {
+        "id": 1322,
+        "name": "London Museum of Archaeology",
+        "recipient_size": 690769
+      },
+      "gift_amount": 20000.0,
+      "focus": "Arts and culture",
+      "focus_display": "History",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 2018,
+      "details": "Operating"
+    },
+    {
+      "id": 2503594,
+      "funder": {
+        "id": 11940,
+        "name": "Community Heritage Investment Program (CHIP)"
+      },
+      "charity": {
+        "id": 23337,
+        "name": "Jet Aircraft Museum",
+        "recipient_size": 424895
+      },
+      "gift_amount": 10000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Historical activities",
+      "location": {
+        "province": "ON",
+        "city": "London"
+      },
+      "year": 2018,
+      "details": "Operating"
+    },
+    {
+      "id": 2503383,
+      "funder": {
+        "id": 15376,
+        "name": "Stewardship Seed Funding"
+      },
+      "charity": {
+        "id": 307635,
+        "name": "MVIHES",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Shelley Creek Signage Support"
+    },
+    {
+      "id": 2503375,
+      "funder": {
+        "id": 15376,
+        "name": "Stewardship Seed Funding"
+      },
+      "charity": {
+        "id": 307634,
+        "name": "NALT",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Knarston Creek Riparian Restoration"
+    },
+    {
+      "id": 2503374,
+      "funder": {
+        "id": 15376,
+        "name": "Stewardship Seed Funding"
+      },
+      "charity": {
+        "id": 307634,
+        "name": "NALT",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Chase River Slope Restoration"
+    },
+    {
+      "id": 2460674,
+      "funder": {
+        "id": 11866,
+        "name": "Yukon Law Foundation"
+      },
+      "charity": {
+        "id": 306428,
+        "name": "\u00a0Law Library Society of Yukon",
+        "recipient_size": null
+      },
+      "gift_amount": 10000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "\u00a0Legal Research Database Subscriptions"
+    },
+    {
+      "id": 2460558,
+      "funder": {
+        "id": 11837,
+        "name": "Slocan Valley Legacy Fund"
+      },
+      "charity": {
+        "id": 306382,
+        "name": "Corporation of the Village of Slocan/Slocan Valley Heritage Trail Society\u00a0",
+        "recipient_size": null
+      },
+      "gift_amount": null,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "\u00a0Rail Trail Safety Equipment Purchase"
+    },
+    {
+      "id": 2460557,
+      "funder": {
+        "id": 11837,
+        "name": "Slocan Valley Legacy Fund"
+      },
+      "charity": {
+        "id": 54678,
+        "name": "Slocan Lake Garden Society",
+        "recipient_size": 20899
+      },
+      "gift_amount": null,
+      "focus": "Sports and recreation",
+      "focus_display": "Parks and trails",
+      "location": {
+        "province": "BC",
+        "city": "Nakusp"
+      },
+      "year": 2018,
+      "details": "\u00a0Creating a New Gallery"
+    },
+    {
+      "id": 2460556,
+      "funder": {
+        "id": 11837,
+        "name": "Slocan Valley Legacy Fund"
+      },
+      "charity": {
+        "id": 79349,
+        "name": "Rural Alternatives Research and Training Society",
+        "recipient_size": 92270
+      },
+      "gift_amount": null,
+      "focus": "Community and economic development",
+      "focus_display": "Rural development",
+      "location": {
+        "province": "BC",
+        "city": null
+      },
+      "year": 2018,
+      "details": "\u00a0Vallican Whole Art Gallery Project"
+    },
+    {
+      "id": 2460555,
+      "funder": {
+        "id": 11837,
+        "name": "Slocan Valley Legacy Fund"
+      },
+      "charity": {
+        "id": 48830,
+        "name": "New Denver Hospice Society",
+        "recipient_size": 21686
+      },
+      "gift_amount": null,
+      "focus": "Health",
+      "focus_display": "Palliative care",
+      "location": {
+        "province": "BC",
+        "city": "Nakusp"
+      },
+      "year": 2018,
+      "details": "\u00a0Office Renovation/Remodel for Bereavement Centre Addition"
+    },
+    {
+      "id": 2460554,
+      "funder": {
+        "id": 11837,
+        "name": "Slocan Valley Legacy Fund"
+      },
+      "charity": {
+        "id": 20029,
+        "name": "W E Graham Community Service Society",
+        "recipient_size": 509630
+      },
+      "gift_amount": null,
+      "focus": "Social Services",
+      "focus_display": "Social Services",
+      "location": null,
+      "year": 2018,
+      "details": "\u00a0Inter-Generational Cooking"
+    },
+    {
+      "id": 2460469,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306352,
+        "name": "Simone Buck",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "6-day painting workshop in Germany"
+    },
+    {
+      "id": 2460468,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306351,
+        "name": "Likely and District Chamber of Commerce",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "To send Cedar City Museum staff to visit and learn from the Kamloops Museum, and to obtain staff computer training"
+    },
+    {
+      "id": 2460467,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306334,
+        "name": "Cariboo Chilcotin Youth Fiddle Society",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Public barn dance"
+    },
+    {
+      "id": 2460466,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306339,
+        "name": "Cariboo Gold Dance Band",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Workshop and public performance"
+    },
+    {
+      "id": 2460465,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306338,
+        "name": "Arts on the Fly Festival Society",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Dark Times Festival"
+    },
+    {
+      "id": 2460464,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306350,
+        "name": "Lake City Secondary Columneetza Band Program",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "To offer Freedom Arts programming with Angela Roy"
+    },
+    {
+      "id": 2460463,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306349,
+        "name": "Downtown Williams Lake",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "To support Art Walk Buskers"
+    },
+    {
+      "id": 2460462,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306325,
+        "name": "Cariboo Chilcotin Conservation Society",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "To commission locally based photographs to be used in the Cariboo Chilcotin Conservation Field Guide"
+    },
+    {
+      "id": 2460461,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306348,
+        "name": "150 Mile Greenbelt, Trail & Heritage Society",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "To develop a website, Facebook page and email address for 150 Mile Schoolhouse"
+    },
+    {
+      "id": 2460460,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306334,
+        "name": "Cariboo Chilcotin Youth Fiddle Society",
+        "recipient_size": null
+      },
+      "gift_amount": 950.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "To purchase speakers, bodhran drums and sticks."
+    },
+    {
+      "id": 2460459,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306330,
+        "name": "Potato House Sustainable Community Society",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "To purchase photo and sound equipment."
+    },
+    {
+      "id": 2460458,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306347,
+        "name": "Esk'etemc (Alkali Lake First Nation)",
+        "recipient_size": null
+      },
+      "gift_amount": 3000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Esk'etemc Canvas Art Project"
+    },
+    {
+      "id": 2460457,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306335,
+        "name": "Cariboo Potters' Guild",
+        "recipient_size": null
+      },
+      "gift_amount": 1600.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Hand Building with Slabs workshop with Linda Doherty"
+    },
+    {
+      "id": 2460456,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306334,
+        "name": "Cariboo Chilcotin Youth Fiddle Society",
+        "recipient_size": null
+      },
+      "gift_amount": 1500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Love and Lemonade Community Dance"
+    },
+    {
+      "id": 2460455,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306325,
+        "name": "Cariboo Chilcotin Conservation Society",
+        "recipient_size": null
+      },
+      "gift_amount": 1500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Trash Art Project for Secondary Students"
+    },
+    {
+      "id": 2460454,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306325,
+        "name": "Cariboo Chilcotin Conservation Society",
+        "recipient_size": null
+      },
+      "gift_amount": 3000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Water Wise / Salmonid Art Exhibit"
+    },
+    {
+      "id": 2460453,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306338,
+        "name": "Arts on the Fly Festival Society",
+        "recipient_size": null
+      },
+      "gift_amount": 3000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Arts on the Fly Festival"
+    },
+    {
+      "id": 2460452,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 306346,
+        "name": "Christina Mary",
+        "recipient_size": null
+      },
+      "gift_amount": 1000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "5-day basket weaving workshop in Saskatchewan"
+    },
+    {
+      "id": 2460451,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 42535,
+        "name": "Station House Studio & Gallery Society",
+        "recipient_size": 104092
+      },
+      "gift_amount": 1100.0,
+      "focus": "Arts and culture",
+      "focus_display": "Historical activities",
+      "location": {
+        "province": "BC",
+        "city": "Williams Lake"
+      },
+      "year": 2018,
+      "details": "Williams Lake Spring Lilac Festival"
+    },
+    {
+      "id": 2460450,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 11558,
+        "name": "Cariboo Chilcotin Child Development Centre Association",
+        "recipient_size": 2305055
+      },
+      "gift_amount": 3000.0,
+      "focus": "Disability",
+      "focus_display": "Youth with physical disabilities",
+      "location": {
+        "province": "BC",
+        "city": "Williams Lake"
+      },
+      "year": 2018,
+      "details": "Uptown Art"
+    },
+    {
+      "id": 2460449,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 51186,
+        "name": "The Community Arts Council Of Williams Lake",
+        "recipient_size": 30491
+      },
+      "gift_amount": 1000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Performing arts",
+      "location": {
+        "province": "BC",
+        "city": "Williams Lake"
+      },
+      "year": 2018,
+      "details": "To purchase a laptop and printer"
+    },
+    {
+      "id": 2460448,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 51186,
+        "name": "The Community Arts Council Of Williams Lake",
+        "recipient_size": 30491
+      },
+      "gift_amount": 1000.0,
+      "focus": "Arts and culture",
+      "focus_display": "Performing arts",
+      "location": {
+        "province": "BC",
+        "city": "Williams Lake"
+      },
+      "year": 2018,
+      "details": "Cariboo Wildfire Legacy"
+    },
+    {
+      "id": 2460447,
+      "funder": {
+        "id": 11833,
+        "name": "Central Cariboo Arts & Culture Society"
+      },
+      "charity": {
+        "id": 23877,
+        "name": "Cariboo Chilcotin Partners For Literacy Society",
+        "recipient_size": 546734
+      },
+      "gift_amount": 500.0,
+      "focus": "Education",
+      "focus_display": "Literacy",
+      "location": {
+        "province": "BC",
+        "city": "Williams Lake"
+      },
+      "year": 2018,
+      "details": "Storywalk Williams Lake"
+    },
+    {
+      "id": 2459887,
+      "funder": {
+        "id": 14678,
+        "name": "Lloyd's Register Foundation"
+      },
+      "charity": {
+        "id": 3275,
+        "name": "Memorial University of Newfoundland",
+        "recipient_size": 604452120
+      },
+      "gift_amount": 149675.0,
+      "focus": "Education",
+      "focus_display": "University education",
+      "location": {
+        "province": "NL",
+        "city": "St. John's"
+      },
+      "year": 2018,
+      "details": "This project aims to collect data and perform initial research in small-scale fishing safety in the Philippines with application in other Southeast Asian nations (baseline data/information collection and analysis; community identification/stakeholder consultations in the Philippines; virtual consultations with key international organisations; recommendations on interventions with indicative costing & identification of Philippine organisations for future work)."
+    },
+    {
+      "id": 2459882,
+      "funder": {
+        "id": 14667,
+        "name": "Roddenberry Foundation"
+      },
+      "charity": {
+        "id": 306182,
+        "name": "Rates Monetique Network",
+        "recipient_size": null
+      },
+      "gift_amount": 15000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Catalyst program"
+    },
+    {
+      "id": 2459881,
+      "funder": {
+        "id": 14667,
+        "name": "Roddenberry Foundation"
+      },
+      "charity": {
+        "id": 306181,
+        "name": "NextBillion",
+        "recipient_size": null
+      },
+      "gift_amount": 13000.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": "Catalyst program"
+    },
+    {
+      "id": 2459443,
+      "funder": {
+        "id": 1805,
+        "name": "Kurt Weill Foundation for Music"
+      },
+      "charity": {
+        "id": 208739,
+        "name": "University of Toronto",
+        "recipient_size": 3478501000
+      },
+      "gift_amount": null,
+      "focus": "Education",
+      "focus_display": "University education",
+      "location": {
+        "province": "ON",
+        "city": "Toronto"
+      },
+      "year": 2018,
+      "details": "Production of Street Scene"
+    },
+    {
+      "id": 2309680,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 269972,
+        "name": "Zimbabwe Cultural Society of Alberta",
+        "recipient_size": null
+      },
+      "gift_amount": 2146.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309676,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296060,
+        "name": "Winterburn Golden Age Club",
+        "recipient_size": null
+      },
+      "gift_amount": 912.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309673,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 294686,
+        "name": "Whitemud Equine Learning Centre Association",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309668,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296056,
+        "name": "Warriors Athletic Assocation",
+        "recipient_size": null
+      },
+      "gift_amount": 15159.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309662,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296053,
+        "name": "United Cultures of Canada",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309660,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 294478,
+        "name": "Ukrainian Canadian Congress Edmonton Branch Association",
+        "recipient_size": null
+      },
+      "gift_amount": 3673.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309656,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296050,
+        "name": "Thunderbirds Water Polo Club",
+        "recipient_size": null
+      },
+      "gift_amount": 14286.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309654,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296048,
+        "name": "Thistle Curling Club Limited",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309645,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296042,
+        "name": "Team Edmonton Sports Association",
+        "recipient_size": null
+      },
+      "gift_amount": 339.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309642,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296041,
+        "name": "SWAT Hockey Association",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309639,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296040,
+        "name": "Superskate Advanced Hockey Development Association",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309632,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296037,
+        "name": "Sudanese Cultural League of Edmonton",
+        "recipient_size": null
+      },
+      "gift_amount": 6497.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309627,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296034,
+        "name": "South West Zone Hockey Association of Edmonton",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309621,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296031,
+        "name": "South Jasper Place Minor Baseball Association",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309619,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296030,
+        "name": "South Edmonton Minor Football Parents Association",
+        "recipient_size": null
+      },
+      "gift_amount": 13739.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309615,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296027,
+        "name": "South Edmonton Elite Baseball Association",
+        "recipient_size": null
+      },
+      "gift_amount": 15450.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309613,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 270876,
+        "name": "Somali Canadian Women and Children Association",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309610,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296020,
+        "name": "Soci\u00e9t\u00e9 Radio Communautaire du grand Edmonton society",
+        "recipient_size": null
+      },
+      "gift_amount": 333.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309606,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296017,
+        "name": "Snow Valley Racing Association",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309601,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296013,
+        "name": "Shang De Tai Chi Praying Mantis Martial Arts Association",
+        "recipient_size": null
+      },
+      "gift_amount": 9175.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    },
+    {
+      "id": 2309598,
+      "funder": {
+        "id": 14010,
+        "name": "Community Investment Operating Grants"
+      },
+      "charity": {
+        "id": 296012,
+        "name": "Shamrock Curling Society",
+        "recipient_size": null
+      },
+      "gift_amount": 16500.0,
+      "focus": null,
+      "focus_display": null,
+      "location": null,
+      "year": 2018,
+      "details": ""
+    }
+  ]
+}

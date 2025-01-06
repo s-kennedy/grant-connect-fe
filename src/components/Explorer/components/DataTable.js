@@ -2,20 +2,33 @@ import React, { useMemo, useState } from 'react'
 import { MaterialReactTable } from 'material-react-table'
 import { Dialog, FlatButton } from 'material-ui'
 import FullTextModal from './FullTextModal'
+import FunderHeader from './FunderHeader'
+import CharityHeader from './CharityHeader'
+
 
 const DataTable = ({records}) => {
   //should be memoized or stable
   const columns = useMemo(
     () => [
       {
-        accessorKey: 'funder.name', //access nested data with dot notation
-        header: 'Funder',
-        size: 150
-      },
-      {
         accessorKey: 'charity.name',
         header: 'Recipient',
-        size: 150
+        size: 150,
+        Header: ({ column }) => {
+          return (
+            <CharityHeader column={column} />
+          )
+        }
+      },
+      {
+        accessorKey: 'funder.name', //access nested data with dot notation
+        header: 'Funder',
+        size: 150,
+        Header: ({ column }) => {
+          return (
+            <FunderHeader column={column} />
+          )
+        }
       },
       {
         accessorKey: 'amount',
@@ -59,7 +72,7 @@ const DataTable = ({records}) => {
     []
   )
 
-  return <MaterialReactTable columns={columns} data={records} />
+  return <MaterialReactTable columns={columns} data={records} enableColumnOrdering />
 }
 
 export default DataTable
