@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Dialog, FlatButton, TextField } from 'material-ui'
 import SimpleInputField from './SimpleInputField'
+import AutocompleteField from './AutocompleteField'
 
 const CharityHeader = ({column}) => {
   const [showForm, setShowForm] = useState(false)
@@ -25,17 +26,14 @@ const CharityHeader = ({column}) => {
       >
         <div>
           <label htmlFor="recipient-name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search by name</label>
-          <SimpleInputField
+          <AutocompleteField
             type="text"
             id="recipient-name"
-            name="recipient-name"
-            className={`ge-simple-text-field tw-flex-1`}
-            underlineShow={false}
           />
         </div>
 
-        <div>
-          <p htmlFor="recipient-name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by size</p>
+        <div className="tw-mb-5">
+          <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by size</p>
           <div>
             <SimpleInputField
               id="recipient-min-size"
@@ -44,12 +42,15 @@ const CharityHeader = ({column}) => {
             />
           </div>
           <div>
-          <SimpleInputField
-            id="recipient-max-size"
-            label="Maximum"
-            type="number"
-          />
+            <SimpleInputField
+              id="recipient-max-size"
+              label="Maximum"
+              type="number"
+            />
           </div>
+        </div>
+        <div className="tw-flex tw-justify-end">
+          <FlatButton onClick={handleClose} label="Apply" variant="contained" color="primary" className={`button-primary`} />
         </div>
       </Dialog>
     </div>

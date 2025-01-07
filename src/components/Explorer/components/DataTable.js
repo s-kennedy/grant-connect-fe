@@ -4,6 +4,8 @@ import { Dialog, FlatButton } from 'material-ui'
 import FullTextModal from './FullTextModal'
 import FunderHeader from './FunderHeader'
 import CharityHeader from './CharityHeader'
+import AmountHeader from './AmountHeader'
+import FocusHeader from './FocusHeader'
 
 
 const DataTable = ({records}) => {
@@ -31,14 +33,32 @@ const DataTable = ({records}) => {
         }
       },
       {
-        accessorKey: 'amount',
+        accessorKey: 'gift_amount',
         header: 'Amount',
-        size: 150
+        size: 150,
+        Header: ({ column }) => {
+          return (
+            <AmountHeader column={column} />
+          )
+        },
+        Cell: ({ cell }) => {
+          const numberValue = cell.getValue()
+          const formattedValue = new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0, minimumFractionDigits: 0 }).format(
+            numberValue,
+          )
+
+          return <div>{formattedValue}</div>
+        }
       },
       {
         accessorKey: 'focus',
         header: 'Focus',
-        size: 150
+        size: 150,
+        Header: ({ column }) => {
+          return (
+            <FocusHeader column={column} />
+          )
+        },
       },
       {
         accessorKey: 'location.city',

@@ -3962,9 +3962,9 @@ table tr th, table tr td {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.Explorer .ge-simple-text-field {
+.Explorer .ge-simple-text-field input {
+  padding: 0.5rem !important;
 }
-
 
 .Explorer .Material-cards svg {
   top: 0 !important;
@@ -3978,10 +3978,14 @@ table tr th, table tr td {
   font-family: "Open Sans" !important;
 }
 
+.Explorer.ge-dialog > div > div > div > div {
+  overflow-y: scroll !important;
+}
 .button-primary {
   background-color: #ffc72c !important;
   height: unset !important;
   line-height: unset !important;
+  padding: 0.5rem !important;
 }
 .button-link {
   color: #7c878e !important;

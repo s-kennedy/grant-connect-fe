@@ -24,14 +24,23 @@ const CharityHeader = ({column}) => {
         onBackdropClick={handleClose}
         className="Explorer"
       >
-        <div className="tw-mb-4">
-          <label htmlFor="recipient-name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search by name</label>
-          <AutocompleteField
-            type="text"
-            id="recipient-name"
-          />
+        <div className="tw-mb-5">
+          <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by size</p>
+          <div>
+            <SimpleInputField
+              id="recipient-min-size"
+              label="Minimum"
+              type="number"
+            />
+          </div>
+          <div>
+            <SimpleInputField
+              id="recipient-max-size"
+              label="Maximum"
+              type="number"
+            />
+          </div>
         </div>
-
         <div className="tw-flex tw-justify-end">
           <FlatButton onClick={handleClose} label="Apply" variant="contained" color="primary" className={`button-primary`} />
         </div>

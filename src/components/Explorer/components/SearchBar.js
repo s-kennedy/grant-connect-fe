@@ -25,15 +25,6 @@ function SearchBar({
   return (
     <div className="relative">
       <div className={`ge-search-field-wrapper tw-flex tw-gap-2 tw-items-stretch`}>
-        {/*<TextField
-          type="text"
-          name={`ge-search-field`}
-          className={`ge-search-field tw-flex-1`}
-          value={searchTerm}
-          onChange={handleChange}
-          placeholder={placeholderText}
-          underlineShow={false}
-        />*/}
         <Autocomplete
           id="gifts-search-bar"
           fullWidth
