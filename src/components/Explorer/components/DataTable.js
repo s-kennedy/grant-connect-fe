@@ -6,6 +6,9 @@ import FunderHeader from './FunderHeader'
 import CharityHeader from './CharityHeader'
 import AmountHeader from './AmountHeader'
 import FocusHeader from './FocusHeader'
+import LocationHeader from './LocationHeader'
+import YearHeader from './YearHeader'
+import PurposeHeader from './PurposeHeader'
 
 
 const DataTable = ({records}) => {
@@ -63,12 +66,22 @@ const DataTable = ({records}) => {
       {
         accessorKey: 'location.city',
         header: 'Location',
-        size: 150
+        size: 150,
+        Header: ({ column }) => {
+          return (
+            <LocationHeader column={column} />
+          )
+        },
       },
       {
         accessorKey: 'year',
         header: 'Year',
-        size: 150
+        size: 150,
+        Header: ({ column }) => {
+          return (
+            <YearHeader column={column} />
+          )
+        },
       },
       {
         accessorKey: 'purpose',
@@ -86,6 +99,11 @@ const DataTable = ({records}) => {
           }
 
           return <div>{fullText}</div>
+        },
+        Header: ({ column }) => {
+          return (
+            <PurposeHeader column={column} />
+          )
         }
       }
     ],

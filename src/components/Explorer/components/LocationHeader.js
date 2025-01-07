@@ -3,7 +3,7 @@ import { Dialog, FlatButton, TextField } from 'material-ui'
 import SimpleInputField from './SimpleInputField'
 import AutocompleteField from './AutocompleteField'
 
-const FunderHeader = ({column}) => {
+const RegionHeader = ({column}) => {
   const [showForm, setShowForm] = useState(false)
   
   const handleClose = () => {
@@ -25,10 +25,10 @@ const FunderHeader = ({column}) => {
         className="Explorer"
       >
         <div className="tw-mb-4">
-          <label htmlFor="recipient-name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search by name</label>
+          <label htmlFor="recipient-name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search locations</label>
           <AutocompleteField
             type="text"
-            id="recipient-name"
+            id="locations"
           />
         </div>
 
@@ -40,4 +40,4 @@ const FunderHeader = ({column}) => {
   )
 }
 
-export default FunderHeader
+export default RegionHeader
