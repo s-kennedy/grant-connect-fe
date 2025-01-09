@@ -427,7 +427,17 @@ export const locale = () => {
         contact:
           'https://datastudio.google.com/embed/reporting/a747aeb9-1204-4578-8eb7-9d6240ade7be/page/2pL2B',
         privacy: 'Privacy',
-        privacy_url: 'https://policies.google.com/privacy'
+        privacy_url: 'https://policies.google.com/privacy',
+        results_summary_text: 'Showing results for:',
+        keyword: "Keyword",
+        recipient_min_size: "Minimum recipient size",
+        recipient_max_size: "Maximum recipient size",
+        amount_min: "Minimum amount",
+        amount_max: "Maximum amount",
+        year_min: "Year (from)",
+        year_max: "Year (to)",
+        focus: "Focus",
+        cause: "Focus",
       },
       activities: {
         numGifts: 'Number of gifts',
@@ -857,7 +867,11 @@ export const locale = () => {
         contact:
           'https://datastudio.google.com/embed/reporting/32ae3fff-ad49-4653-82ef-323329522aac/page/2pL2B?hl=fr',
         privacy: 'Confidentialité',
-        privacy_url: 'https://policies.google.com/privacy'
+        privacy_url: 'https://policies.google.com/privacy',
+        results_summary_text: "Showing results for:",
+        keyword: "Keyword",
+        amount: "Amount",
+        cause: "Focus",
       },
       activities: {
         numGifts: 'Nombre de dons',

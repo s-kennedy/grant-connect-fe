@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Dialog, FlatButton, TextField } from 'material-ui'
 import SimpleInputField from './SimpleInputField'
 import AutocompleteField from './AutocompleteField'
+import { FilterList } from 'material-ui-icons'
 
 const RegionHeader = ({column}) => {
   const [showForm, setShowForm] = useState(false)
@@ -10,13 +11,19 @@ const RegionHeader = ({column}) => {
     setShowForm(false)
   }
 
-  const handleOpen = () => {
+  const handleOpen = (e) => {
+    e.stopPropagation()
     setShowForm(true)
   }
 
   return (
     <div>
-      <FlatButton onClick={handleOpen}>{column.columnDef.header}</FlatButton>
+      <FlatButton onClick={handleOpen} className="ge-header-button">
+        <div className="tw-inline-flex tw-items-center tw-text-dark">
+          <FilterList />
+          <span className="tw-ml-1">{column.columnDef.header}</span>
+        </div>
+      </FlatButton>
       <Dialog
         open={showForm}
         onClose={handleClose}

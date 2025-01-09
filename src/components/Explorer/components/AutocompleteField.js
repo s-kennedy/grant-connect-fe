@@ -8,6 +8,7 @@ const AutocompleteField = ({id, className, autocompleteResults=[], handleInputCh
   return (
     <Autocomplete
       id={id}
+      name={id}
       fullWidth
       freeSolo
       size="small"

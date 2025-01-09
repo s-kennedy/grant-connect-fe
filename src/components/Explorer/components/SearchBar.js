@@ -17,10 +17,16 @@ function SearchBar({
   searchTerm,
   setSearchTerm,
   autocompleteResults, 
-  handleSearchChange
+  handleSearchChange,
+  handleFilterChange
 }) {
   const { i18n } = useTranslation()
   const t = i18n.getResourceBundle(i18n.language)
+
+  const handleSelect = (e) => {
+    console.log(e)
+    handleFilterChange({keyword: searchTerm})
+  }
 
   return (
     <div className="relative">
@@ -43,13 +49,16 @@ function SearchBar({
           }}
           getOptionLabel={(option) => `${option.match}`}
           autoComplete
-          includeInputInList
           filterSelectedOptions
           noOptionsText="No suggested results"
           onInputChange={handleSearchChange}
-          renderInput={(params) => <TextField {...params} placeholder={placeholderText} />}
+          inputValue={searchTerm}
+          renderInput={(params) => {
+            console.log(params)
+            return (<TextField {...params} placeholder={placeholderText} />)
+          }}
         />
-        <FlatButton label="Search" variant="contained" color="primary" className={`button-primary`} />
+        <FlatButton onClick={handleSelect} label="Search" variant="contained" color="primary" className={`button-primary`} />
       </div>
     </div>
   )

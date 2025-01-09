@@ -12,9 +12,9 @@ function SavedSearchesDropdown({ classes, label, placeholderText, onChange }) {
   const [value, setValue] = useState('')
 
   return (
-    <div className={`ge-search-field-wrapper tw-flex tw-gap-2`}>
+    <div className={`ge-search-field-wrapper tw-flex tw-gap-2 tw-mt-2`}>
       <FlatButton color="primary" className={`button-link`}>
-        <div className="tw-inline-flex tw-p-1 tw-items-center">
+        <div className="tw-inline-flex tw-px-2 tw-items-center">
           <Star />
           <span className="tw-underline tw-ml-1">Your Saved Searches</span>
         </div>

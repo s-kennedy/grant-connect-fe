@@ -3989,7 +3989,6 @@ table tr th, table tr td {
 }
 .button-link {
   color: #7c878e !important;
-  height: unset !important;
 }
 .button-link span {
   font-weight: 400 !important;
@@ -3997,6 +3996,42 @@ table tr th, table tr td {
 .button-link svg {
   height: 18px !important;
   width: 18px !important;
+}
+
+.ge-button, .ge-header-button {
+  height: 32px !important;
+  min-width: unset !important;
+/*  background-color: #ffc72c !important;*/
+  line-height: unset !important;
+  padding: 0.25rem !important;
+  color: #000000 !important;
+  border: 1px solid #7C878E !important;
+}
+
+.ge-button {
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+
+.ge-button.grey {
+  background-color: #7C878E !important;
+  color: #ffffff !important;
+}
+
+.ge-button.dark-grey {
+  background-color: #404040 !important;
+  color: #ffffff !important;
+}
+
+.ge-button svg, .ge-header-button svg {
+  height: 16px !important;
+  width: 16px !important;
+  color: inherit !important;
+}
+
+.result-button svg {
+  height: 16px !important;
+  width: 16px !important;
 }
 
 .full-text-modal {
