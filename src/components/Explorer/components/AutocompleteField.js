@@ -3,24 +3,23 @@ import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 
 
-
-const AutocompleteField = ({id, className, autocompleteResults=[], handleInputChange, placeholderText="", ...props}) => {
+const AutocompleteField = ({id, className, options, onInputChange, placeholderText="", ...props}) => {
+  console.log({options})
   return (
+    <div className="relative">
     <Autocomplete
       id={id}
-      name={id}
       fullWidth
       freeSolo
       size="small"
-      filterOptions={(x) => x}
-      options={autocompleteResults}
-      autoComplete
-      includeInputInList
-      filterSelectedOptions
+      options={options}
       noOptionsText="No suggested results"
-      onInputChange={handleInputChange}
+      onInputChange={onInputChange}
+      // inputValue={searchTerm}
       renderInput={(params) => <TextField {...params} placeholder={placeholderText} />}
+      {...props}
     />
+    </div>
   )
 }
 

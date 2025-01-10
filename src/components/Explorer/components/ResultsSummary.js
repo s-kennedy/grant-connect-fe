@@ -30,8 +30,9 @@ const ResultSummary = ({filters}) => {
   }
 
   return (
-      <div className="tw-inline-flex tw-items-center tw-gap-2 tw-mb-4">
-        <span>{t.explorer.results_summary_text}</span>
+      <div className="tw-flex tw-items-start tw-gap-2 tw-mb-4">
+        <div className="tw-flex-none tw-mt-2">{t.explorer.results_summary_text}</div>
+        <div className="tw-inline-flex tw-items-center tw-gap-2 tw-mb-4 tw-flex-wrap">
         {
           filterKeys.map(filterKey => {
             const filterValue = filters[filterKey]
@@ -43,6 +44,7 @@ const ResultSummary = ({filters}) => {
             )
           })
         }
+        </div>
       </div>
   )
 }

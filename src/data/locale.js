@@ -437,7 +437,10 @@ export const locale = () => {
         year_min: "Year (from)",
         year_max: "Year (to)",
         focus: "Focus",
-        cause: "Focus",
+        recipient_name: "Recipient",
+        funder_name: "Funder",
+        location: "Region",
+        purpose: "Description",
       },
       activities: {
         numGifts: 'Number of gifts',

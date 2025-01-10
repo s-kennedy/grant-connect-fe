@@ -4,7 +4,6 @@ import { FlatButton } from 'material-ui'
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 
-
 // App Language.
 import { useTranslation } from 'react-i18next'
 
@@ -52,11 +51,8 @@ function SearchBar({
           filterSelectedOptions
           noOptionsText="No suggested results"
           onInputChange={handleSearchChange}
-          inputValue={searchTerm}
-          renderInput={(params) => {
-            console.log(params)
-            return (<TextField {...params} placeholder={placeholderText} />)
-          }}
+          // inputValue={searchTerm}
+          renderInput={(params) => <TextField {...params} placeholder={placeholderText} />}
         />
         <FlatButton onClick={handleSelect} label="Search" variant="contained" color="primary" className={`button-primary`} />
       </div>

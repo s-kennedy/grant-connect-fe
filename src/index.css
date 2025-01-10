@@ -4008,6 +4008,10 @@ table tr th, table tr td {
   border: 1px solid #7C878E !important;
 }
 
+.ge-header-button span {
+  font-weight:600 !important;
+}
+
 .ge-button {
   text-transform: uppercase;
   font-weight: 600 !important;

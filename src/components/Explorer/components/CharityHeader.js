@@ -4,8 +4,11 @@ import SimpleInputField from './SimpleInputField'
 import AutocompleteField from './AutocompleteField'
 import { FilterList } from 'material-ui-icons'
 
+
 const CharityHeader = ({column, handleFilterChange}) => {
   const [showForm, setShowForm] = useState(false)
+  const [searchTerm, setSearchTerm] = useState("")
+  const [ autocompleteResults, setAutocompleteResults ] = useState([])
   
   const handleClose = () => {
     setShowForm(false)
@@ -14,6 +17,23 @@ const CharityHeader = ({column, handleFilterChange}) => {
   const handleOpen = (e) => {
     e.stopPropagation()
     setShowForm(true)
+  }
+
+  useEffect(() => {
+    setAutocompleteResults()
+  })
+
+  const handleSearchChange = (event, newInputValue) => {
+    setAutocompleteResults([])
+    const query = event?.target?.value
+    console.log({query})
+
+    setSearchTerm(query)
+
+    if (query?.length > 2) {
+      const autocomplete = ["Kitchener-Waterloo Art Gallery", "Lost & Found Theatre Inc.", "CAFKA - Contemporary Art Forum Kitchener & Area", "Centre in the Square Inc.", "J.M. Drama Alumni"]
+      setAutocompleteResults(autocomplete)
+    }
   }
 
   const handleSubmit = (e) => {
@@ -49,11 +69,10 @@ const CharityHeader = ({column, handleFilterChange}) => {
       >
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="recipient-name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search by name</label>
-            <AutocompleteField
-              type="text"
+            <label htmlFor="recipient_name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search by name</label>
+            <SimpleInputField
               id="recipient_name"
-              autocompleteResults={["Kitchener-Waterloo Art Gallery", "Lost & Found Theatre Inc.", "CAFKA - Contemporary Art Forum Kitchener & Area", "Centre in the Square Inc.", "J.M. Drama Alumni"]}
+              type="text"
             />
           </div>
 

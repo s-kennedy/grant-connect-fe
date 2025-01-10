@@ -4,7 +4,7 @@ import SimpleInputField from './SimpleInputField'
 import AutocompleteField from './AutocompleteField'
 import { FilterList } from 'material-ui-icons'
 
-const FunderHeader = ({column}) => {
+const FunderHeader = ({column, handleFilterChange}) => {
   const [showForm, setShowForm] = useState(false)
   
   const handleClose = () => {
@@ -14,6 +14,22 @@ const FunderHeader = ({column}) => {
   const handleOpen = (e) => {
     e.stopPropagation()
     setShowForm(true)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const formData = new FormData(e.target)
+    const formKeys = formData.keys()
+    const data = formKeys.reduce((obj, key) => {
+      const value = formData.get(key)
+      if (value) {
+        obj[key] = value
+      }
+      return obj
+    }, {})
+
+    handleFilterChange(data)
+    handleClose()
   }
 
   return (
@@ -31,17 +47,19 @@ const FunderHeader = ({column}) => {
         onBackdropClick={handleClose}
         className="Explorer"
       >
-        <div className="tw-mb-4">
-          <label htmlFor="recipient-name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search by name</label>
-          <AutocompleteField
-            type="text"
-            id="recipient-name"
-          />
-        </div>
+        <form onSubmit={handleSubmit}>
+          <div className="tw-mb-4">
+            <label htmlFor="recipient-name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search by name</label>
+            <SimpleInputField
+              id="funder_name"
+              type="text"
+            />
+          </div>
 
-        <div className="tw-flex tw-justify-end">
-          <FlatButton onClick={handleClose} label="Apply" variant="contained" color="primary" className={`button-primary`} />
-        </div>
+          <div className="tw-flex tw-justify-end">
+            <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
+          </div>
+        </form>
       </Dialog>
     </div>
   )

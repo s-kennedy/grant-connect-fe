@@ -85,7 +85,7 @@ const DataTable = ({records, handleFilterChange}) => {
       },
       {
         accessorKey: 'purpose',
-        header: 'Purpose',
+        header: 'Description',
         size: 150,
         Cell: ({ cell }) => {
           const fullText = cell.getValue()
