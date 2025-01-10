@@ -33,7 +33,7 @@ const Explorer = ({ url }) => {
     setFilters({})
     setSearchTerm("")
     setAutocompleteValue(null)
-    setAutocompleteResults([])g
+    setAutocompleteResults([])
   }
 
   useEffect(() => {
