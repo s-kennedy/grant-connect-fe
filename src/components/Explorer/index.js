@@ -32,6 +32,8 @@ const Explorer = ({ url }) => {
   const reset = () => {
     setFilters({})
     setSearchTerm("")
+    setAutocompleteValue(null)
+    setAutocompleteResults([])gi
   }
 
   useEffect(() => {
