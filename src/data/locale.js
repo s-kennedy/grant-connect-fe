@@ -428,6 +428,7 @@ export const locale = () => {
           'https://datastudio.google.com/embed/reporting/a747aeb9-1204-4578-8eb7-9d6240ade7be/page/2pL2B',
         privacy: 'Privacy',
         privacy_url: 'https://policies.google.com/privacy',
+        your_saved_searches: 'Your Saved Searches',
         results_summary_text: 'Showing results for:',
         keyword: "Keyword",
         recipient_min_size: "Minimum recipient size",
@@ -441,6 +442,7 @@ export const locale = () => {
         funder_name: "Funder",
         location: "Region",
         purpose: "Description",
+        search: "Search",
       },
       activities: {
         numGifts: 'Number of gifts',

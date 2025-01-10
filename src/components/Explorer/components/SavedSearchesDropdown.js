@@ -6,7 +6,7 @@ import { Star } from 'material-ui-icons'
 // App Language.
 import { useTranslation } from 'react-i18next'
 
-function SavedSearchesDropdown({ classes, label, placeholderText, onChange }) {
+function SavedSearchesDropdown() {
   const { i18n } = useTranslation()
   const t = i18n.getResourceBundle(i18n.language)
   const [value, setValue] = useState('')
@@ -16,7 +16,7 @@ function SavedSearchesDropdown({ classes, label, placeholderText, onChange }) {
       <FlatButton color="primary" className={`button-link`}>
         <div className="tw-inline-flex tw-px-2 tw-items-center">
           <Star />
-          <span className="tw-underline tw-ml-1">Your Saved Searches</span>
+          <span className="tw-underline tw-ml-1">{t.explorer.your_saved_searches}</span>
         </div>
       </FlatButton>
     </div>

@@ -22,6 +22,7 @@ const Explorer = ({ url }) => {
   const { i18n } = useTranslation()
   const t = i18n.getResourceBundle(i18n.language)
   const [ autocompleteResults, setAutocompleteResults ] = useState([])
+  const [ autocompleteValue, setAutocompleteValue ] = useState(null)
   const [ searchTerm, setSearchTerm ] = useState("")
   const [ records, setRecords ] = useState([])
   const [ loading, setLoading ] = useState(false)
@@ -69,8 +70,7 @@ const Explorer = ({ url }) => {
 
   const handleSearchChange = (event, newInputValue) => {
     setAutocompleteResults([])
-    const query = event?.target?.value
-    console.log({query})
+    const query = newInputValue
 
     setSearchTerm(query)
 
@@ -80,14 +80,30 @@ const Explorer = ({ url }) => {
     }
   }
 
+  const onAutocompleteSelect = (event, value) => {
+    if (value?.field === "Recipient") {
+      handleFilterChange({ recipient_name: value.match })
+    }
+
+    if (value?.field === "Funder") {
+      handleFilterChange({ funder_name: value.match })
+    }
+
+    if (value?.field === "Keyword") {
+      handleFilterChange({ keyword: value.match })
+    }
+
+    setAutocompleteResults([])
+    setAutocompleteValue(null)
+    setSearchTerm("")
+  }
+
   const handleFilterChange = (input) => {
     setFilters({
       ...filters,
       ...input
     })
   }
-
-  console.log(filters)
 
   return (
     <div className="Explorer">
@@ -105,6 +121,8 @@ const Explorer = ({ url }) => {
                 autocompleteResults={autocompleteResults}
                 handleSearchChange={handleSearchChange}
                 handleFilterChange={handleFilterChange}
+                onAutocompleteSelect={onAutocompleteSelect}
+                autocompleteValue={autocompleteValue}
               />
               <div className="">
                 <SavedSearchesDropdown />

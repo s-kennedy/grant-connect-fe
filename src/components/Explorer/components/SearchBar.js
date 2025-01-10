@@ -11,19 +11,19 @@ function SearchBar({
   classes, 
   label, 
   placeholderText, 
-  onChange, 
   searchLoading, 
   searchTerm,
   setSearchTerm,
   autocompleteResults, 
   handleSearchChange,
-  handleFilterChange
+  handleFilterChange,
+  onAutocompleteSelect,
+  autocompleteValue
 }) {
   const { i18n } = useTranslation()
   const t = i18n.getResourceBundle(i18n.language)
 
   const handleSelect = (e) => {
-    console.log(e)
     handleFilterChange({keyword: searchTerm})
   }
 
@@ -46,15 +46,17 @@ function SearchBar({
               </li>
             );
           }}
+          onChange={onAutocompleteSelect}
+          value={autocompleteValue}
           getOptionLabel={(option) => `${option.match}`}
           autoComplete
           filterSelectedOptions
           noOptionsText="No suggested results"
           onInputChange={handleSearchChange}
-          // inputValue={searchTerm}
+          inputValue={searchTerm}
           renderInput={(params) => <TextField {...params} placeholder={placeholderText} />}
         />
-        <FlatButton onClick={handleSelect} label="Search" variant="contained" color="primary" className={`button-primary`} />
+        <FlatButton onClick={handleSelect} label={t.explorer.search} variant="contained" color="primary" className={`button-primary`} />
       </div>
     </div>
   )

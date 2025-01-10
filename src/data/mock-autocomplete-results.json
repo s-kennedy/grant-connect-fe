@@ -1,14 +1,6 @@
 {
   "results": [
     { 
-      "field": "Focus",
-      "match": "Theatre"
-    },
-    { 
-      "field": "Purpose",
-      "match": "Installing an elevator at the community theatre"
-    },
-    { 
       "field": "Recipient",
       "match": "Lost & Found Theatre Inc."
     },
