@@ -4,8 +4,9 @@ import SimpleInputField from './SimpleInputField'
 import AutocompleteField from './AutocompleteField'
 import { FilterList } from 'material-ui-icons'
 
-const AmountHeader = ({column, handleFilterChange}) => {
+const AmountHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
+  const isActive = !!filters["amount_min"] || !!filters["amount_max"]
   
   const handleClose = () => {
     setShowForm(false)
@@ -35,7 +36,7 @@ const AmountHeader = ({column, handleFilterChange}) => {
 
   return (
     <div>
-      <FlatButton onClick={handleOpen} className="ge-header-button">
+      <FlatButton onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
         <div className="tw-inline-flex tw-items-center tw-text-dark">
           <FilterList />
           <span className="tw-ml-1">{column.columnDef.header}</span>

@@ -3,8 +3,9 @@ import { Dialog, FlatButton, TextField } from 'material-ui'
 import SimpleInputField from './SimpleInputField'
 import { FilterList } from 'material-ui-icons'
 
-const RegionHeader = ({column, handleFilterChange}) => {
+const RegionHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
+  const isActive = !!filters["location"]
   
   const handleClose = () => {
     setShowForm(false)
@@ -33,7 +34,7 @@ const RegionHeader = ({column, handleFilterChange}) => {
 
   return (
     <div>
-      <FlatButton onClick={handleOpen} className="ge-header-button">
+      <FlatButton onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
         <div className="tw-inline-flex tw-items-center tw-text-dark">
           <FilterList />
           <span className="tw-ml-1">{column.columnDef.header}</span>
@@ -52,6 +53,7 @@ const RegionHeader = ({column, handleFilterChange}) => {
             <SimpleInputField
               type="text"
               id="location"
+              placeholder={`Try searching for "Vancouver"`}
             />
           </div>
 

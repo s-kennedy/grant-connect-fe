@@ -5,10 +5,12 @@ import AutocompleteField from './AutocompleteField'
 import { FilterList } from 'material-ui-icons'
 
 
-const CharityHeader = ({column, handleFilterChange}) => {
+const CharityHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
   const [ autocompleteResults, setAutocompleteResults ] = useState([])
+
+  const isActive = !!filters["recipient_name"] || !!filters["recipient_min_size"] || !!filters["recipient_max_size"]
   
   const handleClose = () => {
     setShowForm(false)
@@ -54,7 +56,7 @@ const CharityHeader = ({column, handleFilterChange}) => {
 
   return (
     <div>
-      <FlatButton onClick={handleOpen} className="ge-header-button">
+      <FlatButton onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
         <div className="tw-inline-flex tw-items-center tw-text-dark">
           <FilterList />
           <span className="tw-ml-1">{column.columnDef.header}</span>
@@ -73,6 +75,7 @@ const CharityHeader = ({column, handleFilterChange}) => {
             <SimpleInputField
               id="recipient_name"
               type="text"
+              placeholder={`Try searching for "Kitchener-Waterloo Art Gallery"`}
             />
           </div>
 

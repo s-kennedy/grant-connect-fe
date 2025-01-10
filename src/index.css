@@ -4017,7 +4017,11 @@ table tr th, table tr td {
   padding-right: 8px !important;
   padding-left: 8px !important;
   color: #000000 !important;
-  border: 1px solid #7C878E !important;
+  border: 1px solid #ffc72c !important;
+}
+
+.ge-header-button.active {
+  background-color: #ffc72c !important;
 }
 
 .ge-header-button span {

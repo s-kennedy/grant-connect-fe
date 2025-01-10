@@ -4,8 +4,9 @@ import SimpleInputField from './SimpleInputField'
 import AutocompleteField from './AutocompleteField'
 import { FilterList } from 'material-ui-icons'
 
-const YearHeader = ({column, handleFilterChange}) => {
+const YearHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
+  const isActive = !!filters["year_min"] || !!filters["year_max"]
   
   const handleClose = () => {
     setShowForm(false)
@@ -34,7 +35,7 @@ const YearHeader = ({column, handleFilterChange}) => {
 
   return (
     <div>
-      <FlatButton onClick={handleOpen} className="ge-header-button">
+      <FlatButton onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
         <div className="tw-inline-flex tw-items-center tw-text-dark">
           <FilterList />
           <span className="tw-ml-1">{column.columnDef.header}</span>

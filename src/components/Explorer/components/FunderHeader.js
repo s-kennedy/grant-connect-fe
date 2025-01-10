@@ -4,8 +4,10 @@ import SimpleInputField from './SimpleInputField'
 import AutocompleteField from './AutocompleteField'
 import { FilterList } from 'material-ui-icons'
 
-const FunderHeader = ({column, handleFilterChange}) => {
+const FunderHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
+  const isActive = !!filters["funder_name"]
+  
   
   const handleClose = () => {
     setShowForm(false)
@@ -34,7 +36,7 @@ const FunderHeader = ({column, handleFilterChange}) => {
 
   return (
     <div>
-      <FlatButton onClick={handleOpen} className="ge-header-button">
+      <FlatButton onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
         <div className="tw-inline-flex tw-items-center tw-text-dark">
           <FilterList />
           <span className="tw-ml-1">{column.columnDef.header}</span>
@@ -53,6 +55,7 @@ const FunderHeader = ({column, handleFilterChange}) => {
             <SimpleInputField
               id="funder_name"
               type="text"
+              placeholder={`Try searching for "CanadaHelps"`}
             />
           </div>
 

@@ -11,7 +11,7 @@ import YearHeader from './YearHeader'
 import PurposeHeader from './PurposeHeader'
 
 
-const DataTable = ({records, handleFilterChange}) => {
+const DataTable = ({records, handleFilterChange, filters}) => {
   //should be memoized or stable
   const columns = useMemo(
     () => [
@@ -21,7 +21,7 @@ const DataTable = ({records, handleFilterChange}) => {
         size: 150,
         Header: ({ column }) => {
           return (
-            <CharityHeader column={column} handleFilterChange={handleFilterChange} />
+            <CharityHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
           )
         }
       },
@@ -31,7 +31,7 @@ const DataTable = ({records, handleFilterChange}) => {
         size: 150,
         Header: ({ column }) => {
           return (
-            <FunderHeader column={column} handleFilterChange={handleFilterChange}/>
+            <FunderHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
           )
         }
       },
@@ -41,7 +41,7 @@ const DataTable = ({records, handleFilterChange}) => {
         size: 150,
         Header: ({ column }) => {
           return (
-            <AmountHeader column={column} handleFilterChange={handleFilterChange}/>
+            <AmountHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
           )
         },
         Cell: ({ cell }) => {
@@ -59,7 +59,7 @@ const DataTable = ({records, handleFilterChange}) => {
         size: 150,
         Header: ({ column }) => {
           return (
-            <FocusHeader column={column} handleFilterChange={handleFilterChange}/>
+            <FocusHeader column={column} handleFilterChange={handleFilterChange} filters={filters}/>
           )
         },
       },
@@ -69,7 +69,7 @@ const DataTable = ({records, handleFilterChange}) => {
         size: 150,
         Header: ({ column }) => {
           return (
-            <LocationHeader column={column} handleFilterChange={handleFilterChange}/>
+            <LocationHeader column={column} handleFilterChange={handleFilterChange} filters={filters}/>
           )
         },
       },
@@ -79,7 +79,7 @@ const DataTable = ({records, handleFilterChange}) => {
         size: 150,
         Header: ({ column }) => {
           return (
-            <YearHeader column={column} handleFilterChange={handleFilterChange}/>
+            <YearHeader column={column} handleFilterChange={handleFilterChange} filters={filters}/>
           )
         },
       },
@@ -102,7 +102,7 @@ const DataTable = ({records, handleFilterChange}) => {
         },
         Header: ({ column }) => {
           return (
-            <PurposeHeader column={column} handleFilterChange={handleFilterChange}/>
+            <PurposeHeader column={column} handleFilterChange={handleFilterChange} filters={filters}/>
           )
         }
       }

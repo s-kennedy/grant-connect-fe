@@ -11,6 +11,11 @@ import ButtonWithIcon from './components/ButtonWithIcon'
 import ResultsSummary from './components/ResultsSummary'
 import { Star, Undo, Close } from 'material-ui-icons'
 import mockData from 'data/ge-data/default.json'
+import mockDataFocus from 'data/ge-data/focus-health_order-amount.json'
+import mockDataFunder from 'data/ge-data/funder-canadahelps_location-vancouver-bc_focus-education_order-amount.json'
+import mockDataRecipient from 'data/ge-data/recipient-kitchener-waterloo-art-gallery_min-amount-10000_order-year.json'
+import mockDataRecipientSize from 'data/ge-data/recipient-size-range-5000-15000_focus-religion_order-amount.json'
+import mockDataYear from 'data/ge-data/year-2018.json'
 import mockAutocompleteResults from 'data/mock-autocomplete-results.json'
 
 const Explorer = ({ url }) => {
@@ -30,8 +35,34 @@ const Explorer = ({ url }) => {
 
   useEffect(() => {
     setLoading(true)
+    setRecords([])
     setTimeout(() => {
-      setRecords(mockData.results)
+      let filteredRecords = []
+      if (filters['recipient_name']) {
+        filteredRecords = filteredRecords.concat(mockDataRecipient.results)
+      }
+
+      if (filters['recipient_min_size'] || filters['recipient_max_size']) {
+        filteredRecords = filteredRecords.concat(mockDataRecipientSize.results)
+      }
+
+      if (filters['funder_name'] || filters['location']) {
+        filteredRecords = filteredRecords.concat(mockDataFunder.results)
+      }
+
+      if (filters['focus']) {
+        filteredRecords = filteredRecords.concat(mockDataFocus.results)
+      }
+
+      if (filters['year_min'] || filters['year_max']) {
+        filteredRecords = filteredRecords.concat(mockDataYear.results)
+      }
+
+      if (filteredRecords.length === 0) {
+        filteredRecords = mockData.results
+      }
+
+      setRecords(filteredRecords)
       setLoading(false)
     }, 1000)
   }, [filters])
@@ -98,7 +129,7 @@ const Explorer = ({ url }) => {
                   <Loader />
                 </div>
               ) : (
-                <DataTable records={records} handleFilterChange={handleFilterChange} />
+                <DataTable records={records} handleFilterChange={handleFilterChange} filters={filters} />
               )}
             </Paper>
           </Col>

@@ -6,9 +6,12 @@ import causes from 'data/ge-data/causes.json'
 import { getPrimaryText, hasSelection, facetSort } from 'components/Facets/helpers'
 import { FilterList } from 'material-ui-icons'
 
-const FocusHeader = ({column, handleFilterChange}) => {
+const FocusHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
   const [selected, setSelected] = useState([])
+
+  const isActive = !!filters["focus"]
+
   
   const handleClose = () => {
     setShowForm(false)
@@ -26,7 +29,7 @@ const FocusHeader = ({column, handleFilterChange}) => {
 
   return (
     <div>
-      <FlatButton onClick={handleOpen} className="ge-header-button">
+      <FlatButton onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
         <div className="tw-inline-flex tw-items-center tw-text-dark">
           <FilterList />
           <span className="tw-ml-1">{column.columnDef.header}</span>
