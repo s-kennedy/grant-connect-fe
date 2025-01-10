@@ -3,14 +3,16 @@ import React, { useState, useEffect } from 'react'
 import { Loop } from 'material-ui-icons'
 import { useTranslation } from 'react-i18next'
 import { Close } from 'material-ui-icons'
+import { IconButton } from 'material-ui'
 
 
-const ResultSummary = ({filters}) => {
+const ResultSummary = ({filters, handleFilterChange}) => {
   const { i18n } = useTranslation()
   const t = i18n.getResourceBundle(i18n.language)
   const filterKeys = Object.keys(filters)
+  const activeFilterKeys = filterKeys.filter(k => !!filters[k])
 
-  if (filterKeys.length === 0) {
+  if (activeFilterKeys.length === 0) {
     return null
   }
 
@@ -29,17 +31,24 @@ const ResultSummary = ({filters}) => {
     }
   }
 
+  const removeFilter = (filterKey) => () => {
+    handleFilterChange({ [filterKey]: null })
+  }
+
   return (
       <div className="tw-flex tw-items-start tw-gap-2 tw-mb-4">
-        <div className="tw-flex-none tw-mt-2">{t.explorer.results_summary_text}</div>
+        <div className="tw-flex-none tw-mt-1">{t.explorer.results_summary_text}</div>
         <div className="tw-inline-flex tw-items-center tw-gap-2 tw-mb-4 tw-flex-wrap">
         {
-          filterKeys.map(filterKey => {
+          activeFilterKeys.map(filterKey => {
             const filterValue = filters[filterKey]
+            if (!filterValue) {
+              return null
+            }
             return (
-              <div key={`${filterKey}-${filterValue}`} className="result-button tw-border tw-border-grey tw-border-solid tw-bg-white tw-rounded tw-py-1 tw-px-2 tw-flex tw-items-center tw-gap-1">
+              <div key={`${filterKey}-${filterValue}`} className="ge-result-button tw-hover:bg-lightGrey tw-border tw-border-grey tw-border-solid tw-bg-white tw-rounded tw-py-1 tw-px-2 tw-flex tw-items-center tw-gap-1">
                 {generateButtonText(filterKey, filterValue)}
-                <Close className=""/>
+                <IconButton className="ge-icon-button" onClick={removeFilter(filterKey)}><Close className=""/></IconButton>
               </div>
             )
           })

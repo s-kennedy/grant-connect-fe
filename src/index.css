@@ -3998,12 +3998,24 @@ table tr th, table tr td {
   width: 18px !important;
 }
 
-.ge-button, .ge-header-button {
+.ge-button {
   height: 32px !important;
   min-width: unset !important;
 /*  background-color: #ffc72c !important;*/
   line-height: unset !important;
   padding: 0.25rem !important;
+  color: #000000 !important;
+  border: 1px solid #7C878E !important;
+}
+
+.ge-header-button {
+  height: 26px !important;
+  min-width: unset !important;
+  line-height: unset !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 8px !important;
+  padding-left: 8px !important;
   color: #000000 !important;
   border: 1px solid #7C878E !important;
 }
@@ -4033,7 +4045,13 @@ table tr th, table tr td {
   color: inherit !important;
 }
 
-.result-button svg {
+.ge-result-button svg {
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.ge-result-button .ge-icon-button {
+  padding: 0 !important;
   height: 16px !important;
   width: 16px !important;
 }

@@ -110,7 +110,7 @@ const DataTable = ({records, handleFilterChange}) => {
     []
   )
 
-  return <MaterialReactTable columns={columns} data={records} enableColumnOrdering />
+  return <MaterialReactTable columns={columns} data={records} enableColumnOrdering enableTopToolbar={false} />
 }
 
 export default DataTable

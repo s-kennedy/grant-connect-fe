@@ -92,7 +92,7 @@ const Explorer = ({ url }) => {
                   <ButtonWithIcon color="dark-grey" label="Reset" Icon={Close} onClick={reset} />
                 </div>
               </div>
-              <ResultsSummary filters={filters} />
+              <ResultsSummary filters={filters} handleFilterChange={handleFilterChange} />
               {loading ? (
                 <div className="tw-w-full tw-h-40 tw-flex tw-justify-center tw-items-center">
                   <Loader />
