@@ -6,7 +6,7 @@ import { Close } from 'material-ui-icons'
 import { IconButton } from 'material-ui'
 
 
-const ResultSummary = ({filters, handleFilterChange}) => {
+const ResultSummary = ({filters, handleFilterChange, displayMode=false}) => {
   const { i18n } = useTranslation()
   const t = i18n.getResourceBundle(i18n.language)
   const filterKeys = Object.keys(filters)
@@ -36,8 +36,8 @@ const ResultSummary = ({filters, handleFilterChange}) => {
   }
 
   return (
-      <div className="tw-flex tw-items-start tw-gap-2 tw-mb-4">
-        <div className="tw-flex-none tw-mt-1">{t.explorer.results_summary_text}</div>
+      <div className="tw-flex tw-items-start tw-gap-2">
+        <div className="tw-flex-none tw-mt-1">{displayMode ? t.explorer.saved_search_summary_text : t.explorer.results_summary_text}</div>
         <div className="tw-inline-flex tw-items-center tw-gap-2 tw-mb-4 tw-flex-wrap">
         {
           activeFilterKeys.map(filterKey => {
@@ -48,7 +48,7 @@ const ResultSummary = ({filters, handleFilterChange}) => {
             return (
               <div key={`${filterKey}-${filterValue}`} className="ge-result-button tw-hover:bg-lightGrey tw-border tw-border-grey tw-border-solid tw-bg-white tw-rounded tw-py-1 tw-px-2 tw-flex tw-items-center tw-gap-1">
                 {generateButtonText(filterKey, filterValue)}
-                <IconButton className="ge-icon-button" onClick={removeFilter(filterKey)}><Close className=""/></IconButton>
+                {!displayMode && <IconButton className="ge-icon-button" onClick={removeFilter(filterKey)}><Close className=""/></IconButton>}
               </div>
             )
           })

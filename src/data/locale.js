@@ -430,6 +430,7 @@ export const locale = () => {
         privacy_url: 'https://policies.google.com/privacy',
         your_saved_searches: 'Your Saved Searches',
         results_summary_text: 'Showing results for:',
+        saved_search_summary_text: 'Search parameters:',
         keyword: "Keyword",
         recipient_min_size: "Minimum recipient size",
         recipient_max_size: "Maximum recipient size",

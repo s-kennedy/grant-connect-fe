@@ -5,6 +5,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Paper } from 'material-ui'
 import SearchBar from './components/SearchBar'
 import SavedSearchesDropdown from './components/SavedSearchesDropdown'
+import SaveSearch from './components/SaveSearch'
 import DataTable from './components/DataTable'
 import Loader from './components/Loader'
 import ButtonWithIcon from './components/ButtonWithIcon'
@@ -28,6 +29,7 @@ const Explorer = ({ url }) => {
   const [ loading, setLoading ] = useState(false)
   const [ searchLoading, setSearchLoading ] = useState(false)
   const [ filters, setFilters ] = useState({})
+  const [ showSaveSearchModal, setShowSaveSearchModal ] = useState(false) 
 
   const reset = () => {
     setFilters({})
@@ -138,7 +140,7 @@ const Explorer = ({ url }) => {
               <div className="tw-flex tw-justify-between">
                 <h2 className={'tw-text-lg tw-font-semibold'}>{t.explorer.results}</h2>
                 <div className="tw-flex tw-gap-1">
-                  <ButtonWithIcon color="grey" label="Save this search" Icon={Star} />
+                  <SaveSearch filters={filters}/>
                   <ButtonWithIcon color="grey" label="Undo" Icon={Undo} />
                   <ButtonWithIcon color="dark-grey" label="Reset" Icon={Close} onClick={reset} />
                 </div>
