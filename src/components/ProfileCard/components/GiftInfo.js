@@ -5,7 +5,7 @@ import { CircularProgress } from 'material-ui'
 import { formatSINumber } from 'utils/helpers'
 
 const GiftInfo = ({ giftInfos }) => (
-  <Col xs={12} lg={9} lgOffset={5} className="Full-card__values">
+  <Col xs={12} className="Full-card__values tw-mb-4">
     {giftInfos.reduce((items, { label, value }, idx, arr) => {
       const isFirst = idx === 0
       const isLast = idx === arr.length - 1
