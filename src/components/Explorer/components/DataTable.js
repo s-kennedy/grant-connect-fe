@@ -40,7 +40,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
           return (
             <div className="ge-table-cell tw-inline-flex tw-gap-1">
               {cell.getValue()}
-              <IconButton className="ge-icon-button" onClick={() => openCharityModal(cell)}><Search /></IconButton>
+              <IconButton className="ge-icon-button"><Search /></IconButton>
             </div>
           )
         }
@@ -60,7 +60,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
             <div>
               <div className="ge-table-cell tw-inline-flex tw-gap-1">
                 {cell.getValue()}
-                <IconButton className="ge-icon-button" onClick={() => openFunderModal(cell)}><div className="tw-rotate-45"><UnfoldMore /></div></IconButton>
+                <IconButton className="ge-icon-button"><div className="tw-rotate-45"><UnfoldMore /></div></IconButton>
                 {inPipeline && <IconButton className="ge-icon-button ge-pipeline-button"><Check /></IconButton> }
               </div>
               <Dialog
