@@ -136,6 +136,13 @@ const Explorer = ({ url }) => {
 
   const undo = () => {
     history.goBack();
+    const filtersFromParams = {}
+    const urlParams = new URLSearchParams(location.search);
+    urlParams.forEach((value, key) => {
+      filtersFromParams[key] = value
+    })
+    console.log({filtersFromParams})
+    setFilters(filtersFromParams)
   }
 
   const saveSearch = (title) => {
@@ -145,6 +152,12 @@ const Explorer = ({ url }) => {
   const applySearch = (index) => {
     const search = savedSearches[index]
     const newPath = `${location.pathname}${search.search}`
+    const filtersFromParams = {}
+    const urlParams = new URLSearchParams(search.search);
+    urlParams.forEach((value, key) => {
+      filtersFromParams[key] = value
+    })
+    setFilters(filtersFromParams)
     history.push(newPath)
   }
 
