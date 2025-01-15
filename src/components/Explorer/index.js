@@ -31,6 +31,7 @@ const Explorer = ({ url }) => {
   const [ records, setRecords ] = useState([])
   const [ loading, setLoading ] = useState(false)
   const [ searchLoading, setSearchLoading ] = useState(false)
+  const [ filterStack, setFilterStack ] = useState([])
   const filtersFromParams = {}
   const urlParams = new URLSearchParams(location.search);
   urlParams.forEach((value, key) => {
@@ -58,6 +59,7 @@ const Explorer = ({ url }) => {
 
   useEffect(() => {
     updateSearchParams()
+    setFilterStack([...filterStack, filters])
     setLoading(true)
     setRecords([])
     setTimeout(() => {
@@ -135,7 +137,11 @@ const Explorer = ({ url }) => {
   }
 
   const undo = () => {
-    history.goBack();
+    const stack = [...filterStack]
+    const currentFilters = stack.pop()
+    const previousFilters = stack.pop()
+    setFilters(previousFilters)
+    setFilterStack(stack)
   }
 
   const saveSearch = (title) => {
