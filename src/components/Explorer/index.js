@@ -61,7 +61,7 @@ const Explorer = ({ url }) => {
 
   useEffect(() => {
     updateSearchParams()
-    // setFilterStack([...filterStack, filters])
+    setFilterStack([...filterStack, filters])
     setLoading(true)
     setRecords([])
     setTimeout(() => {
@@ -168,8 +168,6 @@ const Explorer = ({ url }) => {
     setSavedSearches(newSearches)
   }
 
-  console.log({filters})
-
   return (
     <div className="Explorer">
       <Grid fluid className="grid">
@@ -227,7 +225,7 @@ const Explorer = ({ url }) => {
           <Col xs={12} md={6}>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
               <h2 className={'tw-text-lg tw-font-semibold'}>{t.explorer.graphic_2_title}</h2>
-              <PieChart records={records} />
+              
             </Paper>
           </Col>
         </Row>

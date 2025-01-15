@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react'
-import { Bar } from 'react-chartjs-2';
+import { Chart } from 'react-chartjs-2';
 
 
 const BarChart = ({records, ...props}) => {
@@ -21,11 +21,7 @@ const BarChart = ({records, ...props}) => {
   }
 
   return (
-    <Bar
-      options={options}
-      data={data}
-      {...props}
-    />
+    <Chart type='bar' data={data} />
   )
 }
 
