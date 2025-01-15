@@ -9,6 +9,7 @@ const CharityHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
   const [ autocompleteResults, setAutocompleteResults ] = useState([])
+  console.log({filters})
 
   const isActive = !!filters["recipient_name"] || !!filters["recipient_min_size"] || !!filters["recipient_max_size"]
   
