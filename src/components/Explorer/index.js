@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import MediaQuery from 'react-responsive'
+import { useLocation, useHistory } from 'react-router-dom'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Paper } from 'material-ui'
 import SearchBar from './components/SearchBar'
@@ -21,6 +22,8 @@ import mockAutocompleteResults from 'data/mock-autocomplete-results.json'
 
 const Explorer = ({ url }) => {
   const { i18n } = useTranslation()
+  const history = useHistory()
+  const location = useLocation()
   const t = i18n.getResourceBundle(i18n.language)
   const [ autocompleteResults, setAutocompleteResults ] = useState([])
   const [ autocompleteValue, setAutocompleteValue ] = useState(null)
@@ -28,8 +31,14 @@ const Explorer = ({ url }) => {
   const [ records, setRecords ] = useState([])
   const [ loading, setLoading ] = useState(false)
   const [ searchLoading, setSearchLoading ] = useState(false)
-  const [ filters, setFilters ] = useState({})
+  const filtersFromParams = {}
+  const urlParams = new URLSearchParams(location.search);
+  urlParams.forEach((value, key) => {
+    filtersFromParams[key] = value
+  })
+  const [ filters, setFilters ] = useState(filtersFromParams)
   const [ showSaveSearchModal, setShowSaveSearchModal ] = useState(false) 
+  const [ savedSearches, setSavedSearches ] = useState([])
 
   const reset = () => {
     setFilters({})
@@ -38,7 +47,17 @@ const Explorer = ({ url }) => {
     setAutocompleteResults([])
   }
 
+  const updateSearchParams = () => {
+    const newParams = new URLSearchParams(filters)
+    const newPath = `${location.pathname}?${newParams.toString()}`
+    const currentPath = `${location.pathname}${location.search}`
+    if (newPath !== currentPath) {
+      history.push(newPath)
+    }
+  }
+
   useEffect(() => {
+    updateSearchParams()
     setLoading(true)
     setRecords([])
     setTimeout(() => {
@@ -109,6 +128,34 @@ const Explorer = ({ url }) => {
     })
   }
 
+  const handleRemoveFilter = filterKey => {
+    let newFilters = { ...filters } 
+    delete newFilters[filterKey]
+    setFilters(newFilters)
+  }
+
+  const undo = () => {
+    history.goBack();
+  }
+
+  const saveSearch = (title) => {
+    setSavedSearches([...savedSearches, { title, search: location.search }])
+  }
+
+  const applySearch = (index) => {
+    const search = savedSearches[index]
+    const newPath = `${location.pathname}${search.search}`
+    history.push(newPath)
+  }
+
+  const deleteSearch = (index) => {
+    const newSearches = [...savedSearches]
+    newSearches.splice(index, 1)
+    setSavedSearches(newSearches)
+  }
+
+  console.log(savedSearches)
+
   return (
     <div className="Explorer">
       <Grid fluid className="grid">
@@ -129,7 +176,7 @@ const Explorer = ({ url }) => {
                 autocompleteValue={autocompleteValue}
               />
               <div className="">
-                <SavedSearchesDropdown />
+                <SavedSearchesDropdown savedSearches={savedSearches} applySearch={applySearch} deleteSearch={deleteSearch} />
               </div>
             </Paper>
           </Col>
@@ -140,12 +187,12 @@ const Explorer = ({ url }) => {
               <div className="tw-flex tw-justify-between">
                 <h2 className={'tw-text-lg tw-font-semibold'}>{t.explorer.results}</h2>
                 <div className="tw-flex tw-gap-1">
-                  <SaveSearch filters={filters}/>
-                  <ButtonWithIcon color="grey" label="Undo" Icon={Undo} />
-                  <ButtonWithIcon color="dark-grey" label="Reset" Icon={Close} onClick={reset} />
+                  <SaveSearch filters={filters} saveSearch={saveSearch} />
+                  <ButtonWithIcon onClick={undo} color="grey" label="Undo" Icon={Undo} />
+                  <ButtonWithIcon onClick={reset} color="dark-grey" label="Reset" Icon={Close} />
                 </div>
               </div>
-              <ResultsSummary filters={filters} handleFilterChange={handleFilterChange} />
+              <ResultsSummary filters={filters} handleRemoveFilter={handleRemoveFilter} />
               {loading ? (
                 <div className="tw-w-full tw-h-40 tw-flex tw-justify-center tw-items-center">
                   <Loader />

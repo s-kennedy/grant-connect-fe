@@ -7,7 +7,7 @@ import ResultsSummary from './ResultsSummary'
 import { FilterList } from 'material-ui-icons'
 import { Star, Undo, Close } from 'material-ui-icons'
 
-const SaveSearch = ({filters}) => {
+const SaveSearch = ({filters, saveSearch}) => {
   const [showForm, setShowForm] = useState(false)
   
   const handleClose = () => {
@@ -21,16 +21,9 @@ const SaveSearch = ({filters}) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const formData = new FormData(e.target)
-    const formKeys = formData.keys()
-    const data = formKeys.reduce((obj, key) => {
-      const value = formData.get(key)
-      if (value) {
-        obj[key] = value
-      }
-      return obj
-    }, {})
+    const title = formData.get("saved_search_title")
 
-    // handleFilterChange(data)
+    saveSearch(title                                               )
     handleClose()
   }
 
@@ -44,7 +37,8 @@ const SaveSearch = ({filters}) => {
   };
   const localizedDateString = today.toLocaleTimeString([], options);
   const defaultSearchTitle = `Search saved on ${localizedDateString}`
-
+  const filterKeys = Object.keys(filters)
+  const activeFilterKeys = filterKeys.filter(k => !!filters[k])
 
   return (
     <div>
@@ -56,24 +50,30 @@ const SaveSearch = ({filters}) => {
         onBackdropClick={handleClose}
         className="Explorer"
       >
-        <form onSubmit={handleSubmit}>
-          <div className="tw-mb-5">
-            <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Save this search</p>
-            <ResultsSummary filters={filters} displayMode={true} />
-            <div>
-              <SimpleInputField
-                id="saved_search_title"
-                label="Enter a title for your saved search"
-                type="text"
-                placeholder={defaultSearchTitle}
-                defaultValue={defaultSearchTitle}
-              />
+       {
+        (activeFilterKeys.length === 0) ? (
+          <p>No filters applied yet.</p>
+        ) : (
+          <form onSubmit={handleSubmit}>
+            <div className="tw-mb-5">
+              <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Save this search</p>
+              <ResultsSummary filters={filters} displayMode={true} />
+              <div>
+                <SimpleInputField
+                  id="saved_search_title"
+                  label="Enter a title for your saved search"
+                  type="text"
+                  placeholder={defaultSearchTitle}
+                  defaultValue={defaultSearchTitle}
+                />
+              </div>
             </div>
-          </div>
-          <div className="tw-flex tw-justify-end">
-            <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
-          </div>
-        </form>
+            <div className="tw-flex tw-justify-end">
+              <FlatButton type="submit" label="Save" variant="contained" color="primary" className={`button-primary`} />
+            </div>
+          </form>
+        )
+       }
       </Dialog>
     </div>
   )
