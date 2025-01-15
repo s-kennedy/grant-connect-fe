@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import { MaterialReactTable } from 'material-react-table'
-import { Dialog, FlatButton } from 'material-ui'
+import { Dialog, FlatButton, IconButton } from 'material-ui'
 import FullTextModal from './FullTextModal'
 import FunderHeader from './FunderHeader'
 import CharityHeader from './CharityHeader'
@@ -9,9 +9,21 @@ import FocusHeader from './FocusHeader'
 import LocationHeader from './LocationHeader'
 import YearHeader from './YearHeader'
 import PurposeHeader from './PurposeHeader'
+import { Search, Check, UnfoldMore } from 'material-ui-icons'
+import Tooltip from "@mui/material/Tooltip"
 
 
 const DataTable = ({records, handleFilterChange, filters}) => {
+  const [selectedCharity, setSelectedCharity] = useState(null)
+  const [selectedFunder, setSelectedFunder] = useState(false)
+
+  const openCharityModal = (cell) => {
+    setSelectedCharity(cell)
+  }
+
+  const openFunderModal = (cell) => {
+    setSelectedFunder(true)
+  }
   //should be memoized or stable
   const columns = useMemo(
     () => [
@@ -23,6 +35,14 @@ const DataTable = ({records, handleFilterChange, filters}) => {
           return (
             <CharityHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
           )
+        },
+        Cell: ({ cell }) => {
+          return (
+            <div className="ge-table-cell tw-inline-flex tw-gap-1">
+              {cell.getValue()}
+              <IconButton className="ge-icon-button" onClick={() => openCharityModal(cell)}><Search /></IconButton>
+            </div>
+          )
         }
       },
       {
@@ -32,6 +52,29 @@ const DataTable = ({records, handleFilterChange, filters}) => {
         Header: ({ column }) => {
           return (
             <FunderHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
+          )
+        },
+        Cell: ({ cell }) => {
+          const inPipeline = cell.row.original.funder.pipeline
+          return (
+            <div>
+              <div className="ge-table-cell tw-inline-flex tw-gap-1">
+                {cell.getValue()}
+                <IconButton className="ge-icon-button" onClick={() => openFunderModal(cell)}><div className="tw-rotate-45"><UnfoldMore /></div></IconButton>
+                {inPipeline && <IconButton className="ge-icon-button ge-pipeline-button"><Check /></IconButton> }
+              </div>
+              <Dialog
+                open={selectedFunder}
+                onClose={() => setSelectedFunder(null)}
+                onRequestClose={() => setSelectedFunder(null)}
+                onBackdropClick={() => setSelectedFunder(null)}
+                className="Explorer"
+              >
+                <div className="tw-mb-5">
+                  <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">{cell.getValue()}</p>
+                </div>
+              </Dialog>
+            </div>
           )
         }
       },

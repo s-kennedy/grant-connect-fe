@@ -4060,6 +4060,29 @@ table tr th, table tr td {
   width: 16px !important;
 }
 
+.ge-table-cell {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.ge-table-cell .ge-pipeline-button svg {
+  fill: #ffffff !important;
+}
+
+.ge-table-cell .ge-icon-button, .ge-icon-button svg {
+  padding: 0 !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.ge-table-cell .ge-icon-button {
+  background-color: #D9E3E9 !important;
+}
+
+.ge-table-cell .ge-pipeline-button {
+  background-color: #417505 !important;
+}
+
 .full-text-modal {
   display: inline-block;
 }

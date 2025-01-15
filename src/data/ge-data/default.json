@@ -28,7 +28,8 @@
       "id": 2714697,
       "funder": {
         "id": 3533,
-        "name": "The Edmonton Rotary Club Foundation"
+        "name": "The Edmonton Rotary Club Foundation",
+        "pipeline": true
       },
       "charity": {
         "id": 663,
