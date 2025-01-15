@@ -4061,8 +4061,7 @@ table tr th, table tr td {
 }
 
 .ge-table-cell {
-  display: inline-flex;
-  white-space: nowrap;
+  display: inline;
 }
 
 .ge-table-cell .ge-pipeline-button svg {
@@ -4077,10 +4076,12 @@ table tr th, table tr td {
 
 .ge-table-cell .ge-icon-button {
   background-color: #D9E3E9 !important;
+  transform: translateY(2px);
 }
 
 .ge-table-cell .ge-pipeline-button {
   background-color: #417505 !important;
+  margin-left: 3px !important;
 }
 
 .full-text-modal {

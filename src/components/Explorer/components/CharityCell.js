@@ -25,9 +25,9 @@ const CharityCell = ({cell}) => {
 
   return (
     <div>
-      <div className="ge-table-cell tw-inline-flex tw-gap-1">
-        {cell.getValue()}
-        <IconButton className="ge-icon-button" onClick={handleOpen}><div className="tw-rotate-45"><Search /></div></IconButton>
+      <div className="ge-table-cell">
+        <span className="tw-mr-1">{cell.getValue()}</span>
+        <IconButton className="ge-icon-button" onClick={handleOpen}><Search /></IconButton>
       </div>
       <Dialog
         open={showModal}

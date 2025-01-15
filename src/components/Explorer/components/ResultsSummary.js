@@ -4,6 +4,7 @@ import { Loop } from 'material-ui-icons'
 import { useTranslation } from 'react-i18next'
 import { Close } from 'material-ui-icons'
 import { IconButton } from 'material-ui'
+import causes from 'data/ge-data/causes.json'
 
 
 const ResultSummary = ({filters, handleRemoveFilter, displayMode=false}) => {
@@ -25,7 +26,8 @@ const ResultSummary = ({filters, handleRemoveFilter, displayMode=false}) => {
       )
       return `${t.explorer[filterKey]}: ${formattedValue}`
     } else if (filterKey === "focus") {
-      return `${t.explorer[filterKey]}: ${filterValue.map(v => v.name).join(", ")}`
+      const selectedCauses = causes.filter(c => filterValue.includes(c.id))
+      return `${t.explorer[filterKey]}: ${selectedCauses.map(c => c.name).join(", ")}`
     } else {
       return `${t.explorer[filterKey]}: ${filterValue}`
     }

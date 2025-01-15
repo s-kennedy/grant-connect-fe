@@ -46,7 +46,7 @@ const FocusHeader = ({column, handleFilterChange, filters}) => {
         <div className="tw-mb-5">
           <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by Focus Area</p>
           { causes.map(cause => {
-            const selectedId = selected.findIndex(s => s.id === cause.id)
+            const selectedId = selected.findIndex(s => s === cause.id)
             const isSelected = selectedId >= 0
             return (
               <ListItem
@@ -66,7 +66,7 @@ const FocusHeader = ({column, handleFilterChange, filters}) => {
                         console.log({newArray})
                         setSelected(newArray)
                       } else {
-                        setSelected([...selected, cause])
+                        setSelected([...selected, cause.id])
                       }
                     }}
                   />

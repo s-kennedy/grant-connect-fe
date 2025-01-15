@@ -4,6 +4,7 @@ import { Search, Check, UnfoldMore, Close, LocationOn } from 'material-ui-icons'
 import { Col, Row } from 'react-flexbox-grid'
 import { useTranslation } from 'react-i18next'
 import GiftInfo from 'components/ProfileCard/components/GiftInfo'
+import ReactTooltip from 'react-tooltip'
 
 const FunderCell = ({cell}) => {
   const { i18n } = useTranslation()
@@ -27,10 +28,16 @@ const FunderCell = ({cell}) => {
   ]
   return (
     <div>
-      <div className="ge-table-cell tw-inline-flex tw-gap-1">
-        {cell.getValue()}
+      <div className="ge-table-cell">
+        <span className="tw-mr-1">{cell.getValue()}</span>
         <IconButton className="ge-icon-button" onClick={handleOpen}><div className=""><UnfoldMore style={{transform: "rotate(45deg)"}}/></div></IconButton>
-        {inPipeline && <IconButton className="ge-icon-button ge-pipeline-button"><Check /></IconButton> }
+        {inPipeline && (
+          <React.Fragment>
+            <IconButton className="ge-icon-button ge-pipeline-button" title="In your pipeline">
+              <Check />
+            </IconButton>
+          </React.Fragment>
+        )}
       </div>
       <Dialog
         open={showModal}
