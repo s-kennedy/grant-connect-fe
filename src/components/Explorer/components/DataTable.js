@@ -3,6 +3,8 @@ import { MaterialReactTable } from 'material-react-table'
 import { Dialog, FlatButton, IconButton } from 'material-ui'
 import FullTextModal from './FullTextModal'
 import FunderHeader from './FunderHeader'
+import FunderCell from './FunderCell'
+import CharityCell from './CharityCell'
 import CharityHeader from './CharityHeader'
 import AmountHeader from './AmountHeader'
 import FocusHeader from './FocusHeader'
@@ -10,7 +12,6 @@ import LocationHeader from './LocationHeader'
 import YearHeader from './YearHeader'
 import PurposeHeader from './PurposeHeader'
 import { Search, Check, UnfoldMore } from 'material-ui-icons'
-import Tooltip from "@mui/material/Tooltip"
 
 
 const DataTable = ({records, handleFilterChange, filters}) => {
@@ -36,14 +37,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
             <CharityHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
           )
         },
-        Cell: ({ cell }) => {
-          return (
-            <div className="ge-table-cell tw-inline-flex tw-gap-1">
-              {cell.getValue()}
-              <IconButton className="ge-icon-button"><Search /></IconButton>
-            </div>
-          )
-        }
+        Cell: ({ cell }) => <CharityCell cell={cell} />,
       },
       {
         accessorKey: 'funder.name', //access nested data with dot notation
@@ -54,29 +48,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
             <FunderHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
           )
         },
-        Cell: ({ cell }) => {
-          const inPipeline = cell.row.original.funder.pipeline
-          return (
-            <div>
-              <div className="ge-table-cell tw-inline-flex tw-gap-1">
-                {cell.getValue()}
-                <IconButton className="ge-icon-button"><div className="tw-rotate-45"><UnfoldMore /></div></IconButton>
-                {inPipeline && <IconButton className="ge-icon-button ge-pipeline-button"><Check /></IconButton> }
-              </div>
-              <Dialog
-                open={selectedFunder}
-                onClose={() => setSelectedFunder(null)}
-                onRequestClose={() => setSelectedFunder(null)}
-                onBackdropClick={() => setSelectedFunder(null)}
-                className="Explorer"
-              >
-                <div className="tw-mb-5">
-                  <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">{cell.getValue()}</p>
-                </div>
-              </Dialog>
-            </div>
-          )
-        }
+        Cell: ({ cell }) => <FunderCell cell={cell} />,
       },
       {
         accessorKey: 'gift_amount',
@@ -153,7 +125,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
     []
   )
 
-  return <MaterialReactTable columns={columns} data={records} enableColumnOrdering enableTopToolbar={false} />
+  return <MaterialReactTable columns={columns} data={records} enableColumnOrdering enableTopToolbar={false} enableColumnFilters={false} />
 }
 
 export default DataTable

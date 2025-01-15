@@ -50,14 +50,14 @@ function SavedSearchesDropdown({savedSearches, applySearch, deleteSearch}) {
         ) : (
           <div>
             <div className="tw-mb-5">
-              <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold tw-text-md">Your Saved Searches</p>
+              <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold tw-text-md">Use a Saved Search</p>
               {savedSearches.map((search, index) => {
                 return (
                   <div className="tw-flex tw-justify-between">
                     <p className="tw-text-md">{search.title}</p>
-                    <div>
-                      <FlatButton onClick={() => handleApply(index)} color="primary" className={`button-link`}>
-                        <span className="tw-underline tw-text-md">Apply</span>
+                    <div className="tw-inline tw-gap-1">
+                      <FlatButton onClick={() => handleApply(index)} color="primary" className={`button-primary`}>
+                        <span className="tw-text-md">Apply</span>
                       </FlatButton>
                       <FlatButton onClick={() => handleDelete(index)} color="primary" className={`button-link`}>
                         <div className="tw-inline-flex tw-px-2 tw-items-center">
@@ -68,9 +68,6 @@ function SavedSearchesDropdown({savedSearches, applySearch, deleteSearch}) {
                   </div>
                 )
               })}
-            </div>
-            <div className="tw-flex tw-justify-end">
-              <FlatButton type="submit" label="Save" variant="contained" color="primary" className={`button-primary`} />
             </div>
           </div>
         )

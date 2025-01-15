@@ -136,13 +136,6 @@ const Explorer = ({ url }) => {
 
   const undo = () => {
     history.goBack();
-    const filtersFromParams = {}
-    const urlParams = new URLSearchParams(location.search);
-    urlParams.forEach((value, key) => {
-      filtersFromParams[key] = value
-    })
-    console.log({filtersFromParams})
-    setFilters(filtersFromParams)
   }
 
   const saveSearch = (title) => {
@@ -166,8 +159,6 @@ const Explorer = ({ url }) => {
     newSearches.splice(index, 1)
     setSavedSearches(newSearches)
   }
-
-  console.log(savedSearches)
 
   return (
     <div className="Explorer">
