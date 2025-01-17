@@ -1,56 +1,64 @@
 import React, { useMemo, useState } from 'react'
-
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 const BarChart = ({records, ...props}) => {
+
+  const giftsByFunder = records.reduce((obj, gift) => {
+    if (!gift.funder) {
+      return obj
+    }
+
+    if (!!obj[gift.funder.id]) {
+      obj[gift.funder.id].gifts_total = obj[gift.funder.id].gifts_total + gift.gift_amount
+    } else {
+      obj[gift.funder.id] = {
+        funder_name: gift.funder.name,
+        gifts_total: gift.gift_amount
+      }
+    }
+    return obj
+  }, {})
+
+  const funderIds = Object.keys(giftsByFunder)
+  const labels = funderIds.map(id => giftsByFunder[id].funder_name.length > 23 ? `${giftsByFunder[id].funder_name.substring(0,25)}…` : giftsByFunder[id].funder_name)
+  const series = funderIds.map((id) => giftsByFunder[id].gifts_total)
+
   const data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    datasets: [
-      {
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-        ],
-        borderWidth: 1,
-      },
-    ],
-  };
+    labels: labels,
+    datasets: [{
+      label: 'Total $ amount given',
+      data: series,
+      borderWidth: 1,
+      backgroundColor: '#ffc72c',
+    }]
+  }
 
   const options = {
     indexAxis: 'y',
-    // Elements options apply to all of the options unless overridden in a dataset
-    // In this case, we are setting the border of each horizontal bar to be 2px wide
-    elements: {
-      bar: {
-        borderWidth: 2,
-      },
-    },
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'right',
-      },
-      title: {
-        display: true,
-        text: 'Chart.js Horizontal Bar Chart',
-      },
-    },
-  };
-
+    scales: {
+      x: {
+        beginAtZero: true
+      }
+    }
+  }
 
   return (
     <Bar options={options} data={data} />

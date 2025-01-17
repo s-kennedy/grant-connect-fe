@@ -12,7 +12,7 @@ import Loader from './components/Loader'
 import ButtonWithIcon from './components/ButtonWithIcon'
 import ResultsSummary from './components/ResultsSummary'
 import BarChart from './components/BarChart'
-// import PieChart from './components/PieChart'
+import PieChart from './components/PieChart'
 import { Star, Undo, Close } from 'material-ui-icons'
 import mockData from 'data/ge-data/default.json'
 import mockDataFocus from 'data/ge-data/focus-health_order-amount.json'
@@ -225,7 +225,7 @@ const Explorer = ({ url }) => {
           <Col xs={12} md={6}>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
               <h2 className={'tw-text-lg tw-font-semibold'}>{t.explorer.graphic_2_title}</h2>
-              
+              <PieChart records={records} />
             </Paper>
           </Col>
         </Row>
