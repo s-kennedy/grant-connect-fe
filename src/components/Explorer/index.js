@@ -4,6 +4,9 @@ import MediaQuery from 'react-responsive'
 import { useLocation, useHistory } from 'react-router-dom'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Paper } from 'material-ui'
+import { Star, Undo, Close } from 'material-ui-icons'
+import _ from 'lodash'
+
 import SearchBar from './components/SearchBar'
 import SavedSearchesDropdown from './components/SavedSearchesDropdown'
 import SaveSearch from './components/SaveSearch'
@@ -13,7 +16,7 @@ import ButtonWithIcon from './components/ButtonWithIcon'
 import ResultsSummary from './components/ResultsSummary'
 import BarChart from './components/BarChart'
 import PieChart from './components/PieChart'
-import { Star, Undo, Close } from 'material-ui-icons'
+
 import mockData from 'data/ge-data/default.json'
 import mockDataFocus from 'data/ge-data/focus-health_order-amount.json'
 import mockDataFunder from 'data/ge-data/funder-canadahelps_location-vancouver-bc_focus-education_order-amount.json'
@@ -59,9 +62,16 @@ const Explorer = ({ url }) => {
     }
   }
 
+  const updateFilterStack = () => {
+    const lastInStack = filterStack[filterStack.length - 1]
+    if (!_.isEqual(lastInStack, filters)) {
+      setFilterStack([...filterStack, filters])
+    }
+  }
+
   useEffect(() => {
     updateSearchParams()
-    setFilterStack([...filterStack, filters])
+    updateFilterStack()
     setLoading(true)
     setRecords([])
     setTimeout(() => {
@@ -140,10 +150,17 @@ const Explorer = ({ url }) => {
 
   const undo = () => {
     const stack = [...filterStack]
-    const currentFilters = stack.pop()
-    const previousFilters = stack.pop()
-    setFilters(previousFilters)
-    setFilterStack(stack)
+    if (stack.length > 0) {
+      const currentFilters = stack.pop()
+      const previousFilters = stack[stack.length - 1]
+      if (previousFilters) {
+        setFilters(previousFilters)
+      }
+
+      console.log({stack})
+      console.log({previousFilters})
+      setFilterStack(stack)
+    }
   }
 
   const saveSearch = (title) => {
@@ -167,6 +184,8 @@ const Explorer = ({ url }) => {
     newSearches.splice(index, 1)
     setSavedSearches(newSearches)
   }
+
+  console.log({filterStack})
 
   return (
     <div className="Explorer">
