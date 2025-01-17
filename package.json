@@ -12,7 +12,6 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
-    "@mui/x-charts": "^7.23.6",
     "@mui/x-date-pickers": "^7.14.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
