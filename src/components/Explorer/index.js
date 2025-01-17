@@ -14,6 +14,8 @@ import DataTable from './components/DataTable'
 import Loader from './components/Loader'
 import ButtonWithIcon from './components/ButtonWithIcon'
 import ResultsSummary from './components/ResultsSummary'
+import BarChart from './components/BarChart'
+import PieChart from './components/PieChart'
 
 import mockData from 'data/ge-data/default.json'
 import mockDataFocus from 'data/ge-data/focus-health_order-amount.json'
@@ -34,7 +36,6 @@ const Explorer = ({ url }) => {
   const [ records, setRecords ] = useState([])
   const [ loading, setLoading ] = useState(false)
   const [ searchLoading, setSearchLoading ] = useState(false)
-  const [ filterStack, setFilterStack ] = useState([])
   const filtersFromParams = {}
   const urlParams = new URLSearchParams(location.search);
   urlParams.forEach((value, key) => {
@@ -43,6 +44,7 @@ const Explorer = ({ url }) => {
   const [ filters, setFilters ] = useState(filtersFromParams)
   const [ showSaveSearchModal, setShowSaveSearchModal ] = useState(false) 
   const [ savedSearches, setSavedSearches ] = useState([])
+  const [ filterStack, setFilterStack ] = useState([])
 
   const reset = () => {
     setFilters({})
@@ -236,11 +238,13 @@ const Explorer = ({ url }) => {
           <Col xs={12} md={6}>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
               <h2 className={'tw-text-lg tw-font-semibold'}>{t.explorer.graphic_1_title}</h2>
+              <BarChart records={records} />
             </Paper>
           </Col>
           <Col xs={12} md={6}>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
               <h2 className={'tw-text-lg tw-font-semibold'}>{t.explorer.graphic_2_title}</h2>
+              <PieChart records={records} />
             </Paper>
           </Col>
         </Row>

@@ -420,8 +420,8 @@ export const locale = () => {
         saved_searches: 'Your Saved Searches',
         results: 'Results',
         showing_results: 'Showing results for:',
-        graphic_1_title: 'Graphic 1',
-        graphic_2_title: 'Graphic 2',
+        graphic_1_title: 'Total gift amounts by funder',
+        graphic_2_title: 'Total gift amounts by recipient',
         gift:
           'https://datastudio.google.com/embed/reporting/1us6Bt5AWFGJTXQpgW-7h5URLn9Fj9g1U/page/5pJDB',
         contact:
