@@ -52,6 +52,7 @@ const BarChart = ({records, ...props}) => {
   }
 
   const options = {
+    aspectRatio: 1,
     indexAxis: 'y',
     scales: {
       x: {

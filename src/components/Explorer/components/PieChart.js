@@ -33,11 +33,12 @@ const PieChart = ({records, ...props}) => {
       label: 'Total $ amount received',
       data: series,
       borderWidth: 1,
-      backgroundColor: ["#4c9eff", "#d0021b", "#417505", '#ffc72c', "#806416"]
+      backgroundColor: ["#4c9eff", "#d0021b", "#417505", '#ffc72cg', "#806416"]
     }]
   }
 
   const options = {
+    aspectRatio: 1,
     plugins: {
             legend: {
                 display: false
