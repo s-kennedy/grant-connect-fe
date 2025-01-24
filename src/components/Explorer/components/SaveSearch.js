@@ -42,7 +42,7 @@ const SaveSearch = ({filters, saveSearch}) => {
 
   return (
     <div>
-      <ButtonWithIcon onClick={handleOpen} color="grey" label="Save this search" Icon={Star} />
+      <ButtonWithIcon onClick={handleOpen} color="grey" label="Save my search" Icon={Star} />
       <Dialog
         open={showForm}
         onClose={handleClose}
@@ -56,7 +56,7 @@ const SaveSearch = ({filters, saveSearch}) => {
         ) : (
           <form onSubmit={handleSubmit}>
             <div className="tw-mb-5">
-              <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Save this search</p>
+              <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Save my search</p>
               <ResultsSummary filters={filters} displayMode={true} />
               <div>
                 <SimpleInputField

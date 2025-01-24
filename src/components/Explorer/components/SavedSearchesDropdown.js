@@ -31,10 +31,10 @@ function SavedSearchesDropdown({savedSearches, applySearch, deleteSearch}) {
 
   return (
     <div className={`ge-search-field-wrapper tw-flex tw-gap-2 tw-mt-2`}>
-      <FlatButton onClick={handleOpen} color="primary" className={`button-link`}>
+      <FlatButton onClick={handleOpen} color="primary" className={`ge-button grey`}>
         <div className="tw-inline-flex tw-px-2 tw-items-center">
           <Star />
-          <span className="tw-underline tw-ml-1">{t.explorer.your_saved_searches}</span>
+          <span className="tw-ml-1 tw-uppercase">{t.explorer.your_saved_searches}</span>
         </div>
       </FlatButton>
       <Dialog

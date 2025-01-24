@@ -3994,6 +3994,8 @@ table tr th, table tr td {
 }
 .button-link {
   color: #7c878e !important;
+  border: 1px solid #ffc72c !important;
+  background-color: #FFF4D6 !important;
 }
 .button-link span {
   font-weight: 400 !important;
@@ -4055,9 +4057,17 @@ table tr th, table tr td {
   color: inherit !important;
 }
 
+.ge-result-button {
+  border: 1px solid #bfd0da !important;
+}
+
 .ge-result-button svg {
   height: 16px !important;
   width: 16px !important;
+}
+
+.ge-result-button span {
+  font-weight: 400 !important;
 }
 
 .ge-result-button .ge-icon-button {
