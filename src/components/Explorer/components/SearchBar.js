@@ -33,6 +33,7 @@ function SearchBar({
         <Autocomplete
           id="gifts-search-bar"
           fullWidth
+          style={{ maxWidth: "520px" }}
           freeSolo
           size="small"
           filterOptions={(x) => x}

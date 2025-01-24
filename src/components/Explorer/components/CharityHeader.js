@@ -80,20 +80,23 @@ const CharityHeader = ({column, handleFilterChange, filters}) => {
           </div>
 
           <div className="tw-mb-5">
-            <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by size</p>
-            <div>
-              <SimpleInputField
-                id="recipient_min_size"
-                label="Minimum"
-                type="number"
-              />
-            </div>
-            <div>
-              <SimpleInputField
-                id="recipient_max_size"
-                label="Maximum"
-                type="number"
-              />
+            <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by recipient size</p>
+            <div className="tw-flex tw-gap-2 tw-items-center">
+              <div>
+                <SimpleInputField
+                  id="recipient_min_size"
+                  label="Minimum revenue ($)"
+                  type="number"
+                />
+              </div>
+              <p className="tw-mt-6">to</p>
+              <div>
+                <SimpleInputField
+                  id="recipient_max_size"
+                  label="Maximum revenue ($)"
+                  type="number"
+                />
+              </div>
             </div>
           </div>
           <div className="tw-flex tw-justify-end">

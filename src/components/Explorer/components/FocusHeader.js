@@ -41,42 +41,43 @@ const FocusHeader = ({column, handleFilterChange, filters}) => {
         onRequestClose={handleClose}
         onBackdropClick={handleClose}
         className="Explorer ge-dialog"
-        scroll="body"
       >
-        <div className="tw-mb-5">
-          <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by Focus Area</p>
-          { causes.map(cause => {
-            const selectedId = selected.findIndex(s => s === cause.id)
-            const isSelected = selectedId >= 0
-            return (
-              <ListItem
-                key={cause.id}
-                nestedLevel={0}
-                primaryText={cause.name}
-                primaryTogglesNestedList={false}
-                leftCheckbox={
-                  <Checkbox
-                    checked={isSelected}
-                    onCheck={() => {
-                      if (isSelected) {
-                        console.log({selectedId})
-                        console.log({selected})
-                        const newArray = [...selected]
-                        newArray.splice(selectedId, 1)
-                        console.log({newArray})
-                        setSelected(newArray)
-                      } else {
-                        setSelected([...selected, cause.id])
-                      }
-                    }}
-                  />
-                }
-              />
-            )
-          })}
-        </div>
-        <div className="tw-flex tw-justify-end">
-          <FlatButton onClick={handleSubmit} label="Apply" variant="contained" color="primary" className={`button-primary`} />
+        <div className="tw-relative">
+          <div className="tw-mb-5">
+            <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by Focus Area</p>
+            { causes.map(cause => {
+              const selectedId = selected.findIndex(s => s === cause.id)
+              const isSelected = selectedId >= 0
+              return (
+                <ListItem
+                  key={cause.id}
+                  nestedLevel={0}
+                  primaryText={cause.name}
+                  primaryTogglesNestedList={false}
+                  leftCheckbox={
+                    <Checkbox
+                      checked={isSelected}
+                      onCheck={() => {
+                        if (isSelected) {
+                          console.log({selectedId})
+                          console.log({selected})
+                          const newArray = [...selected]
+                          newArray.splice(selectedId, 1)
+                          console.log({newArray})
+                          setSelected(newArray)
+                        } else {
+                          setSelected([...selected, cause.id])
+                        }
+                      }}
+                    />
+                  }
+                />
+              )
+            })}
+          </div>
+          <div className="tw-flex tw-justify-end tw-absolute tw-bottom-left">
+            <FlatButton onClick={handleSubmit} label="Apply" variant="contained" color="primary" className={`button-primary`} />
+          </div>
         </div>
       </Dialog>
     </div>

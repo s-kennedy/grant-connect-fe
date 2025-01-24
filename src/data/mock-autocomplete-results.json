@@ -1,16 +1,16 @@
 {
   "results": [
     { 
+      "field": "Funder",
+      "match": "Ontario Theatre Fund"
+    },
+    { 
       "field": "Recipient",
       "match": "Lost & Found Theatre Inc."
     },
     { 
       "field": "Recipient",
       "match": "Registry Theatre"
-    },
-    { 
-      "field": "Funder",
-      "match": "Ontario Theatre Fund"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import { MaterialReactTable } from 'material-react-table'
+import { MRT_Localization_FR } from 'material-react-table/locales/fr';
 import { Dialog, FlatButton, IconButton } from 'material-ui'
 import FullTextModal from './FullTextModal'
 import FunderHeader from './FunderHeader'
@@ -31,7 +32,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       {
         accessorKey: 'charity.name',
         header: 'Recipient',
-        size: 150,
+        size: 110,
         Header: ({ column }) => {
           return (
             <CharityHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
@@ -42,7 +43,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       {
         accessorKey: 'funder.name', //access nested data with dot notation
         header: 'Funder',
-        size: 150,
+        size: 110,
         Header: ({ column }) => {
           return (
             <FunderHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
@@ -53,7 +54,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       {
         accessorKey: 'gift_amount',
         header: 'Amount',
-        size: 150,
+        size: 110,
         Header: ({ column }) => {
           return (
             <AmountHeader column={column} handleFilterChange={handleFilterChange} filters={filters} />
@@ -71,7 +72,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       {
         accessorKey: 'focus',
         header: 'Focus',
-        size: 150,
+        size: 110,
         Header: ({ column }) => {
           return (
             <FocusHeader column={column} handleFilterChange={handleFilterChange} filters={filters}/>
@@ -81,7 +82,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       {
         accessorKey: 'location.city',
         header: 'Location',
-        size: 150,
+        size: 110,
         Header: ({ column }) => {
           return (
             <LocationHeader column={column} handleFilterChange={handleFilterChange} filters={filters}/>
@@ -91,7 +92,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       {
         accessorKey: 'year',
         header: 'Year',
-        size: 150,
+        size: 110,
         Header: ({ column }) => {
           return (
             <YearHeader column={column} handleFilterChange={handleFilterChange} filters={filters}/>
@@ -101,7 +102,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       {
         accessorKey: 'purpose',
         header: 'Description',
-        size: 150,
+        size: 110,
         Cell: ({ cell }) => {
           const fullText = cell.getValue()
           const maxLength = 50
@@ -125,7 +126,35 @@ const DataTable = ({records, handleFilterChange, filters}) => {
     []
   )
 
-  return <MaterialReactTable columns={columns} data={records} enableColumnOrdering enableTopToolbar={false} enableColumnFilters={false} />
+  return (
+    <MaterialReactTable 
+      columns={columns} 
+      data={records} 
+      enableColumnOrdering 
+      enableTopToolbar={false} 
+      enableColumnFilters={false}
+      muiTableProps={{
+        sx: {
+          borderRight: '1px solid #D9E3E9',
+          borderTop: '1px solid #D9E3E9',
+        },
+      }}
+      muiTableHeadCellProps={{
+        sx: {
+          borderLeft: '1px solid #D9E3E9',
+          borderBottom: '1px solid #D9E3E9',
+          paddingRight: '0.4rem',
+        },
+      }}
+      muiTableBodyCellProps={{
+        sx: {
+          borderLeft: '1px solid #D9E3E9',
+          borderBottom: '1px solid #D9E3E9',
+          paddingRight: '0.4rem',
+        },
+      }}
+    />
+  )
 }
 
 export default DataTable

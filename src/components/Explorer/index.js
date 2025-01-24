@@ -185,16 +185,15 @@ const Explorer = ({ url }) => {
     setSavedSearches(newSearches)
   }
 
-  console.log({filterStack})
-
   return (
     <div className="Explorer">
       <Grid fluid className="grid">
         <Row>
           <Col xs={12}>
+            <h1 className={'tw-text-2xl'}>{t.explorer.title}</h1>
+            <p className="subtitle tw-mb-6">{t.explorer.subtitle}</p>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
-              <h1 className={'tw-text-2xl'}>{t.explorer.title}</h1>
-              <p className="subtitle">{t.explorer.subtitle}</p>
+            <h2 className={'tw-text-lg tw-font-semibold tw-mt-0'}>{t.explorer.search}</h2>
               <SearchBar 
                 placeholderText={t.explorer.search_placeholder}
                 searchLoading={searchLoading}
@@ -216,7 +215,7 @@ const Explorer = ({ url }) => {
           <Col xs={12}>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
               <div className="tw-flex tw-justify-between">
-                <h2 className={'tw-text-lg tw-font-semibold'}>{t.explorer.results}</h2>
+                <h2 className={'tw-text-lg tw-font-semibold tw-mt-0'}>{t.explorer.results}</h2>
                 <div className="tw-flex tw-gap-1">
                   <SaveSearch filters={filters} saveSearch={saveSearch} />
                   <ButtonWithIcon onClick={undo} color="grey" label="Undo" Icon={Undo} />
@@ -237,13 +236,13 @@ const Explorer = ({ url }) => {
         <Row>
           <Col xs={12} md={6}>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
-              <h2 className={'tw-text-lg tw-font-semibold'}>{t.explorer.graphic_1_title}</h2>
+              <h2 className={'tw-text-lg tw-font-semibold tw-mt-0'}>{t.explorer.graphic_1_title}</h2>
               <BarChart records={records} />
             </Paper>
           </Col>
           <Col xs={12} md={6}>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
-              <h2 className={'tw-text-lg tw-font-semibold'}>{t.explorer.graphic_2_title}</h2>
+              <h2 className={'tw-text-lg tw-font-semibold tw-mt-0'}>{t.explorer.graphic_2_title}</h2>
               <PieChart records={records} />
             </Paper>
           </Col>

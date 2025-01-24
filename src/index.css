@@ -3969,6 +3969,11 @@ table tr th, table tr td {
 .Explorer .Material-cards svg {
   top: 0 !important;
 }
+
+#gifts-search-bar {
+  max-width: 500px;
+}
+
 .Explorer .ge-autocomplete-results {
   background: white;
   border: 1px solid #bfd0da !important;
@@ -4018,6 +4023,7 @@ table tr th, table tr td {
   padding-left: 8px !important;
   color: #000000 !important;
   border: 1px solid #ffc72c !important;
+  background-color: #FFF4D6 !important;
 }
 
 .ge-header-button.active {

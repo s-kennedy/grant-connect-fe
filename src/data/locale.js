@@ -420,8 +420,8 @@ export const locale = () => {
         saved_searches: 'Your Saved Searches',
         results: 'Results',
         showing_results: 'Showing results for:',
-        graphic_1_title: 'Total gift amounts by funder',
-        graphic_2_title: 'Total gift amounts by recipient',
+        graphic_1_title: 'Total amount given ($) by funder',
+        graphic_2_title: 'Total amount given ($) by recipient',
         gift:
           'https://datastudio.google.com/embed/reporting/1us6Bt5AWFGJTXQpgW-7h5URLn9Fj9g1U/page/5pJDB',
         contact:
@@ -432,8 +432,8 @@ export const locale = () => {
         results_summary_text: 'Showing results for:',
         saved_search_summary_text: 'Search parameters:',
         keyword: "Keyword",
-        recipient_min_size: "Minimum recipient size",
-        recipient_max_size: "Maximum recipient size",
+        recipient_min_size: "Minimum revenue ($)",
+        recipient_max_size: "Maximum revenue ($)",
         amount_min: "Minimum amount",
         amount_max: "Maximum amount",
         year_min: "Year (from)",
