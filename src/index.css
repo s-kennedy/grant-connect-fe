@@ -3994,8 +3994,6 @@ table tr th, table tr td {
 }
 .button-link {
   color: #7c878e !important;
-  border: 1px solid #ffc72c !important;
-  background-color: #FFF4D6 !important;
 }
 .button-link span {
   font-weight: 400 !important;

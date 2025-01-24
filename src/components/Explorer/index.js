@@ -164,7 +164,12 @@ const Explorer = ({ url }) => {
   }
 
   const saveSearch = (title) => {
-    setSavedSearches([...savedSearches, { title, search: location.search }])
+    const searchExists = savedSearches.find(s => s.title === title)
+    if (searchExists) {
+      alert("A search with this title already exists. Please choose a unique title.")
+    } else {
+      setSavedSearches([...savedSearches, { title, search: location.search }])
+    }
   }
 
   const applySearch = (index) => {
