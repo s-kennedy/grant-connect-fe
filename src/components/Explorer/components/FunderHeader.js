@@ -56,6 +56,7 @@ const FunderHeader = ({column, handleFilterChange, filters}) => {
               id="funder_name"
               type="text"
               placeholder={`Try searching for "CanadaHelps"`}
+              defaultValue={filters["funder_name"]}
             />
           </div>
 

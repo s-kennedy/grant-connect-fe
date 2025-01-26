@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Dialog, FlatButton, TextField } from 'material-ui'
+import { useTranslation } from 'react-i18next'
 import SimpleInputField from './SimpleInputField'
 import AutocompleteField from './AutocompleteField'
 import ButtonWithIcon from './ButtonWithIcon'
@@ -7,15 +8,31 @@ import ResultsSummary from './ResultsSummary'
 import { FilterList } from 'material-ui-icons'
 import { Star, Undo, Close } from 'material-ui-icons'
 
-const SaveSearch = ({filters, saveSearch}) => {
+const SaveSearch = ({filters, saveSearch, savedSearches}) => {
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
   const [showForm, setShowForm] = useState(false)
+  const [error, setError] = useState()
+  const [value, setValue] = useState("")
   
   const handleClose = () => {
     setShowForm(false)
   }
 
   const handleOpen = (e) => {
+    setValue("")
     setShowForm(true)
+  }
+
+  const handleChange = e => {
+    const duplicateTitle = savedSearches.find(s => s.title === e.target.value)
+    if (duplicateTitle) {
+      setError(t.explorer.duplicate_title_error)
+    } else {
+      setError(null)
+    }
+
+    setValue(e.target.value)
   }
 
   const handleSubmit = (e) => {
@@ -23,10 +40,17 @@ const SaveSearch = ({filters, saveSearch}) => {
     const formData = new FormData(e.target)
     const title = formData.get("saved_search_title")
 
-    saveSearch(title                                               )
-    handleClose()
+    const duplicateTitle = savedSearches.find(s => s.title === title)
+    if (!duplicateTitle) {
+      saveSearch(title)
+      setError(null)
+      setValue("")
+      handleClose()
+    }
   }
 
+  const filterKeys = Object.keys(filters)
+  const activeFilterKeys = filterKeys.filter(k => !!filters[k])
   const today = new Date()
   const options = {
     year: "numeric",
@@ -37,8 +61,6 @@ const SaveSearch = ({filters, saveSearch}) => {
   };
   const localizedDateString = today.toLocaleTimeString([], options);
   const defaultSearchTitle = `Search saved on ${localizedDateString}`
-  const filterKeys = Object.keys(filters)
-  const activeFilterKeys = filterKeys.filter(k => !!filters[k])
 
   return (
     <div>
@@ -64,7 +86,9 @@ const SaveSearch = ({filters, saveSearch}) => {
                   label="Enter a title for your saved search"
                   type="text"
                   placeholder={defaultSearchTitle}
-                  defaultValue={defaultSearchTitle}
+                  errorMessage={error}
+                  onChange={handleChange}
+                  value={value}
                 />
               </div>
             </div>

@@ -58,6 +58,7 @@ const AmountHeader = ({column, handleFilterChange, filters}) => {
                   id="amount_min"
                   label="Minimum ($)"
                   type="number"
+                  defaultValue={filters["amount_min"]}
                 />
               </div>
               <p className="tw-mt-6">to</p>
@@ -66,6 +67,7 @@ const AmountHeader = ({column, handleFilterChange, filters}) => {
                   id="amount_max"
                   label="Maximum ($)"
                   type="number"
+                  defaultValue={filters["amount_max"]}
                 />
               </div>
             </div>

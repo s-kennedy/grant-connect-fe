@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import TextField from '@mui/material/TextField';
 
 
-const SimpleInputField = ({type="text", id, className, label, placeholder, ...props}) => {
+const SimpleInputField = ({type="text", id, className, label, placeholder, errorMessage, ...props}) => {
   return (
     <div className="tw-flex tw-flex-col tw-mb-2">
       {label && <label htmlFor={id} className="tw-mb-1">{label}</label>}
@@ -12,6 +12,8 @@ const SimpleInputField = ({type="text", id, className, label, placeholder, ...pr
         type={type}
         className="ge-simple-text-field"
         placeholder={placeholder} 
+        error={!!errorMessage}
+        helperText={errorMessage}
         {...props}
       />
     </div>

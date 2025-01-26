@@ -164,12 +164,7 @@ const Explorer = ({ url }) => {
   }
 
   const saveSearch = (title) => {
-    const searchExists = savedSearches.find(s => s.title === title)
-    if (searchExists) {
-      alert("A search with this title already exists. Please choose a unique title.")
-    } else {
-      setSavedSearches([...savedSearches, { title, search: location.search }])
-    }
+    setSavedSearches([...savedSearches, { title, search: location.search }])
   }
 
   const applySearch = (index) => {
@@ -222,7 +217,7 @@ const Explorer = ({ url }) => {
               <div className="tw-flex tw-justify-between">
                 <h2 className={'tw-text-lg tw-font-semibold tw-mt-0'}>{t.explorer.results}</h2>
                 <div className="tw-flex tw-gap-1">
-                  <SaveSearch filters={filters} saveSearch={saveSearch} />
+                  <SaveSearch filters={filters} saveSearch={saveSearch} savedSearches={savedSearches} />
                   <ButtonWithIcon onClick={undo} color="grey" label="Undo" Icon={Undo} />
                   <ButtonWithIcon onClick={reset} color="dark-grey" label="Reset" Icon={Close} />
                 </div>
@@ -250,6 +245,11 @@ const Explorer = ({ url }) => {
               <h2 className={'tw-text-lg tw-font-semibold tw-mt-0'}>{t.explorer.graphic_2_title}</h2>
               <PieChart records={records} />
             </Paper>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <p className="tw-my-6">{t.explorer.disclaimer}</p>
           </Col>
         </Row>
       </Grid>

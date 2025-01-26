@@ -33,7 +33,7 @@ const PieChart = ({records, ...props}) => {
       label: 'Total $ amount received',
       data: series,
       borderWidth: 1,
-      backgroundColor: ["#d0021b","#417505","#ffc72c","#4c9eff"]
+      backgroundColor: ["#f5b400","#ffc72c","#ffe085"]
     }]
   }
 

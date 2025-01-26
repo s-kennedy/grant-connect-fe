@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import { Dialog, FlatButton, TextField } from 'material-ui'
+import { Dialog, FlatButton, TextField, MenuItem, SelectField } from 'material-ui'
 import SimpleInputField from './SimpleInputField'
-import AutocompleteField from './AutocompleteField'
-import { FilterList } from 'material-ui-icons'
+import SimpleSelectField from './SimpleSelectField'
+import { FilterList, KeyboardArrowDown } from 'material-ui-icons'
+
+const range = (start, stop, step=1) =>
+  Array.from(
+    { length: Math.ceil((stop - start) / step) },
+    (_, i) => start + i * step,
+  );
 
 const YearHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
@@ -33,6 +39,13 @@ const YearHeader = ({column, handleFilterChange, filters}) => {
     handleClose()
   }
 
+  const selectFieldStyle = {
+    listStyle: { border: '1px solid #bfd0da' },
+    menuItemStyle: { paddingTop: 2, paddingBottom: 2 }
+  }
+
+  const options = range(1980, 2024).reverse().map(y => ({ value: y, label: y }))
+
   return (
     <div>
       <FlatButton onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
@@ -50,22 +63,26 @@ const YearHeader = ({column, handleFilterChange, filters}) => {
       >
         <form onSubmit={handleSubmit} >
         <div className="tw-mb-5">
-          <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by year</p>
-          <div>
-            <SimpleInputField
-              id="year_min"
-              label="From"
-              type="number"
-              min="1980"
-            />
-          </div>
-          <div>
-            <SimpleInputField
-              id="year_max"
-              label="To"
-              type="number"
-              max="2024"
-            />
+          <p className="tw-w-full tw-block tw-text-md tw-text-black tw-font-semibold">Filter by year</p>
+          <p className="tw-w-full tw-block tw-mb-4">Data is available from 1980 to 2023</p>
+          <div className="tw-flex tw-gap-2 tw-items-center">
+            <div>
+              <SimpleSelectField
+                id="year_min"
+                label="Start year"
+                options={options}
+                defaultValue={filters["year_min"]}
+              />
+            </div>
+            <p className="tw-mt-6">to</p>
+            <div>
+              <SimpleSelectField
+                id="year_max"
+                label="End year"
+                options={options}
+                defaultValue={filters["year_max"] || filters["year_min"] || undefined }
+              />
+            </div>
           </div>
         </div>
         <div className="tw-flex tw-justify-end">

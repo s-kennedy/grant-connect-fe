@@ -76,6 +76,7 @@ const CharityHeader = ({column, handleFilterChange, filters}) => {
               id="recipient_name"
               type="text"
               placeholder={`Try searching for "Kitchener-Waterloo Art Gallery"`}
+              defaultValue={filters["recipient_name"]}
             />
           </div>
 
@@ -87,6 +88,7 @@ const CharityHeader = ({column, handleFilterChange, filters}) => {
                   id="recipient_min_size"
                   label="Minimum revenue ($)"
                   type="number"
+                  defaultValue={filters["recipient_min_size"]}
                 />
               </div>
               <p className="tw-mt-6">to</p>
@@ -95,6 +97,7 @@ const CharityHeader = ({column, handleFilterChange, filters}) => {
                   id="recipient_max_size"
                   label="Maximum revenue ($)"
                   type="number"
+                  defaultValue={filters["recipient_max_size"]}
                 />
               </div>
             </div>

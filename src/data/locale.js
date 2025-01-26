@@ -421,7 +421,7 @@ export const locale = () => {
         results: 'Results',
         showing_results: 'Showing results for:',
         graphic_1_title: 'Total amount given ($) by funder',
-        graphic_2_title: 'Total amount given ($) by recipient',
+        graphic_2_title: 'Total amount received ($) by recipient',
         gift:
           'https://datastudio.google.com/embed/reporting/1us6Bt5AWFGJTXQpgW-7h5URLn9Fj9g1U/page/5pJDB',
         contact:
@@ -444,6 +444,8 @@ export const locale = () => {
         location: "Region",
         purpose: "Description",
         search: "Search",
+        disclaimer: "Gift records are sourced from Canada Revenue Agency T3010 Registered Charity Information Returns, or materials published by the organization (e.g., annual report, official website, etc.). While useful for researching the capacity and interests of each organization, please be aware that these gift records may not be inclusive and may contain errors. Data in this table is updated on a quarterly basis.",
+        duplicate_title_error: "A saved search with this title already exists. Please choose a unique title.",
       },
       activities: {
         numGifts: 'Number of gifts',
