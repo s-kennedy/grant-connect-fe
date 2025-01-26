@@ -7,8 +7,9 @@ import { getPrimaryText, hasSelection, facetSort } from 'components/Facets/helpe
 import { FilterList } from 'material-ui-icons'
 
 const FocusHeader = ({column, handleFilterChange, filters}) => {
+  const currentValue = filters["focus"]?.split(",").map(n => parseInt(n))
   const [showForm, setShowForm] = useState(false)
-  const [selected, setSelected] = useState([])
+  const [selected, setSelected] = useState(currentValue || [])
 
   const isActive = !!filters["focus"]
 
@@ -29,7 +30,7 @@ const FocusHeader = ({column, handleFilterChange, filters}) => {
 
   return (
     <div>
-      <FlatButton onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
+      <FlatButton title="Gift recipient focus" onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
         <div className="tw-inline-flex tw-items-center tw-text-dark">
           <FilterList />
           <span className="tw-ml-1">{column.columnDef.header}</span>
@@ -42,42 +43,39 @@ const FocusHeader = ({column, handleFilterChange, filters}) => {
         onBackdropClick={handleClose}
         className="Explorer ge-dialog"
       >
-        <div className="tw-relative">
-          <div className="tw-mb-5">
-            <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by Focus Area</p>
-            { causes.map(cause => {
-              const selectedId = selected.findIndex(s => s === cause.id)
-              const isSelected = selectedId >= 0
-              return (
-                <ListItem
-                  key={cause.id}
-                  nestedLevel={0}
-                  primaryText={cause.name}
-                  primaryTogglesNestedList={false}
-                  leftCheckbox={
-                    <Checkbox
-                      checked={isSelected}
-                      onCheck={() => {
-                        if (isSelected) {
-                          console.log({selectedId})
-                          console.log({selected})
-                          const newArray = [...selected]
-                          newArray.splice(selectedId, 1)
-                          console.log({newArray})
-                          setSelected(newArray)
-                        } else {
-                          setSelected([...selected, cause.id])
-                        }
-                      }}
-                    />
-                  }
-                />
-              )
-            })}
-          </div>
-          <div className="tw-flex tw-justify-end tw-absolute tw-bottom-left">
-            <FlatButton onClick={handleSubmit} label="Apply" variant="contained" color="primary" className={`button-primary`} />
-          </div>
+        <div className="tw-relative tw-flex tw-flex-col tw-w-full">
+            <p className="tw-w-full tw-flex-none tw-tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by Focus Area</p>
+            <div className="tw-overflow-scroll tw-grow">
+              { causes.map(cause => {
+                const selectedId = selected.findIndex(s => s === cause.id)
+                const isSelected = selectedId >= 0
+                return (
+                  <ListItem
+                    key={cause.id}
+                    nestedLevel={0}
+                    primaryText={cause.name}
+                    primaryTogglesNestedList={false}
+                    leftCheckbox={
+                      <Checkbox
+                        checked={isSelected}
+                        onCheck={() => {
+                          if (isSelected) {
+                            const newArray = [...selected]
+                            newArray.splice(selectedId, 1)
+                            setSelected(newArray)
+                          } else {
+                            setSelected([...selected, cause.id])
+                          }
+                        }}
+                      />
+                    }
+                  />
+                )
+              })}
+            </div>
+            <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
+              <FlatButton onClick={handleSubmit} label="Apply" variant="contained" color="primary" className={`button-primary`} />
+            </div>
         </div>
       </Dialog>
     </div>

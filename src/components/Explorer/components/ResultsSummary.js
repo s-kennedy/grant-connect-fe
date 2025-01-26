@@ -34,9 +34,9 @@ const ResultSummary = ({filters, handleRemoveFilter, displayMode=false}) => {
   }
 
   return (
-      <div className="tw-flex tw-items-start tw-gap-2">
+      <div className="tw-flex tw-flex-col tw-md:flex-row tw-items-start tw-gap-2">
         <div className="tw-flex-none tw-mt-1">{displayMode ? t.explorer.saved_search_summary_text : t.explorer.results_summary_text}</div>
-        <div className="tw-inline-flex tw-items-center tw-gap-2 tw-mb-4 tw-flex-wrap">
+        <div className="tw-inline-flex tw-items-center tw-gap-2 tw-mb-2 tw-flex-wrap">
         {
           activeFilterKeys.map(filterKey => {
             const filterValue = filters[filterKey]

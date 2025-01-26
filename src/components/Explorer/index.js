@@ -4,7 +4,7 @@ import MediaQuery from 'react-responsive'
 import { useLocation, useHistory } from 'react-router-dom'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Paper } from 'material-ui'
-import { Star, Undo, Close } from 'material-ui-icons'
+import { Star, Undo, Close, ArrowForward } from 'material-ui-icons'
 import _ from 'lodash'
 
 import SearchBar from './components/SearchBar'
@@ -185,6 +185,14 @@ const Explorer = ({ url }) => {
     setSavedSearches(newSearches)
   }
 
+  const totalSum = records.length
+  const totalAmount = records.reduce((sum, gift) => {
+    return sum + gift.gift_amount
+  }, 0)
+  const formattedAmount = new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0, minimumFractionDigits: 0 }).format(
+    totalAmount,
+  )
+  
   return (
     <div className="Explorer">
       <Grid fluid className="grid">
@@ -214,8 +222,8 @@ const Explorer = ({ url }) => {
         <Row>
           <Col xs={12}>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
-              <div className="tw-flex tw-justify-between">
-                <h2 className={'tw-text-lg tw-font-semibold tw-mt-0'}>{t.explorer.results}</h2>
+              <div className="tw-md:flex tw-justify-between tw-mb-1">
+                <h2 className={'tw-text-lg tw-font-semibold tw-mb-1'}>{t.explorer.results}</h2>
                 <div className="tw-flex tw-gap-1">
                   <SaveSearch filters={filters} saveSearch={saveSearch} savedSearches={savedSearches} />
                   <ButtonWithIcon onClick={undo} color="grey" label="Undo" Icon={Undo} />
@@ -228,7 +236,23 @@ const Explorer = ({ url }) => {
                   <Loader />
                 </div>
               ) : (
-                <DataTable records={records} handleFilterChange={handleFilterChange} filters={filters} />
+                <div>
+                  <div className="tw-flex tw-justify-end tw-items-center tw-gap-1 tw-mb-1">
+                    <span>Scroll to see all columns</span>
+                    <ArrowForward style={{height: '18px', width: '18px'}} />
+                  </div>
+                  <DataTable records={records} handleFilterChange={handleFilterChange} filters={filters} />
+                  <div className="tw-mt-4 tw-flex tw-gap-4">
+                    <div className="tw-text-center">
+                      <p className="tw-my-1">{`Total number of gifts`}</p>
+                      <p className="tw-my-0 tw-font-semibold tw-text-lg">{totalSum}</p>
+                    </div>
+                    <div className="tw-text-center">
+                      <p className="tw-my-1">{`Total amount of gifts`}</p>
+                      <p className="tw-my-0 tw-font-semibold tw-text-lg">{formattedAmount}</p>
+                    </div>
+                  </div>
+                </div>
               )}
             </Paper>
           </Col>

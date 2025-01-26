@@ -3994,8 +3994,9 @@ table tr th, table tr td {
 }
 
 .Explorer.ge-dialog > div > div > div > div {
-  overflow-y: scroll !important;
+  display: flex;
 }
+
 .button-primary {
   background-color: #ffc72c !important;
   height: unset !important;

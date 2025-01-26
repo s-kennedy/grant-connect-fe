@@ -4,8 +4,9 @@ import SimpleInputField from './SimpleInputField'
 import AutocompleteField from './AutocompleteField'
 import { FilterList } from 'material-ui-icons'
 
-const PurposeHeader = ({column,handleFilterChange}) => {
+const PurposeHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
+  const isActive = !!filters["purpose"]
   
   const handleClose = () => {
     setShowForm(false)
@@ -34,7 +35,7 @@ const PurposeHeader = ({column,handleFilterChange}) => {
 
   return (
     <div>
-      <FlatButton onClick={handleOpen} className="ge-header-button">
+      <FlatButton title="Description of gift purpose" onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
         <div className="tw-inline-flex tw-items-center tw-text-dark">
           <FilterList />
           <span className="tw-ml-1">{column.columnDef.header}</span>
@@ -49,14 +50,15 @@ const PurposeHeader = ({column,handleFilterChange}) => {
       >
         <form onSubmit={handleSubmit}>
         <div className="tw-mb-4">
-          <label htmlFor="recipient-name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search the description</label>
+          <label htmlFor="purpose" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search the description</label>
           <SimpleInputField
             type="text"
             id="purpose"
+            defaultValue={filters["purpose"]}
           />
         </div>
 
-        <div className="tw-flex tw-justify-end">
+        <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
           <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
         </div>
         </form>

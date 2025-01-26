@@ -13,6 +13,8 @@ const range = (start, stop, step=1) =>
 const YearHeader = ({column, handleFilterChange, filters}) => {
   const [showForm, setShowForm] = useState(false)
   const isActive = !!filters["year_min"] || !!filters["year_max"]
+  const [minValue, setMinValue] = useState()
+  const [maxValue, setMaxValue] = useState()
   
   const handleClose = () => {
     setShowForm(false)
@@ -72,6 +74,8 @@ const YearHeader = ({column, handleFilterChange, filters}) => {
                 label="Start year"
                 options={options}
                 defaultValue={filters["year_min"]}
+                value={minValue}
+                onChange={(e) => setMinValue(e.target.value)}
               />
             </div>
             <p className="tw-mt-6">to</p>
@@ -81,11 +85,13 @@ const YearHeader = ({column, handleFilterChange, filters}) => {
                 label="End year"
                 options={options}
                 defaultValue={filters["year_max"] || filters["year_min"] || undefined }
+                value={maxValue}
+                onChange={(e) => setMaxValue(e.target.value)}
               />
             </div>
           </div>
         </div>
-        <div className="tw-flex tw-justify-end">
+        <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
           <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
         </div>
         </form>

@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import { MaterialReactTable } from 'material-react-table'
 import { MRT_Localization_FR } from 'material-react-table/locales/fr';
+import { MRT_Localization_EN } from 'material-react-table/locales/en';
 import { Dialog, FlatButton, IconButton } from 'material-ui'
 import FullTextModal from './FullTextModal'
 import FunderHeader from './FunderHeader'
@@ -12,12 +13,14 @@ import FocusHeader from './FocusHeader'
 import LocationHeader from './LocationHeader'
 import YearHeader from './YearHeader'
 import PurposeHeader from './PurposeHeader'
-import { Search, Check, UnfoldMore } from 'material-ui-icons'
+import { Search, Check, UnfoldMore, ArrowDownward } from 'material-ui-icons'
 
 
 const DataTable = ({records, handleFilterChange, filters}) => {
   const [selectedCharity, setSelectedCharity] = useState(null)
   const [selectedFunder, setSelectedFunder] = useState(false)
+
+  console.log({MRT_Localization_EN})
 
   const openCharityModal = (cell) => {
     setSelectedCharity(cell)
@@ -126,6 +129,12 @@ const DataTable = ({records, handleFilterChange, filters}) => {
     []
   )
 
+  const customLocalizationEn = {
+    ...MRT_Localization_EN,
+    showAllColumns: "Unhide all columns",
+    move: "Move column"
+  }
+
   return (
     <MaterialReactTable 
       columns={columns} 
@@ -152,6 +161,10 @@ const DataTable = ({records, handleFilterChange, filters}) => {
           borderBottom: '1px solid #D9E3E9',
           paddingRight: '0.4rem',
         },
+      }}
+      localization={customLocalizationEn}
+      icons={{
+        SortIcon: (props) => (<ArrowDownward {...props} />)
       }}
     />
   )

@@ -72,7 +72,7 @@ const AmountHeader = ({column, handleFilterChange, filters}) => {
               </div>
             </div>
           </div>
-          <div className="tw-flex tw-justify-end">
+          <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
             <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
           </div>
         </form>

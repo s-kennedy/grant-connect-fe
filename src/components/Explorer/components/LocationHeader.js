@@ -34,7 +34,7 @@ const RegionHeader = ({column, handleFilterChange, filters}) => {
 
   return (
     <div>
-      <FlatButton onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
+      <FlatButton title="Gift recipient location" onClick={handleOpen} className={`ge-header-button ${isActive ? 'active' : ''}`}>
         <div className="tw-inline-flex tw-items-center tw-text-dark">
           <FilterList />
           <span className="tw-ml-1">{column.columnDef.header}</span>
@@ -54,10 +54,11 @@ const RegionHeader = ({column, handleFilterChange, filters}) => {
               type="text"
               id="location"
               placeholder={`Try searching for "Vancouver"`}
+              defaultValue={filters["location"]}
             />
           </div>
 
-          <div className="tw-flex tw-justify-end">
+          <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
             <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
           </div>
         </form>
