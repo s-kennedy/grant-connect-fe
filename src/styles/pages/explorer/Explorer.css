@@ -1,26 +1,3 @@
-/* Explorer Page */
-.Explorer {
-  position: relative;
-  padding: 0;
-  overflow: hidden;
-}
-.Explorer .frame {
-  padding: 0;
-  width: 100%;
-  height: calc(93.25vh - 20px);
-  border: 0;
-}
-.Explorer .footer {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  bottom: 0;
-  left: 0;
-  background-color: #f5f8f9;
-}
 .Explorer h1 {
   font-weight: 600;
 }
@@ -28,7 +5,18 @@
   font-size: 1rem;
 }
 .Explorer .ge-search-field {
-  background: white;
+  background: #ffffff;
+  border: 1px solid #bfd0da !important;
+  border-radius: 3px;
+  height: 32px !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.Explorer .ge-simple-text-field input {
+  padding: 0.5rem !important;
+}
+.Explorer .ge-simple-select-field {
+  background: #ffffff;
   border: 1px solid #bfd0da !important;
   border-radius: 3px;
   height: 32px !important;
@@ -39,18 +27,25 @@
   top: 0 !important;
 }
 .Explorer .ge-autocomplete-results {
-  background: white;
+  background: #ffffff;
   border: 1px solid #bfd0da !important;
   border-radius: 3px;
 }
 .Explorer .MuiTableCell-root {
   font-family: "Open Sans" !important;
 }
+.Explorer .ge-simple-text-field input {
+  padding: 0.5rem !important;
+}
 
 .button-primary {
   background-color: #ffc72c !important;
   height: unset !important;
   line-height: unset !important;
+  padding: 0.5rem !important;
+}
+.button-primary:hover {
+  background-color: #ffd86c !important;
 }
 .button-link {
   color: #7c878e !important;
@@ -81,4 +76,103 @@
 }
 .spin-reverse {
   animation: spin-reverse 1.5s linear infinite;
+}
+
+#gifts-search-bar {
+  max-width: 500px;
+}
+
+.ge-button {
+  height: 32px !important;
+  line-height: unset !important;
+  padding: 0.25rem !important;
+  color: #404040 !important;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+.ge-button.grey {
+  background-color: #7c878e !important;
+  color: #ffffff !important;
+}
+.ge-button.grey:hover {
+  background-color: #9badb7 !important;
+  color: #ffffff !important;
+}
+.ge-button.dark-grey {
+  background-color: #404040 !important;
+  color: #ffffff !important;
+}
+.ge-button.dark-grey:hover {
+  background-color: #666666 !important;
+}
+
+.ge-header-button {
+  height: 26px !important;
+  min-width: unset !important;
+  line-height: unset !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+  color: #404040 !important;
+  border: 1px solid #ffc72c !important;
+  background-color: #FFF4D6 !important;
+}
+.ge-header-button:hover {
+  background-color: #FFFAEB !important;
+}
+.ge-header-button span {
+  font-weight: 600 !important;
+}
+.ge-header-button.active {
+  background-color: #ffc72c !important;
+}
+
+.ge-button svg, .ge-header-button svg {
+  height: 16px !important;
+  width: 16px !important;
+  color: inherit !important;
+}
+
+.ge-result-button {
+  border: 1px solid #bfd0da !important;
+}
+
+.ge-result-button svg {
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.ge-result-button span {
+  font-weight: 400 !important;
+}
+
+.ge-result-button .ge-icon-button {
+  padding: 0 !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.ge-table-cell {
+  display: inline;
+}
+
+.ge-table-cell .ge-pipeline-button svg {
+  fill: #ffffff !important;
+}
+
+.ge-table-cell .ge-icon-button, .ge-icon-button svg {
+  padding: 0 !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.ge-table-cell .ge-icon-button {
+  background-color: #D9E3E9 !important;
+  transform: translateY(2px);
+}
+
+.ge-table-cell .ge-pipeline-button {
+  background-color: #417505 !important;
+  margin-left: 3px !important;
 }

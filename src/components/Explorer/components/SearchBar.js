@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { FlatButton } from 'material-ui'
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
+import DefaultButton from './DefaultButton';
 
 // App Language.
 import { useTranslation } from 'react-i18next'
@@ -57,7 +58,7 @@ function SearchBar({
           inputValue={searchTerm}
           renderInput={(params) => <TextField {...params} placeholder={placeholderText} />}
         />
-        <FlatButton onClick={handleSelect} label={t.explorer.search} variant="contained" color="primary" className={`button-primary`} />
+        <DefaultButton onClick={handleSelect} label={t.explorer.search} className={`button-primary`} />
       </div>
     </div>
   )

@@ -3,6 +3,7 @@ $green: #417505;
 $yellow: #ffc72c;
 $yellow-light: #ffd86c;
 $yellow-lighter: #ffe9ac;
+$yellow-lightest: #FFF4D6;
 $blue: #4c9eff;
 $blue-dark: #3b7bc8;
 $brown-dark: #402701;
@@ -12,7 +13,11 @@ $grey-dark: #7c878e;
 $grey: #9badb7;
 $grey-light: #bfd0da;
 $grey-lighter: #f5f8f9;
+$grey-darkest: #666666;
 $black: #404040;
+$true-black: #000000;
+$white: #FFFAEB;
+$true-white: #ffffff;
 
 @mixin breakpoint($class) {
   @if $class == xxs {

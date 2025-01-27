@@ -1,35 +1,7 @@
 @import '../../base.scss';
 
-/* Explorer Page */
-$page-height: calc(93.575vh - 20px);
-$frame-height: calc(93.25vh - 20px);
-$general-width: 100%;
-
 
 .Explorer {
-    position: relative;
-    padding: 0;
-    // height: $page-height;
-    overflow: hidden;
-
-    .frame {
-        padding: 0;
-        width: $general-width;
-        height: $frame-height;
-        border: 0;
-    }
-    .footer {
-      position: absolute;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: $general-width;
-      height: 40px;
-      bottom: 0;
-      left: 0;
-      background-color: $grey-lighter;
-    }
-
     h1 {
         font-weight: 600;
     }
@@ -39,8 +11,21 @@ $general-width: 100%;
     }
 
     .ge-search-field {
-        background: white;
+        background: $true-white;
         border: 1px solid #bfd0da!important;
+        border-radius: 3px;
+        height: 32px !important;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .ge-simple-text-field input {
+      padding: 0.5rem !important;
+    }
+
+    .ge-simple-select-field {
+        background: $true-white;
+        border: 1px solid #bfd0da !important;
         border-radius: 3px;
         height: 32px !important;
         padding-left: 0.5rem;
@@ -52,13 +37,17 @@ $general-width: 100%;
     }
 
     .ge-autocomplete-results {
-        background: white;
+        background: $true-white;
         border: 1px solid #bfd0da!important;
         border-radius: 3px;
     }
 
     .MuiTableCell-root {
         font-family: 'Open Sans' !important;
+    }
+
+    .ge-simple-text-field input {
+        padding: 0.5rem !important;
     }
 }
 
@@ -67,6 +56,11 @@ $general-width: 100%;
         background-color: $yellow !important;
         height: unset !important;
         line-height: unset !important;
+        padding: 0.5rem !important;
+
+        &:hover {
+            background-color: $yellow-light !important;
+        }
     }
     &-link {
         color: $grey-dark !important;
@@ -100,3 +94,112 @@ $general-width: 100%;
 .spin-reverse {
     animation: spin-reverse 1.5s linear infinite;
 }
+
+
+#gifts-search-bar {
+  max-width: 500px;
+}
+
+.ge-button {
+  height: 32px !important;
+  line-height: unset !important;
+  padding: 0.25rem !important;
+  color: $black !important;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+
+  &.grey {
+    background-color: $grey-dark !important;
+    color: $true-white !important;
+
+    &:hover {
+      background-color: $grey !important;
+      color: $true-white !important;
+    }
+  }
+
+  &.dark-grey {
+    background-color: $black !important;
+    color: $true-white !important;
+
+    &:hover {
+      background-color: $grey-darkest !important;
+    }
+  }
+}
+
+.ge-header-button {
+  height: 26px !important;
+  min-width: unset !important;
+  line-height: unset !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+  color: $black !important;
+  border: 1px solid $yellow !important;
+  background-color: $yellow-lightest !important;
+
+  &:hover {
+    background-color: $white !important;
+  }
+
+  span {
+    font-weight:600 !important;
+  }
+
+  &.active {
+    background-color: $yellow !important;
+  }
+}
+
+
+.ge-button svg, .ge-header-button svg {
+  height: 16px !important;
+  width: 16px !important;
+  color: inherit !important;
+}
+
+.ge-result-button {
+  border: 1px solid #bfd0da !important;
+}
+
+.ge-result-button svg {
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.ge-result-button span {
+  font-weight: 400 !important;
+}
+
+.ge-result-button .ge-icon-button {
+  padding: 0 !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.ge-table-cell {
+  display: inline;
+}
+
+.ge-table-cell .ge-pipeline-button svg {
+  fill: #ffffff !important;
+}
+
+.ge-table-cell .ge-icon-button, .ge-icon-button svg {
+  padding: 0 !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.ge-table-cell .ge-icon-button {
+  background-color: #D9E3E9 !important;
+  transform: translateY(2px);
+}
+
+.ge-table-cell .ge-pipeline-button {
+  background-color: #417505 !important;
+  margin-left: 3px !important;
+}
+

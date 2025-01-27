@@ -3925,29 +3925,6 @@ table tr th, table tr td {
 }
 
 /* Explorer Pages */
-/* Explorer Page */
-.Explorer {
-  position: relative;
-  padding: 0;
-  overflow: hidden;
-}
-.Explorer .frame {
-  padding: 0;
-  width: 100%;
-  height: calc(93.25vh - 20px);
-  border: 0;
-}
-.Explorer .footer {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  bottom: 0;
-  left: 0;
-  background-color: #f5f8f9;
-}
 .Explorer h1 {
   font-weight: 600;
 }
@@ -3955,46 +3932,37 @@ table tr th, table tr td {
   font-size: 1rem;
 }
 .Explorer .ge-search-field {
-  background: white;
+  background: #ffffff;
   border: 1px solid #bfd0da !important;
   border-radius: 3px;
   height: 32px !important;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-
-.Explorer .ge-simple-select-field {
-  background: white;
-  border: 1px solid #bfd0da !important;
-  border-radius: 3px;
-  height: 32px !important;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .Explorer .ge-simple-text-field input {
   padding: 0.5rem !important;
 }
-
+.Explorer .ge-simple-select-field {
+  background: #ffffff;
+  border: 1px solid #bfd0da !important;
+  border-radius: 3px;
+  height: 32px !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .Explorer .Material-cards svg {
   top: 0 !important;
 }
-
-#gifts-search-bar {
-  max-width: 500px;
-}
-
 .Explorer .ge-autocomplete-results {
-  background: white;
+  background: #ffffff;
   border: 1px solid #bfd0da !important;
   border-radius: 3px;
 }
 .Explorer .MuiTableCell-root {
   font-family: "Open Sans" !important;
 }
-
-.Explorer.ge-dialog > div > div > div > div {
-  display: flex;
+.Explorer .ge-simple-text-field input {
+  padding: 0.5rem !important;
 }
 
 .button-primary {
@@ -4003,8 +3971,12 @@ table tr th, table tr td {
   line-height: unset !important;
   padding: 0.5rem !important;
 }
+.button-primary:hover {
+  background-color: #ffd86c !important;
+}
 .button-link {
   color: #7c878e !important;
+  height: unset !important;
 }
 .button-link span {
   font-weight: 400 !important;
@@ -4014,14 +3986,51 @@ table tr th, table tr td {
   width: 18px !important;
 }
 
+.full-text-modal {
+  display: inline-block;
+}
+.full-text-modal .show-modal-button {
+  background-color: #bfd0da !important;
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.spin-reverse {
+  animation: spin-reverse 1.5s linear infinite;
+}
+
+#gifts-search-bar {
+  max-width: 500px;
+}
+
 .ge-button {
   height: 32px !important;
-  min-width: unset !important;
-/*  background-color: #ffc72c !important;*/
   line-height: unset !important;
   padding: 0.25rem !important;
-  color: #000000 !important;
-  border: 1px solid #7C878E !important;
+  color: #404040 !important;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+.ge-button.grey {
+  background-color: #7c878e !important;
+  color: #ffffff !important;
+}
+.ge-button.grey:hover {
+  background-color: #9badb7 !important;
+  color: #ffffff !important;
+}
+.ge-button.dark-grey {
+  background-color: #404040 !important;
+  color: #ffffff !important;
+}
+.ge-button.dark-grey:hover {
+  background-color: #666666 !important;
 }
 
 .ge-header-button {
@@ -4032,32 +4041,18 @@ table tr th, table tr td {
   padding-bottom: 0 !important;
   padding-right: 8px !important;
   padding-left: 8px !important;
-  color: #000000 !important;
+  color: #404040 !important;
   border: 1px solid #ffc72c !important;
   background-color: #FFF4D6 !important;
 }
-
-.ge-header-button.active {
-  background-color: #ffc72c !important;
+.ge-header-button:hover {
+  background-color: #FFFAEB !important;
 }
-
 .ge-header-button span {
-  font-weight:600 !important;
-}
-
-.ge-button {
-  text-transform: uppercase;
   font-weight: 600 !important;
 }
-
-.ge-button.grey {
-  background-color: #7C878E !important;
-  color: #ffffff !important;
-}
-
-.ge-button.dark-grey {
-  background-color: #404040 !important;
-  color: #ffffff !important;
+.ge-header-button.active {
+  background-color: #ffc72c !important;
 }
 
 .ge-button svg, .ge-header-button svg {
@@ -4107,25 +4102,6 @@ table tr th, table tr td {
 .ge-table-cell .ge-pipeline-button {
   background-color: #417505 !important;
   margin-left: 3px !important;
-}
-
-.full-text-modal {
-  display: inline-block;
-}
-.full-text-modal .show-modal-button {
-  background-color: #bfd0da !important;
-}
-
-@keyframes spin-reverse {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-.spin-reverse {
-  animation: spin-reverse 1.5s linear infinite;
 }
 
 /* Login Page */
