@@ -4104,6 +4104,10 @@ table tr th, table tr td {
   margin-left: 3px !important;
 }
 
+.ge-dialog > div > div > div > div {
+  display: flex;
+}
+
 /* Login Page */
 .login, .frlogin {
   background-color: #fff;
