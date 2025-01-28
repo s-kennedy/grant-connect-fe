@@ -1,6 +1,3 @@
-// Global DOM Components.
-import React, { useState, useEffect } from 'react'
-import { FlatButton } from 'material-ui'
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import DefaultButton from './DefaultButton';
@@ -37,6 +34,7 @@ function SearchBar({
           style={{ maxWidth: "520px" }}
           freeSolo
           size="small"
+          color="secondary"
           filterOptions={(x) => x}
           options={autocompleteResults}
           renderOption={(props, option) => {
@@ -53,12 +51,12 @@ function SearchBar({
           getOptionLabel={(option) => `${option.match}`}
           autoComplete
           filterSelectedOptions
-          noOptionsText="No suggested results"
+          noOptionsText={t.explorer.no_results}
           onInputChange={handleSearchChange}
           inputValue={searchTerm}
           renderInput={(params) => <TextField {...params} placeholder={placeholderText} />}
         />
-        <DefaultButton onClick={handleSelect} label={t.explorer.search} className={`button-primary`} />
+        <DefaultButton onClick={handleSelect} label={t.explorer.search} />
       </div>
     </div>
   )

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import { Dialog, FlatButton, TextField } from 'material-ui'
+import React, { useState } from 'react'
+import { Dialog, FlatButton } from 'material-ui'
+import { FilterList } from 'material-ui-icons'
+import { Star } from 'material-ui-icons'
 import { useTranslation } from 'react-i18next'
 import SimpleInputField from './SimpleInputField'
-import AutocompleteField from './AutocompleteField'
 import ButtonWithIcon from './ButtonWithIcon'
 import ResultsSummary from './ResultsSummary'
-import { FilterList } from 'material-ui-icons'
-import { Star, Undo, Close } from 'material-ui-icons'
+import DefaultButton from './DefaultButton'
 
 const SaveSearch = ({filters, saveSearch, savedSearches}) => {
   const { i18n } = useTranslation()
@@ -60,11 +60,11 @@ const SaveSearch = ({filters, saveSearch, savedSearches}) => {
     minute: "2-digit"
   };
   const localizedDateString = today.toLocaleTimeString([], options);
-  const defaultSearchTitle = `Search saved on ${localizedDateString}`
+  const defaultSearchTitle = `${t.explorer.search_saved_on} ${localizedDateString}`
 
   return (
-    <div>
-      <ButtonWithIcon onClick={handleOpen} color="grey" label="Save my search" Icon={Star} />
+    <>
+      <ButtonWithIcon onClick={handleOpen} color="grey" label={t.explorer.save_my_search} Icon={Star} />
       <Dialog
         open={showForm}
         onClose={handleClose}
@@ -74,16 +74,16 @@ const SaveSearch = ({filters, saveSearch, savedSearches}) => {
       >
        {
         (activeFilterKeys.length === 0) ? (
-          <p>No filters applied yet.</p>
+          <p>{t.explorer.no_filters}</p>
         ) : (
           <form onSubmit={handleSubmit}>
             <div className="tw-mb-5">
-              <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Save my search</p>
+              <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">{t.explorer.save_my_search}</p>
               <ResultsSummary filters={filters} displayMode={true} />
               <div>
                 <SimpleInputField
                   id="saved_search_title"
-                  label="Enter a title for your saved search"
+                  label={t.explorer.save_my_search_label}
                   type="text"
                   placeholder={defaultSearchTitle}
                   errorMessage={error}
@@ -93,13 +93,13 @@ const SaveSearch = ({filters, saveSearch, savedSearches}) => {
               </div>
             </div>
             <div className="tw-flex tw-justify-end">
-              <FlatButton type="submit" label="Save" variant="contained" color="primary" className={`button-primary`} />
+              <DefaultButton type="submit" label={t.explorer.save} />
             </div>
           </form>
         )
        }
       </Dialog>
-    </div>
+    </>
   )
 }
 

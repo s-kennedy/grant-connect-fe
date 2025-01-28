@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Dialog, FlatButton, IconButton, Paper } from 'material-ui'
-import { Search, Check, UnfoldMore, Close, LocationOn } from 'material-ui-icons'
+import { Search, LocationOn } from 'material-ui-icons'
 import { Col, Row } from 'react-flexbox-grid'
 import { useTranslation } from 'react-i18next'
 import GiftInfo from 'components/ProfileCard/components/GiftInfo'
@@ -19,7 +19,7 @@ const CharityCell = ({cell}) => {
   }
 
   const giftInfos = [
-    { label: "Recipient Size", value: 942000 },
+    { label: t.explorer.recipient_size, value: 942000 },
     { label: t.cards.giftsLastYear, value: 99000 }
   ]
 
@@ -86,7 +86,7 @@ const CharityCell = ({cell}) => {
                         className="Full-card__status button-primary"
                         spinnerColor="white"
                         labelPosition="before"
-                        label="Full Profile"
+                        label={t.explorer.full_profile}
                         onClick={handleClose}
                       />
                     </div>

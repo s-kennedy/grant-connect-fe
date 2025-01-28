@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react'
 import { FlatButton } from 'material-ui'
-
 
 const DefaultButton = ({className="", label, ...props}) => {
   return (
@@ -8,6 +6,7 @@ const DefaultButton = ({className="", label, ...props}) => {
       label={label} 
       variant="contained" 
       className={`button-primary ${className}`} 
+      {...props}
     />
   )
 }

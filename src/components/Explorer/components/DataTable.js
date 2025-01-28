@@ -1,8 +1,9 @@
 import React, { useMemo, useState } from 'react'
 import { MaterialReactTable } from 'material-react-table'
-import { MRT_Localization_FR } from 'material-react-table/locales/fr';
 import { MRT_Localization_EN } from 'material-react-table/locales/en';
-import { Dialog, FlatButton, IconButton } from 'material-ui'
+import { Search, Check, UnfoldMore, ArrowDownward } from 'material-ui-icons'
+import { useTranslation } from 'react-i18next'
+
 import FullTextModal from './FullTextModal'
 import FunderHeader from './FunderHeader'
 import FunderCell from './FunderCell'
@@ -13,14 +14,13 @@ import FocusHeader from './FocusHeader'
 import LocationHeader from './LocationHeader'
 import YearHeader from './YearHeader'
 import PurposeHeader from './PurposeHeader'
-import { Search, Check, UnfoldMore, ArrowDownward } from 'material-ui-icons'
 
 
 const DataTable = ({records, handleFilterChange, filters}) => {
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
   const [selectedCharity, setSelectedCharity] = useState(null)
   const [selectedFunder, setSelectedFunder] = useState(false)
-
-  console.log({MRT_Localization_EN})
 
   const openCharityModal = (cell) => {
     setSelectedCharity(cell)
@@ -34,7 +34,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
     () => [
       {
         accessorKey: 'charity.name',
-        header: 'Recipient',
+        header: t.explorer.recipient,
         size: 110,
         Header: ({ column }) => {
           return (
@@ -45,7 +45,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       },
       {
         accessorKey: 'funder.name', //access nested data with dot notation
-        header: 'Funder',
+        header: t.explorer.funder,
         size: 110,
         Header: ({ column }) => {
           return (
@@ -56,7 +56,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       },
       {
         accessorKey: 'gift_amount',
-        header: 'Amount',
+        header: t.explorer.amount,
         size: 110,
         Header: ({ column }) => {
           return (
@@ -74,7 +74,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       },
       {
         accessorKey: 'focus',
-        header: 'Focus',
+        header: t.explorer.focus,
         size: 110,
         Header: ({ column }) => {
           return (
@@ -84,7 +84,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       },
       {
         accessorKey: 'location.city',
-        header: 'Location',
+        header: t.explorer.location,
         size: 110,
         Header: ({ column }) => {
           return (
@@ -94,7 +94,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       },
       {
         accessorKey: 'year',
-        header: 'Year',
+        header: t.explorer.year,
         size: 110,
         Header: ({ column }) => {
           return (
@@ -104,7 +104,7 @@ const DataTable = ({records, handleFilterChange, filters}) => {
       },
       {
         accessorKey: 'purpose',
-        header: 'Description',
+        header: t.explorer.description,
         size: 110,
         Cell: ({ cell }) => {
           const fullText = cell.getValue()

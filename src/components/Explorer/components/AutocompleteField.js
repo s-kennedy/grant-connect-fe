@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react'
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
+import { useTranslation } from 'react-i18next'
 
 
 const AutocompleteField = ({id, className, options, onInputChange, placeholderText="", ...props}) => {
-  console.log({options})
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
+
   return (
     <div className="relative">
     <Autocomplete
@@ -13,9 +15,8 @@ const AutocompleteField = ({id, className, options, onInputChange, placeholderTe
       freeSolo
       size="small"
       options={options}
-      noOptionsText="No suggested results"
+      noOptionsText={t.explorer.no_results}
       onInputChange={onInputChange}
-      // inputValue={searchTerm}
       renderInput={(params) => <TextField {...params} placeholder={placeholderText} />}
       {...props}
     />

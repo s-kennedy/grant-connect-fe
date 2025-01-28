@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import { Dialog, FlatButton, TextField, MenuItem, SelectField } from 'material-ui'
-import SimpleInputField from './SimpleInputField'
+import React, { useState } from 'react'
+import { Dialog, FlatButton } from 'material-ui'
+import { FilterList } from 'material-ui-icons'
+import { useTranslation } from 'react-i18next'
 import SimpleSelectField from './SimpleSelectField'
-import { FilterList, KeyboardArrowDown } from 'material-ui-icons'
+import DefaultButton from './DefaultButton'
 
 const range = (start, stop, step=1) =>
   Array.from(
@@ -11,6 +12,8 @@ const range = (start, stop, step=1) =>
   );
 
 const YearHeader = ({column, handleFilterChange, filters}) => {
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
   const [showForm, setShowForm] = useState(false)
   const isActive = !!filters["year_min"] || !!filters["year_max"]
   const [minValue, setMinValue] = useState()
@@ -65,13 +68,13 @@ const YearHeader = ({column, handleFilterChange, filters}) => {
       >
         <form onSubmit={handleSubmit} >
         <div className="tw-mb-5">
-          <p className="tw-w-full tw-block tw-text-md tw-text-black tw-font-semibold">Filter by year</p>
-          <p className="tw-w-full tw-block tw-mb-4">Data is available from 1980 to 2023</p>
+          <p className="tw-w-full tw-block tw-text-md tw-text-black tw-font-semibold">{t.explorer.filter_by_year}</p>
+          <p className="tw-w-full tw-block tw-mb-4">{t.explorer.years_available}</p>
           <div className="tw-flex tw-gap-2 tw-items-center">
             <div>
               <SimpleSelectField
                 id="year_min"
-                label="Start year"
+                label={t.explorer.start_year}
                 options={options}
                 defaultValue={filters["year_min"]}
                 value={minValue}
@@ -82,7 +85,7 @@ const YearHeader = ({column, handleFilterChange, filters}) => {
             <div>
               <SimpleSelectField
                 id="year_max"
-                label="End year"
+                label={t.explorer.end_year}
                 options={options}
                 defaultValue={filters["year_max"] || filters["year_min"] || undefined }
                 value={maxValue}
@@ -92,7 +95,7 @@ const YearHeader = ({column, handleFilterChange, filters}) => {
           </div>
         </div>
         <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
-          <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
+          <DefaultButton type="submit" label={t.explorer.apply} />
         </div>
         </form>
       </Dialog>

@@ -1,6 +1,4 @@
-import Select from 'react-select'
-
-const SimpleSelectField = ({options=[], id, className, label, placeholder, errorMessage, defaultValue, value, ...props}) => {
+const SimpleSelectField = ({options=[], id, className="", label, defaultValue, value, ...props}) => {
   return (
     <div className="tw-flex tw-flex-col tw-mb-2">
       {label && <label htmlFor={id} className="tw-mb-1">{label}</label>}

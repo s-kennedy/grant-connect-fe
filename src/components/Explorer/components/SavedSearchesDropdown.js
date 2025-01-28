@@ -1,10 +1,8 @@
-// Global DOM Components.
-import React, { useState, useEffect } from 'react'
-import { Dialog, FlatButton, TextField } from 'material-ui'
+import React, { useState } from 'react'
+import { Dialog, FlatButton } from 'material-ui'
 import { Star } from 'material-ui-icons'
-
-// App Language.
 import { useTranslation } from 'react-i18next'
+import DefaultButton from './DefaultButton'
 
 function SavedSearchesDropdown({savedSearches, applySearch, deleteSearch}) {
   const { i18n } = useTranslation()
@@ -46,22 +44,20 @@ function SavedSearchesDropdown({savedSearches, applySearch, deleteSearch}) {
       >
        {
         (savedSearches.length === 0) ? (
-          <p>No saved searches.</p>
+          <p>{t.explorer.no_saved_searches}</p>
         ) : (
           <div>
             <div className="tw-mb-5">
-              <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold tw-text-md">Use a Saved Search</p>
+              <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold tw-text-md">{t.explorer.use_saved_search}</p>
               {savedSearches.map((search, index) => {
                 return (
                   <div className="tw-flex tw-justify-between">
                     <p className="tw-text-md">{search.title}</p>
-                    <div className="tw-inline tw-gap-1">
-                      <FlatButton onClick={() => handleApply(index)} color="primary" className={`button-primary`}>
-                        <span className="tw-text-md">Apply</span>
-                      </FlatButton>
-                      <FlatButton onClick={() => handleDelete(index)} color="primary" className={`button-link`}>
+                    <div className="tw-inline">
+                      <DefaultButton onClick={() => handleApply(index)} label={t.explorer.apply} />
+                      <FlatButton onClick={() => handleDelete(index)} className={`button-link tw-ml-1`}>
                         <div className="tw-inline-flex tw-px-2 tw-items-center">
-                          <span className="tw-underline tw-text-md">Delete</span>
+                          <span className="tw-underline tw-text-md">{t.explorer.delete}</span>
                         </div>
                       </FlatButton>
                     </div>

@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Dialog, FlatButton, IconButton, Paper } from 'material-ui'
-import { Search, Check, UnfoldMore, Close, LocationOn } from 'material-ui-icons'
+import { Search, Check, UnfoldMore, LocationOn } from 'material-ui-icons'
 import { Col, Row } from 'react-flexbox-grid'
 import { useTranslation } from 'react-i18next'
 import GiftInfo from 'components/ProfileCard/components/GiftInfo'
-import ReactTooltip from 'react-tooltip'
 
 const FunderCell = ({cell}) => {
   const { i18n } = useTranslation()
@@ -33,7 +32,7 @@ const FunderCell = ({cell}) => {
         <IconButton className="ge-icon-button" onClick={handleOpen}><div className=""><UnfoldMore style={{transform: "rotate(45deg)"}}/></div></IconButton>
         {inPipeline && (
           <React.Fragment>
-            <IconButton className="ge-icon-button ge-pipeline-button" title="In your pipeline">
+            <IconButton className="ge-icon-button ge-pipeline-button" title={t.explorer.in_your_pipeline}>
               <Check />
             </IconButton>
           </React.Fragment>
@@ -92,14 +91,14 @@ const FunderCell = ({cell}) => {
                         className="Full-card__status button-primary"
                         spinnerColor="white"
                         labelPosition="before"
-                        label="Full Profile"
+                        label={t.explorer.full_profile}
                         onClick={handleClose}
                       />
                       <FlatButton
                         className="Full-card__status add"
                         spinnerColor="white"
                         labelPosition="before"
-                        label="Add to Pipeline"
+                        label={t.explorer.add_to_pipeline}
                         onClick={handleClose}
                       />
                     </div>

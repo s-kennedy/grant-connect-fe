@@ -1,6 +1,3 @@
-// Global DOM Components.
-import React, { useState, useEffect } from 'react'
-import { Loop } from 'material-ui-icons'
 import { useTranslation } from 'react-i18next'
 import { Close } from 'material-ui-icons'
 import { IconButton } from 'material-ui'

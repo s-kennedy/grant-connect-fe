@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react'
 import TextField from '@mui/material/TextField';
-
 
 const SimpleInputField = ({type="text", id, className, label, placeholder, errorMessage, ...props}) => {
   return (
@@ -10,7 +8,7 @@ const SimpleInputField = ({type="text", id, className, label, placeholder, error
         id={id}
         name={id}
         type={type}
-        className="ge-simple-text-field"
+        className="ge-simple-input-field"
         placeholder={placeholder} 
         error={!!errorMessage}
         helperText={errorMessage}

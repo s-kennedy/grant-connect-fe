@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react'
 import { FlatButton } from 'material-ui'
-
 
 const ButtonWithIcon = ({className="", label, color, Icon, ...props}) => {
   return (

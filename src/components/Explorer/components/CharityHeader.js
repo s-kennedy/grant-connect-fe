@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import { Dialog, FlatButton, TextField } from 'material-ui'
-import SimpleInputField from './SimpleInputField'
-import AutocompleteField from './AutocompleteField'
+import { Dialog, FlatButton } from 'material-ui'
 import { FilterList } from 'material-ui-icons'
-
+import { useTranslation } from 'react-i18next'
+import SimpleInputField from './SimpleInputField'
+import DefaultButton from './DefaultButton'
 
 const CharityHeader = ({column, handleFilterChange, filters}) => {
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
   const [showForm, setShowForm] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
   const [ autocompleteResults, setAutocompleteResults ] = useState([])
@@ -71,22 +73,22 @@ const CharityHeader = ({column, handleFilterChange, filters}) => {
       >
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="recipient_name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search by name</label>
+            <label htmlFor="recipient_name" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">{t.explorer.search_by_name}</label>
             <SimpleInputField
               id="recipient_name"
               type="text"
-              placeholder={`Try searching for "Kitchener-Waterloo Art Gallery"`}
+              placeholder={t.explorer.recipient_name_placeholder}
               defaultValue={filters["recipient_name"]}
             />
           </div>
 
           <div className="tw-mb-5">
-            <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by recipient size</p>
+            <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">{t.explorer.filter_by_recipient_size}</p>
             <div className="tw-flex tw-gap-2 tw-items-center">
               <div>
                 <SimpleInputField
                   id="recipient_min_size"
-                  label="Minimum revenue ($)"
+                  label={t.explorer.min_revenue}
                   type="number"
                   defaultValue={filters["recipient_min_size"]}
                 />
@@ -95,7 +97,7 @@ const CharityHeader = ({column, handleFilterChange, filters}) => {
               <div>
                 <SimpleInputField
                   id="recipient_max_size"
-                  label="Maximum revenue ($)"
+                  label={t.explorer.max_revenue}
                   type="number"
                   defaultValue={filters["recipient_max_size"]}
                 />
@@ -103,7 +105,7 @@ const CharityHeader = ({column, handleFilterChange, filters}) => {
             </div>
           </div>
           <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
-            <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
+            <DefaultButton type="submit" label={t.explorer.apply} />
           </div>
         </form>
       </Dialog>

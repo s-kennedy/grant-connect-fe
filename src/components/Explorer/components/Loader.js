@@ -1,7 +1,4 @@
-// Global DOM Components.
-import React, { useState, useEffect } from 'react'
 import { Loop } from 'material-ui-icons'
-
 
 const Loader = ({loading, className}) => {
   return (

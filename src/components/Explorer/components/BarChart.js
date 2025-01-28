@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -20,6 +20,8 @@ ChartJS.register(
 );
 
 const BarChart = ({records, ...props}) => {
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
 
   const giftsByFunder = records.reduce((obj, gift) => {
     if (!gift.funder) {
@@ -44,7 +46,7 @@ const BarChart = ({records, ...props}) => {
   const data = {
     labels: labels,
     datasets: [{
-      label: 'Total $ amount given',
+      label: t.explorer.total_amount_given,
       data: series,
       borderWidth: 1,
       backgroundColor: '#ffc72c',

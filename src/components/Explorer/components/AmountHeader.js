@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import { Dialog, FlatButton, TextField } from 'material-ui'
-import SimpleInputField from './SimpleInputField'
-import AutocompleteField from './AutocompleteField'
+import React, { useState } from 'react'
+import { Dialog, FlatButton } from 'material-ui'
 import { FilterList } from 'material-ui-icons'
+import { useTranslation } from 'react-i18next'
+import DefaultButton from './DefaultButton'
+import SimpleInputField from './SimpleInputField'
 
 const AmountHeader = ({column, handleFilterChange, filters}) => {
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
   const [showForm, setShowForm] = useState(false)
   const isActive = !!filters["amount_min"] || !!filters["amount_max"]
   
@@ -51,12 +54,12 @@ const AmountHeader = ({column, handleFilterChange, filters}) => {
       >
         <form onSubmit={handleSubmit}>
           <div className="tw-mb-5">
-            <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by gift size</p>
+            <p className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">{t.explorer.filter_by_gift_size}</p>
             <div className="tw-flex tw-gap-2 tw-items-center">
               <div>
                 <SimpleInputField
                   id="amount_min"
-                  label="Minimum ($)"
+                  label={t.explorer.min_size}
                   type="number"
                   defaultValue={filters["amount_min"]}
                 />
@@ -65,7 +68,7 @@ const AmountHeader = ({column, handleFilterChange, filters}) => {
               <div>
                 <SimpleInputField
                   id="amount_max"
-                  label="Maximum ($)"
+                  label={t.explorer.max_size}
                   type="number"
                   defaultValue={filters["amount_max"]}
                 />
@@ -73,7 +76,7 @@ const AmountHeader = ({column, handleFilterChange, filters}) => {
             </div>
           </div>
           <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
-            <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
+            <DefaultButton type="submit" label={t.explorer.apply} />
           </div>
         </form>
       </Dialog>

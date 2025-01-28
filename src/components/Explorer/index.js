@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import MediaQuery from 'react-responsive'
 import { useLocation, useHistory } from 'react-router-dom'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Paper } from 'material-ui'
@@ -222,9 +221,9 @@ const Explorer = ({ url }) => {
         <Row>
           <Col xs={12}>
             <Paper elevation={1} className={`Material-cards Material-cards__expanded`}>
-              <div className="tw-md:flex tw-justify-between tw-mb-1">
-                <h2 className={'tw-text-lg tw-font-semibold tw-mb-1'}>{t.explorer.results}</h2>
-                <div className="tw-flex tw-gap-1">
+              <div className="sm:tw-flex tw-justify-between tw-mb-1">
+                <h2 className={'tw-text-lg tw-font-semibold tw-mb-1 tw-mt-0'}>{t.explorer.results}</h2>
+                <div className="tw-flex tw-gap-1 tw-flex-wrap tw-mb-2">
                   <SaveSearch filters={filters} saveSearch={saveSearch} savedSearches={savedSearches} />
                   <ButtonWithIcon onClick={undo} color="grey" label="Undo" Icon={Undo} />
                   <ButtonWithIcon onClick={reset} color="dark-grey" label="Reset" Icon={Close} />
@@ -238,7 +237,7 @@ const Explorer = ({ url }) => {
               ) : (
                 <div>
                   <div className="tw-flex tw-justify-end tw-items-center tw-gap-1 tw-mb-1">
-                    <span>Scroll to see all columns</span>
+                    <span>{t.explorer.scroll}</span>
                     <ArrowForward style={{height: '18px', width: '18px'}} />
                   </div>
                   <DataTable records={records} handleFilterChange={handleFilterChange} filters={filters} />

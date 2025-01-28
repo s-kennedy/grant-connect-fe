@@ -1,11 +1,14 @@
 import React, { useMemo, useState } from 'react'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
+import { useTranslation } from 'react-i18next'
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-
 const PieChart = ({records, ...props}) => {
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
+
   const giftsByRecipient = records.reduce((obj, gift) => {
     if (!gift.charity) {
       return obj
@@ -30,7 +33,7 @@ const PieChart = ({records, ...props}) => {
   const data = {
     labels: labels,
     datasets: [{
-      label: 'Total $ amount received',
+      label: t.explorer.total_amount_received,
       data: series,
       borderWidth: 1,
       backgroundColor: ["#f5b400","#ffc72c","#ffe085"]

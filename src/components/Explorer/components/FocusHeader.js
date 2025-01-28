@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import { Dialog, FlatButton, TextField, Checkbox, ListItem } from 'material-ui'
-import SimpleInputField from './SimpleInputField'
-import AutocompleteField from './AutocompleteField'
-import causes from 'data/ge-data/causes.json'
-import { getPrimaryText, hasSelection, facetSort } from 'components/Facets/helpers'
+import React, { useState } from 'react'
+import { Dialog, FlatButton, Checkbox, ListItem } from 'material-ui'
 import { FilterList } from 'material-ui-icons'
+import { useTranslation } from 'react-i18next'
+import causes from 'data/ge-data/causes.json'
+import DefaultButton from './DefaultButton'
 
 const FocusHeader = ({column, handleFilterChange, filters}) => {
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
   const currentValue = filters["focus"]?.split(",").map(n => parseInt(n))
   const [showForm, setShowForm] = useState(false)
   const [selected, setSelected] = useState(currentValue || [])
@@ -44,7 +45,7 @@ const FocusHeader = ({column, handleFilterChange, filters}) => {
         className="Explorer ge-dialog"
       >
         <div className="tw-relative tw-flex tw-flex-col tw-w-full">
-            <p className="tw-w-full tw-flex-none tw-tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Filter by Focus Area</p>
+            <p className="tw-w-full tw-flex-none tw-tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">{t.explorer.filter_by_focus}</p>
             <div className="tw-overflow-scroll tw-grow">
               { causes.map(cause => {
                 const selectedId = selected.findIndex(s => s === cause.id)
@@ -57,6 +58,7 @@ const FocusHeader = ({column, handleFilterChange, filters}) => {
                     primaryTogglesNestedList={false}
                     leftCheckbox={
                       <Checkbox
+                        className={`ge-focus-checkbox ${isSelected ? 'active' : ''}`}
                         checked={isSelected}
                         onCheck={() => {
                           if (isSelected) {
@@ -74,7 +76,7 @@ const FocusHeader = ({column, handleFilterChange, filters}) => {
               })}
             </div>
             <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
-              <FlatButton onClick={handleSubmit} label="Apply" variant="contained" color="primary" className={`button-primary`} />
+              <DefaultButton onClick={handleSubmit} label={t.explorer.apply} />
             </div>
         </div>
       </Dialog>

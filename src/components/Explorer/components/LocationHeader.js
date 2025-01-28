@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import { Dialog, FlatButton, TextField } from 'material-ui'
-import SimpleInputField from './SimpleInputField'
+import React, { useState } from 'react'
+import { Dialog, FlatButton } from 'material-ui'
 import { FilterList } from 'material-ui-icons'
+import { useTranslation } from 'react-i18next'
+import SimpleInputField from './SimpleInputField'
+import DefaultButton from './DefaultButton'
 
 const RegionHeader = ({column, handleFilterChange, filters}) => {
+  const { i18n } = useTranslation()
+  const t = i18n.getResourceBundle(i18n.language)
   const [showForm, setShowForm] = useState(false)
   const isActive = !!filters["location"]
   
@@ -49,17 +53,17 @@ const RegionHeader = ({column, handleFilterChange, filters}) => {
       >
         <form onSubmit={handleSubmit}>
           <div className="tw-mb-4">
-            <label htmlFor="location" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">Search locations</label>
+            <label htmlFor="location" className="tw-w-full tw-block tw-mb-2 tw-text-md tw-text-black tw-font-semibold">{t.explorer.search_locations}</label>
             <SimpleInputField
               type="text"
               id="location"
-              placeholder={`Try searching for "Vancouver"`}
+              placeholder={t.explorer.search_locations_placeholder}
               defaultValue={filters["location"]}
             />
           </div>
 
           <div className="tw-pt-3 tw-flex tw-justify-end tw-flex-none tw-border tw-border-b-0 tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-grey">
-            <FlatButton type="submit" label="Apply" variant="contained" color="primary" className={`button-primary`} />
+            <DefaultButton type="submit" label={t.explorer.apply} />
           </div>
         </form>
       </Dialog>
